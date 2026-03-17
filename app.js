@@ -30,6 +30,10 @@ const D = DASHBOARD_DATA;
 let currentSprint = 'sprint_1';
 let chartInstances = {};
 
+// ===== Sort State =====
+let rankingSortKey = 'sprints';  // default: sort by sprints count
+let rankingSortDir = 'desc';     // default: descending
+
 // ===== Utility Functions =====
 function getCSS(prop) {
   return getComputedStyle(document.documentElement).getPropertyValue(prop).trim();
@@ -400,12 +404,70 @@ function renderSprintContent(sprintId) {
 }
 
 // ===== Ranking Table =====
+function sortStudents(students) {
+  const key = rankingSortKey;
+  const dir = rankingSortDir === 'asc' ? 1 : -1;
+  
+  const classOrder = {
+    '🔮 Alquimista Destacado': 0,
+    '⚗️ Alquimista en Formación': 1,
+    '🧪 Aprendiz Activo': 2
+  };
+  
+  return [...students].sort((a, b) => {
+    let cmp = 0;
+    switch (key) {
+      case 'name':
+        cmp = a.name.localeCompare(b.name, 'es');
+        break;
+      case 'class':
+        cmp = (classOrder[a.alchemist_class] ?? 9) - (classOrder[b.alchemist_class] ?? 9);
+        if (cmp === 0) cmp = b.avg_score - a.avg_score; // secondary: avg desc
+        break;
+      case 'avg':
+        cmp = b.avg_score - a.avg_score; // natural: higher is better
+        if (dir === -1) cmp = cmp; // desc is natural
+        else cmp = a.avg_score - b.avg_score;
+        return cmp || b.sprints_count - a.sprints_count;
+      case 'sprints':
+        cmp = b.sprints_count - a.sprints_count; // natural: more is better
+        if (dir === -1) cmp = cmp; // desc is natural
+        else cmp = a.sprints_count - b.sprints_count;
+        return cmp || b.avg_score - a.avg_score;
+      default:
+        cmp = 0;
+    }
+    // For name and class, apply direction multiplier
+    if (key === 'name' || key === 'class') return cmp * dir;
+    return cmp;
+  });
+}
+
+function updateSortHeaders() {
+  document.querySelectorAll('.ranking-table th.sortable').forEach(th => {
+    const sortKey = th.dataset.sort;
+    const arrow = th.querySelector('.sort-arrow');
+    if (sortKey === rankingSortKey) {
+      th.classList.add('active-sort');
+      arrow.textContent = rankingSortDir === 'desc' ? '▼' : '▲';
+      arrow.className = 'sort-arrow ' + rankingSortDir;
+    } else {
+      th.classList.remove('active-sort');
+      arrow.textContent = '';
+      arrow.className = 'sort-arrow';
+    }
+  });
+}
+
 function renderRanking(students) {
   const tbody = document.getElementById('rankingBody');
   const countEl = document.getElementById('rankingCount');
   
-  tbody.innerHTML = students.map((s, i) => {
-    const isTop3 = i < 3 && students.length > 3;
+  // Apply current sort
+  const sorted = sortStudents(students);
+  
+  tbody.innerHTML = sorted.map((s, i) => {
+    const isTop3 = i < 3 && sorted.length > 3;
     const sprintKeys = ['sprint_1', 'sprint_2', 'sprint_3', 'sprint_4'];
     const orderedScores = [];
     const activeSprints = [];
@@ -449,7 +511,8 @@ function renderRanking(students) {
     `;
   }).join('');
   
-  countEl.textContent = `Mostrando ${students.length} de ${D.students.length} estudiantes evaluados`;
+  countEl.textContent = `Mostrando ${sorted.length} de ${D.students.length} estudiantes evaluados`;
+  updateSortHeaders();
 }
 
 function filterStudents() {
@@ -464,7 +527,7 @@ function filterStudents() {
     return true;
   });
   
-  // Sort
+  // When filtering by sprint, sort by that sprint's score by default
   if (sprintFilter !== 'all') {
     filtered.sort((a, b) => (b.sprints[sprintFilter]?.score || 0) - (a.sprints[sprintFilter]?.score || 0));
   }
@@ -641,6 +704,22 @@ document.querySelectorAll('.nav-link').forEach(link => {
     e.preventDefault();
     const target = document.getElementById(link.dataset.section);
     if (target) target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+// ===== Column Sort Click Handlers =====
+document.querySelectorAll('.ranking-table th.sortable').forEach(th => {
+  th.addEventListener('click', () => {
+    const key = th.dataset.sort;
+    if (rankingSortKey === key) {
+      // Toggle direction
+      rankingSortDir = rankingSortDir === 'desc' ? 'asc' : 'desc';
+    } else {
+      rankingSortKey = key;
+      // Default direction: desc for numeric, asc for name
+      rankingSortDir = key === 'name' ? 'asc' : 'desc';
+    }
+    filterStudents();
   });
 });
 

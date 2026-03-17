@@ -736,6 +736,33 @@ table { border-collapse: collapse; width: 100%; }
 .col-sprints { text-align: center; }
 .col-action { width: 40px; }
 
+/* Sortable columns */
+.sortable {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  transition: color 0.2s ease;
+}
+.sortable:hover {
+  color: var(--color-primary);
+}
+.sortable.active-sort {
+  color: var(--color-primary);
+}
+.sort-arrow {
+  display: inline-block;
+  font-size: 10px;
+  margin-left: 4px;
+  opacity: 0.3;
+  transition: opacity 0.2s ease;
+}
+.sortable:hover .sort-arrow {
+  opacity: 0.6;
+}
+.sortable.active-sort .sort-arrow {
+  opacity: 1;
+}
+
 .rank-num {
   font-family: var(--font-display);
   font-weight: 700;

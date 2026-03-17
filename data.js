@@ -83,460 +83,6 @@ const DASHBOARD_DATA = {
   },
   "students": [
     {
-      "id": "103035128104374350950",
-      "name": "Omar Cuauhtemoc Morfín López",
-      "is_named": true,
-      "avg_score": 4.0,
-      "sprints_count": 2,
-      "total_sprints_with_work": 3,
-      "alchemist_class": "⚗️ Alquimista en Formación",
-      "progression": 0.0,
-      "scores": [
-        4.0,
-        4.0
-      ],
-      "levels": [
-        "Destacado",
-        "Destacado"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "El workflow multi-paso con instrucciones de Arte y Verificación de Tono demuestra un nivel de ingeniería de prompting excepcional para el Sprint 1.",
-            "La restricción de tono ('no burlarse, sí validar') con una pregunta de verificación interna es una técnica avanzada de control de calidad aplicada intuitivamente."
-          ],
-          "recommendations": [
-            "Documentar el output que generó este prompt y compartirlo como caso de estudio para el grupo.",
-            "Explorar el uso de few-shot con ejemplos de posts reales de Purina que hayan funcionado bien, para calibrar el tono con mayor precisión."
-          ],
-          "alchemist_signals": [
-            "Señal de Alquimista Destacado desde el Sprint 1: Omar opera con pensamiento de workflow y control de calidad integrado desde el primer sprint, lo que sugiere adopción acelerada y potencial de liderazgo en el programa."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "El prompt tiene Rol explícito (Director Creativo Senior en real-time marketing), Contexto rico (fenómeno therian, postura de Purina), Objetivo con restricciones claras (humor elegante, no burla), e instrucciones de Workflow numeradas con múltiples pasos. Es un prompt maestro de alta densidad estructural."
-            },
-            "Aplicación a Caso Real": {
-              "score": 4,
-              "justification": "El caso es específico de su industria (marketing de mascota de marca real: Purina), trabaja un fenómeno cultural real (therian) con una estrategia de contenido de marca real-time. Solo alguien en ese contexto profesional podría construir este prompt."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "Diseña un workflow multi-paso (Concepto → Copywriting → Directrices de Arte → Verificación de Tono), incluye una restricción de verificación interna del modelo ('¿Se ríe con ellos o de ellos?') y demuestra comprensión de que el modelo necesita un checklist de salida para no producir contenido que dañe la marca."
-            }
-          }
-        },
-        "sprint_2": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "El diagnóstico de 'alucinaciones de sesgo positivo' en temas sensibles es una contribución conceptual avanzada que va más allá de lo visto en clase.",
-            "El proceso de razonamiento (por qué este tema produce slop → qué técnica lo contrarresta → cómo se implementó) es un modelo de pensamiento de ingeniero de prompting."
-          ],
-          "recommendations": [
-            "Compartir el prompt completo de la Misión 2C para que sirva como referencia técnica para el grupo.",
-            "Explorar cómo este protocolo Anti-Slop para investigación sensible podría sistematizarse en un GPT o SOP reutilizable."
-          ],
-          "alchemist_signals": [
-            "Señal de Alquimista Destacado: Omar tiene capacidad de diagnóstico técnico antes de diseñar soluciones, lo que lo distingue como pensador sistémico de alto nivel en el grupo."
-          ],
-          "criteria": {
-            "Dominio de Técnicas Avanzadas": {
-              "score": 4,
-              "justification": "Aplica Misión 2C con una sofisticación excepcional: entiende por qué la IA produce 'Slop de Sesgo Positivo' en temas sensibles, y diseña contra-medidas específicas (Verificación Extrema, triangulación de conflicto entre fuentes). El diagnóstico técnico del problema antes de aplicar la técnica es análisis de primer nivel."
-            },
-            "Control de Calidad (Anti-Slop)": {
-              "score": 4,
-              "justification": "Identifica un tipo específico de Slop (alucinaciones de sesgo positivo en temas sociales sensibles) y diseña un protocolo para contrarrestarlo. La distinción entre 'qué encontraron las fuentes' y 'qué quiere escuchar el usuario' es una aplicación de Anti-Slop de máxima madurez."
-            },
-            "Iteración y Refinamiento": {
-              "score": 4,
-              "justification": "El análisis del problema (por qué la IA tiende al Slop en este tema), la técnica seleccionada y el resultado están articulados como un proceso de ingeniería completo con razonamiento visible de cada decisión."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "106910608619500189439",
-      "name": "Paulina Rodriguez",
-      "is_named": true,
-      "avg_score": 4.0,
-      "sprints_count": 1,
-      "total_sprints_with_work": 2,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        4.0
-      ],
-      "levels": [
-        "Destacado"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "Integra datos cuantitativos reales de OCESA (600 eventos, umbrales de venta del 30% y 40%) que hacen el prompt altamente ejecutable en un entorno profesional real.",
-            "El pensamiento de edge cases (múltiples preventas el mismo día para un usuario) demuestra dominio de la ingeniería de prompts: anticipa escenarios complejos y pide al modelo que los resuelva de forma lógica."
-          ],
-          "recommendations": [
-            "Considerar añadir un paso de validación donde el modelo confirme su comprensión del esquema antes de generar el output, para prompts tan complejos.",
-            "Explorar la adición de ejemplos concretos (few-shot) de una campaña exitosa para anclar mejor el output del modelo hacia el estilo deseado."
-          ],
-          "alchemist_signals": [
-            "Este prompt es de nivel profesional senior: diseña un sistema completo de automatización de marketing con lógica de negocio real, no solo un ejercicio académico. El estudiante ya piensa en pipelines de IA, no en prompts aislados."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "Estructura ejemplar con Rol muy específico (Arquitecto de Soluciones CRM Senior en SFMC), Contexto con datos cuantitativos reales (600 eventos/año, proceso manual), Tarea desglosada en 3 objetivos numerados y Formato de salida explícito (tabla de flujo lógico + recomendaciones). Va más allá al añadir una sección de 'Prioridad de Negocio' que muestra diseño iterativo."
-            },
-            "Aplicación a Caso Real": {
-              "score": 4,
-              "justification": "El prompt está completamente enraizado en la realidad operativa de OCESA: 600 eventos anuales, Salesforce Marketing Cloud, reglas de negocio reales (Sold Out = cero campañas), triggers de crisis con porcentajes concretos y la Regla de Patrocinio Bancaria como disparador #1. Es altamente específico y operacionalizable."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "Demuestra pensamiento sistémico avanzado: diseña lógica de priorización para evitar saturación de usuarios, propone 'Hierarchy of Send', anticipa edge cases (fan de 3 géneros recibiendo 3 mails el mismo día) y plantea consolidación de campañas. La 'Regla de Coexistencia' añadida evidencia iteración consciente y refinamiento del prompt."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "100303443825812603046",
-      "name": "Yesenia Martinez Cruz",
-      "is_named": true,
-      "avg_score": 4.0,
-      "sprints_count": 1,
-      "total_sprints_with_work": 1,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        4.0
-      ],
-      "levels": [
-        "Destacado"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "La inclusión de nombres reales, fechas concretas y estimaciones de horas convierte este prompt en un instrumento de trabajo real, no en un ejercicio teórico.",
-            "El criterio de priorización por 'entregas que bloquean a otros departamentos' muestra sofisticación gerencial traducida directamente al diseño del prompt."
-          ],
-          "recommendations": [
-            "Añadir una restricción explícita sobre qué hacer si la carga total supera la capacidad del equipo (ej. ¿qué tareas eliminar o renegociar con el cliente?).",
-            "Incluir el formato de la tabla de cronograma esperada con columnas ejemplo para que el output sea más consistente entre usos."
-          ],
-          "alchemist_signals": [
-            "El estudiante usa la IA como un verdadero copiloto de gestión de proyectos: alimenta el modelo con los datos operativos reales de su equipo y le pide un output ejecutable. Es exactamente el uso de IA que transforma la productividad profesional."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "Usa etiquetado explícito [ROL], [CONTEXTO], [TAREAS], [FORMATO DE SALIDA] e [INPUTS ACTUALES] con gran claridad. Las tareas están numeradas con verbos de acción, los insumos están clasificados por prioridad, y el formato de salida especifica tanto el entregable como el destinatario (Yess), lo cual es sofisticado."
-            },
-            "Aplicación a Caso Real": {
-              "score": 4,
-              "justification": "Menciona nombres reales de colaboradores (Mauricio, Luis, Andrés), capacidades específicas (8 horas cada uno), fechas concretas de entrega (24 feb, 12 marzo), y entregables reales de OCESA (Guiones Alta Producción, Vive Latino). El nivel de especificidad es excepcional y demuestra aplicación directa al trabajo diario."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "Estima tiempos por tipo de entregable (Guiones: 4-6h, Conceptos: 3-4h, Copies: 1-2h) como inputs explícitos para que el modelo razone con datos reales. Solicita análisis de riesgos y tiene lógica de priorización por bloqueo de dependencias, lo que demuestra comprensión de cómo guiar al modelo hacia razonamiento estructurado."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "105654336832879521757",
-      "name": "Heidy Paola Fuentes Torres",
-      "is_named": true,
-      "avg_score": 4.0,
-      "sprints_count": 1,
-      "total_sprints_with_work": 1,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        4.0
-      ],
-      "levels": [
-        "Destacado"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "La identificación de KPIs específicos de la industria FMCG (penetración, trial, frecuencia de compra) como parámetros de evaluación demuestra dominio del contexto de negocio y diseño de prompts de alta precisión.",
-            "El dual output (guía de workshop + talking points) convierte un prompt en una herramienta de trabajo completa, demostrando visión de producto en la ingeniería de prompts."
-          ],
-          "recommendations": [
-            "Agregar ejemplos de los beneficios actuales de la sábana de OCESA como pocos ejemplos de referencia para que el modelo calibre el nivel de detalle esperado.",
-            "Incluir una restricción sobre la longitud del output para asegurar que sea accionable en una sesión de trabajo real."
-          ],
-          "alchemist_signals": [
-            "El estudiante diseña herramientas de trabajo, no consultas aisladas. El prompt está pensado para reproducirse en múltiples sesiones estratégicas con diferentes marcas FMCG, lo cual es pensar en IA como infraestructura profesional."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "Rol muy específico (Senior Manager de Patrocinios en OCESA con 15 años y expertise en FMCG), Contexto con problema de negocio claro (priorizar sábana de beneficios), Tarea con doble objetivo (workshop + talking points), y restricciones de tono y lenguaje explícitas. La estructura está completamente desarrollada."
-            },
-            "Aplicación a Caso Real": {
-              "score": 4,
-              "justification": "Menciona la 'sábana de beneficios' de OCESA como artefacto real, los KPIs específicos de FMCG (awareness, penetración, trial, frecuencia de compra, distribución) y la distinción entre beneficios de 'venta vs. brand awareness' y 'aspiracionales vs. transaccionales'. Es un prompt completamente operativo para el trabajo real."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "Solicita dos formatos de output simultáneos (guía de workshop + talking points para presentación), establece un tono consultivo y analítico específico, y el prompt está diseñado para ser reutilizado en diferentes sesiones estratégicas. Demuestra pensamiento sistémico sobre cómo el output se integrará en flujos de trabajo reales."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "108527896667514209095",
-      "name": "Jose Valdez",
-      "is_named": true,
-      "avg_score": 4.0,
-      "sprints_count": 1,
-      "total_sprints_with_work": 1,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        4.0
-      ],
-      "levels": [
-        "Destacado"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "La 'Matriz de Barreras' como herramienta de discriminación entre ruido de redes sociales y problemas reales de conversión es una innovación estratégica dentro del diseño del prompt que agrega valor analítico real.",
-            "El destinatario específico del output (Subdirección de Marketing) y el formato ejecutivo (Quick Wins) convierten el prompt en una herramienta lista para usar en reuniones reales de estrategia."
-          ],
-          "recommendations": [
-            "Agregar un ejemplo de dato de entrada (una crítica de red social y un resultado de encuesta) para que el modelo calibre el nivel de análisis esperado.",
-            "Considerar añadir una cuarta sección al formato de salida: 'Métricas de Seguimiento' para cada Quick Win, completando el ciclo de acción-medición."
-          ],
-          "alchemist_signals": [
-            "Este prompt está diseñado para ser usado en ciclos de mejora continua de ventas en OCESA. La estructura es reproducible para cada show, lo que convierte a la IA en un analista permanente del equipo, no en un asistente de uso puntual."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "Estructura impecable con headers # ROL, # CONTEXTO, # TAREA, # DATOS y # FORMATO DE SALIDA bien diferenciados. El formato de salida detalla tres secciones específicas (Síntesis, Matriz de Barreras, Roadmap) con definiciones de lo que contiene cada una. La claridad estructural es ejemplar."
-            },
-            "Aplicación a Caso Real": {
-              "score": 4,
-              "justification": "El prompt está construido para un problema real y recurrente en OCESA: analizar datos mixtos post-show (redes + encuestas) para mejorar la venta del siguiente evento. La distinción 'Ruido de redes vs. Problemas reales de conversión' y el destinatario específico (Subdirección de Marketing) lo anclan completamente en el entorno profesional."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "Solicita un 'Quick Wins Roadmap' para el equipo de pauta y operaciones, demostrando que diseñó el output para ser accionable, no solo informativo. La distinción entre barreras de compra reales vs. ruido en redes muestra comprensión del problema de signal vs. noise en análisis de datos, una decisión de diseño muy madura."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "114103931418907515524",
-      "name": "Pamela Morales",
-      "is_named": true,
-      "avg_score": 4.0,
-      "sprints_count": 1,
-      "total_sprints_with_work": 1,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        4.0
-      ],
-      "levels": [
-        "Destacado"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "El mecanismo de validación ('Información no disponible en manuales oficiales. Consultar con Pame') es una solución elegante al problema de alucinaciones: el modelo admite sus límites en lugar de inventar.",
-            "El diseño de un 'Next Step inmediato' como cierre obligatorio convierte cada respuesta del modelo en una instrucción accionable para el equipo operativo, maximizando el valor práctico."
-          ],
-          "recommendations": [
-            "Agregar instrucciones sobre cómo proporcionar la documentación al modelo (formato, estructura del input) para completar el workflow de uso.",
-            "Considerar una variante del prompt para el modo 'onboarding de nuevos colaboradores' que adapte el nivel de detalle de las respuestas según la experiencia del usuario."
-          ],
-          "alchemist_signals": [
-            "Este prompt es un sistema de soporte técnico construido sobre IA: está diseñado para ser escalable, consistente y seguro (sin alucinaciones). El estudiante piensa en prompts como infraestructura operativa, no como consultas individuales."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "El prompt tiene un Rol ultra-específico ('Asistente Técnico de Operaciones de Pame'), un Protocolo de Respuesta estructurado con 4 pasos nombrados (Contexto, Instrucción Directa, Validación, Cierre) y una Restricción explícita. El diseño de un protocolo de respuesta dentro del prompt es una técnica avanzada."
-            },
-            "Aplicación a Caso Real": {
-              "score": 4,
-              "justification": "El prompt está diseñado para resolver el problema real de un equipo que necesita respuestas rápidas y consistentes basadas en documentación oficial. Los tres contextos operativos (Venta, Auditoría, Evento) y la referencia a 'Pame' como persona real muestran una aplicación completamente personalizada al entorno laboral."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "La restricción de 'usar exclusivamente la documentación proporcionada' y el mecanismo de 'Información no disponible en manuales oficiales. Consultar con Pame' son guardas explícitas contra alucinaciones, demostrando comprensión sofisticada de las limitaciones del modelo. El diseño de pasos numerados ($1, 2, 3$) muestra control del formato de output."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "116333425705445925015",
-      "name": "Axel Arredondo",
-      "is_named": true,
-      "avg_score": 4.0,
-      "sprints_count": 1,
-      "total_sprints_with_work": 1,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        4.0
-      ],
-      "levels": [
-        "Destacado"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "El chain-of-thought implícito (Para Qué → Hallazgo → Visualización → Storytelling) guía al modelo a través de un proceso de análisis de datos completo y reproducible, demostrando dominio avanzado de la técnica.",
-            "La restricción de lenguaje específica ('Prohibido usar el desempeño fue positivo') muestra que el estudiante ya diseña prompts para combatir el lenguaje genérico del modelo, buscando outputs de alta precisión."
-          ],
-          "recommendations": [
-            "Agregar un ejemplo de dato de entrada (una métrica de social media) y su interpretación esperada para calibrar al modelo con few-shot prompting.",
-            "Especificar el cliente de referencia en el Formato (¿qué tipo de marca o industria es 'Modelo'?) para obtener recomendaciones más específicas en cada uso."
-          ],
-          "alchemist_signals": [
-            "Este prompt convierte a la IA en un mentor de equipo: está diseñado no solo para generar contenido, sino para desarrollar las capacidades analíticas del equipo de Social Media. Es una aplicación transformacional de la ingeniería de prompts."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "Estructura completamente desarrollada con Rol (Chief Data Officer + Storytelling), Contexto (equipo de Social Media que pasa de ejecutivo a consultor), Tarea (guía de interpretación de datos), sección de Razonamiento con 4 pasos numerados, Restricciones explícitas y Formato de salida con 5 diapositivas definidas. Es uno de los prompts más completos del grupo."
-            },
-            "Aplicación a Caso Real": {
-              "score": 4,
-              "justification": "El prompt está diseñado para transformar un equipo real de Social Media de 'tomadores de pedidos' a 'consultores estratégicos'. La referencia a 'reporte mensual de Modelo' y las instrucciones anti-frases vacías ('Prohibido: el desempeño fue positivo') muestran aplicación a un entregable real y recurrente del trabajo."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "La sección de 'Instrucciones de Razonamiento' (con el símbolo ()) que guía al modelo paso a paso (Para Qué → Hallazgo → Visualización → Storytelling) es técnica de chain-of-thought aplicada de forma consciente. La restricción de 'Recomendación Accionable al final de cada interpretación' es una decisión de diseño que maximiza el valor del output."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "116428279246995737033",
-      "name": "Paulina Teja",
-      "is_named": true,
-      "avg_score": 4.0,
-      "sprints_count": 1,
-      "total_sprints_with_work": 1,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        4.0
-      ],
-      "levels": [
-        "Destacado"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "Los Lineamientos de Innovación con ejemplos concretos (ej. LED para momentos de antojo) funcionan como few-shot prompting implícito: le muestran al modelo el tipo de creatividad esperada sin decírselo explícitamente.",
-            "El concepto de paquetes de 'Costo Cero con utilidad superior al 90%' es un constraint de negocio sofisticado que hace el output directamente presentable a un cliente real."
-          ],
-          "recommendations": [
-            "Añadir una restricción sobre el presupuesto máximo de implementación para la marca patrocinadora, completando el modelo de negocio.",
-            "Considerar una versión del prompt parametrizable por tipo de marca (botanas, bebidas, tecnología) para reutilizarlo con diferentes clientes."
-          ],
-          "alchemist_signals": [
-            "El estudiante construyó una herramienta de ventas real con este prompt: los outputs son directamente presentables como propuesta comercial a marcas. Esto es prompting como generador de valor de negocio, no como experimento académico."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "Estructura completa con Rol ultra-específico (Estratega Senior de Patrocinios en Inmuebles Deportivos), Tarea concreta (10 beneficios innovadores para Marca de Botanas), Contexto detallado con activos disponibles numerados, Lineamientos de Innovación y Formato de salida con tabla de 5 columnas con nombres exactos. La precisión es ejemplar."
-            },
-            "Aplicación a Caso Real": {
-              "score": 4,
-              "justification": "El prompt está construido sobre activos reales de un estadio (LED Ribbon 360°, Barras de Alimentos, pantallas gigantes) y resuelve un problema comercial real: diseñar paquetes de patrocinio de costo cero para el estadio. La especificidad del cliente (Marca de Botanas) y la restricción de 'costo CERO para el estadio' refleja lógica de negocio real."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "Los 'Lineamientos de Innovación' con casos de uso específicos (LED Ribbon para 'Momentos de Antojo' tras un gol) son ejemplos few-shot integrados en el prompt que anclan el modelo hacia el tipo de creatividad esperada. El Precio Sugerido en USD como columna del output demuestra pensamiento de producto aplicado al output."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "117460584845700163992",
-      "name": "Daniela Ibarra",
-      "is_named": true,
-      "avg_score": 4.0,
-      "sprints_count": 1,
-      "total_sprints_with_work": 1,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        4.0
-      ],
-      "levels": [
-        "Destacado"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "Los datos cuantitativos del Contexto (60% de venta, estadio de 20k, 3 semanas, presupuesto bajo) crean un escenario de alta especificidad que obliga al modelo a generar soluciones creativas bajo restricciones reales.",
-            "La distribución de ideas por área (PR, Digital, BTL) es un formato de output inteligente que hace el resultado directamente accionable por diferentes equipos dentro de OCESA."
-          ],
-          "recommendations": [
-            "Agregar datos del headliner (nombre del artista o referencias de estilo) para que el modelo genere ideas de guerrilla marketing más específicas al universo del fan.",
-            "Considerar un paso de iteración donde el modelo evalúe el impacto estimado de cada idea antes de presentarla en la tabla, añadiendo criterio de priorización."
-          ],
-          "alchemist_signals": [
-            "El prompt 'Headliner' está diseñado para situaciones de crisis de ventas reales, un escenario que OCESA enfrenta regularmente. El estudiante ya usa la IA como herramienta de aceleración en momentos de alta presión, que es exactamente el caso de uso de mayor valor."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "Estructura perfectamente etiquetada con (Rol), (Contexto), (Tarea), (Restricciones) y (Formato). Cada sección es densa y específica: el Contexto incluye datos numéricos (estadio 20k personas, 60% de venta, 3 semanas), la Tarea especifica 3 ideas con destinatario por área, y el Formato define tabla con columnas exactas."
-            },
-            "Aplicación a Caso Real": {
-              "score": 4,
-              "justification": "El prompt aborda un escenario real y urgente de ventas de eventos (concierto estancado al 60% a 3 semanas), que es el corazón del negocio de OCESA. Las tres áreas de trabajo (PR, Digital, BTL) y la restricción de no usar descuentos reflejan lógica real de marketing de eventos masivos."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "La restricción explícita de 'No sugieras descuentos directos de precio (2x1)' es una decisión de diseño sofisticada que protege la propuesta de valor del evento. El foco en FOMO y urgencia como palancas psicológicas muestra comprensión de la psicología del consumidor integrada en el diseño del prompt."
-            }
-          }
-        }
-      }
-    },
-    {
       "id": "100386131815307003617",
       "name": "Merving Pastor Giron Zarate",
       "is_named": true,
@@ -675,6 +221,294 @@ const DASHBOARD_DATA = {
             "Visión de Workflow Profesional": {
               "score": 3,
               "justification": "Conecta claramente con su práctica (transformar requerimientos en propuestas técnicas con estimaciones) y tiene visión de evolución (tablas de horas base por complejidad). Sin embargo, la explicación de por qué es mejor que un prompt aislado es breve ('estructura fija y reglas')."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "108184187733625290881",
+      "name": "Martha Martinez",
+      "is_named": true,
+      "avg_score": 3.35,
+      "sprints_count": 4,
+      "total_sprints_with_work": 4,
+      "alchemist_class": "⚗️ Alquimista en Formación",
+      "progression": 1.7,
+      "scores": [
+        2.3,
+        3.3,
+        3.8,
+        4.0
+      ],
+      "levels": [
+        "En Desarrollo",
+        "Competente",
+        "Destacado",
+        "Destacado"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 2.3,
+          "level": "En Desarrollo",
+          "strengths": [
+            "El correo generado demuestra que obtuvo resultados de alta calidad con la IA: tono apropiado, estructura clara, y mensaje ejecutivo efectivo para su equipo.",
+            "El caso de uso (ventas no registradas en forecast) es genuinamente relevante para su rol de Financial Controller."
+          ],
+          "recommendations": [
+            "La instrucción pedía compartir el prompt construido, no el output. Revisar esta distinción es clave: el prompt es el instrumento que diseñas, el output es lo que produce.",
+            "Reconstruir el prompt que generó este correo aplicando la estructura: Rol (Financial Controller que necesita un correo), Contexto (ventas sin registrar, equipo comercial), Tarea (redactar comunicación motivacional), Formato (correo profesional con plantilla de datos)."
+          ],
+          "alchemist_signals": [
+            "El output de calidad demuestra intuición para obtener buenos resultados, pero aún falta el paso de codificar ese conocimiento en un prompt estructurado y reutilizable."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 2,
+              "justification": "La respuesta comparte el output generado por la IA (un correo) en lugar del prompt que lo generó. No se puede evaluar la estructura Rol/Contexto/Tarea/Formato porque no está presente."
+            },
+            "Aplicación a Caso Real": {
+              "score": 3,
+              "justification": "El output sí refleja un caso real de su trabajo (forecast de ventas, equipo comercial), con detalles específicos de su industria y rol como Financial Controller. La intención de aplicación es clara aunque no se muestre el prompt."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 2,
+              "justification": "No se evidencia el proceso de diseño del prompt ni iteración. Compartir el output en lugar del prompt sugiere que aún no distingue entre el instrumento (prompt) y el producto (output)."
+            }
+          }
+        },
+        "sprint_2": {
+          "score": 3.3,
+          "level": "Competente",
+          "strengths": [
+            "El output financiero es de nivel profesional real: metodología auditable, diagnósticos basados en reglas, manejo correcto de datos insuficientes. Demuestra que sabe estructurar análisis complejos con la IA.",
+            "La densidad informativa del resultado (fórmulas, porcentajes, interpretación ejecutiva) demuestra dominio de Anti-Slop en la práctica, aunque no se nombre la técnica."
+          ],
+          "recommendations": [
+            "Compartir el prompt final que generó este análisis. El output es excelente pero sin el prompt no se puede evaluar la ingeniería que lo produjo.",
+            "Nombrar explícitamente la técnica usada (probablemente CoT con contexto estructurado) y describir qué cambios se hicieron en el proceso iterativo para llegar a este resultado."
+          ],
+          "alchemist_signals": [
+            "El nivel de sofisticación del análisis financiero sugiere una profesional con capacidad para trasladar su expertise al diseño de prompts complejos; el siguiente paso es documentar ese proceso."
+          ],
+          "criteria": {
+            "Dominio de Técnicas Avanzadas": {
+              "score": 3,
+              "justification": "La respuesta muestra el output de un análisis financiero sofisticado con metodología explícita (mapeos, cálculos, diagnósticos por reglas). Si bien el output es excelente, la técnica aplicada (CoT, Few-Shot, Step-Back) no se nombra explícitamente aunque el razonamiento paso a paso del modelo es evidente."
+            },
+            "Control de Calidad (Anti-Slop)": {
+              "score": 4,
+              "justification": "El output es excepcionalmente denso: fórmulas específicas, porcentajes exactos, diagnósticos categorizados por reglas, manejo explícito de datos insuficientes (N/A). Cero relleno, máxima precisión financiera."
+            },
+            "Iteración y Refinamiento": {
+              "score": 3,
+              "justification": "Se evidencia que hubo construcción progresiva del prompt (la IA nombra la instrucción del usuario 'Senior Financial Controller – Sponsorship Division'), aunque no se muestra el proceso iterativo explícito ni el prompt final que se usó."
+            }
+          }
+        },
+        "sprint_3": {
+          "score": 3.8,
+          "level": "Destacado",
+          "strengths": [
+            "El System Prompt incluye lógica de negocio real de OCESA (SAP, Ticketmaster, SSM) con fórmulas financieras específicas, lo que lo convierte en un activo productivo real, no un ejercicio académico.",
+            "La regla de auditoría del 5% de diferencia entre fuentes demuestra criterio profesional de conciliación contable integrado directamente en el sistema."
+          ],
+          "recommendations": [
+            "Articular más claramente la arquitectura Supervisor-Worker: ¿quién actúa como supervisor que valida la calidad antes de entregar el output? Actualmente es un sistema robusto pero sin capa de supervisión explícita.",
+            "Documentar cómo se reutilizaría mensualmente y qué tan difícil es actualizar el 'Maestro_Mapeo_Eventos' cuando cambian los eventos."
+          ],
+          "alchemist_signals": [
+            "Señal de Alquimista Destacado: Codificó reglas de negocio financiero reales (fórmulas de margen, umbrales de conciliación) en un sistema de IA, creando un activo institucional de alto valor."
+          ],
+          "criteria": {
+            "Arquitectura del Sistema": {
+              "score": 4,
+              "justification": "El System Prompt tiene arquitectura clara: rol definido (Senior Financial Process Engineer), objetivo explícito, algoritmo de procesamiento en pasos numerados con lógica de negocio (regla del 90%, fórmulas, auditoría del 5%), y formato de output estructurado."
+            },
+            "Relevancia del Problema": {
+              "score": 4,
+              "justification": "El problema de consolidar SAP + Ticketmaster + SSM para calcular márgenes de contribución es un pain point real y específico de su rol en OCESA. Requiere genuinamente un sistema por la complejidad y recurrencia del proceso."
+            },
+            "Justificación Técnica": {
+              "score": 3,
+              "justification": "Justifica con ejemplos concretos ('no repites instrucciones, tiene memoria', 'cruce de datos en segundos') pero la explicación es más práctica que técnica; no articula formalmente la ventaja de un sistema sobre un prompt aislado."
+            },
+            "Calidad de la Evidencia": {
+              "score": 4,
+              "justification": "Incluye System Prompt completo con nivel de detalle técnico-financiero excepcional: fórmulas reales (Ingreso Total, Margen), reglas de negocio específicas (90% coincidencia), alertas de conciliación. Es un activo usable de inmediato."
+            }
+          }
+        },
+        "sprint_4": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "El concepto de artefacto como 'consultor de ventas senior' que elimina el sesgo humano y garantiza consistencia entre el análisis del lunes y del viernes es una articulación de valor ejecutivo muy clara.",
+            "La visión de mejora futura (base de datos vectorial, comparación Q1 histórico, patrones estacionales) demuestra pensamiento de sistemas, no solo de herramientas."
+          ],
+          "recommendations": [
+            "Compartir el System Prompt real del SDA. La descripción conceptual es excelente pero falta ver la implementación técnica para completar la evaluación del artefacto.",
+            "Especificar qué herramienta/modelo eligió para el SDA y por qué (¿Claude por su capacidad analítica? ¿ChatGPT por la integración con Salesforce?). El criterio de selección de modelo es parte del aprendizaje del Sprint 4."
+          ],
+          "alchemist_signals": [
+            "Señal de Alquimista Destacado: Conceptualizó un artefacto con bucle de retroalimentación y memoria histórica, pensando en evolución del sistema, no solo en la solución inmediata."
+          ],
+          "criteria": {
+            "Orquestación y Selección": {
+              "score": 4,
+              "justification": "Demuestra criterio claro: nombra Salesforce como fuente, identifica KPIs específicos (CAC, valor promedio de contrato, ciclo de cierre), y articula por qué un artefacto supera a un prompt aislado (automatización, consistencia, reducción de sesgo). Menciona integración futura con base de datos vectorial."
+            },
+            "Artefacto Cognitivo": {
+              "score": 4,
+              "justification": "El SDA está estructurado en tres capas explícitas (Input, Motor de Análisis, Output), tiene nombre propio, propósito definido, y descripción de cada componente. Es un marco de trabajo bien conceptualizado y reutilizable."
+            },
+            "Visión de Workflow Profesional": {
+              "score": 4,
+              "justification": "Conecta directamente con la realidad de su trabajo: datos muertos en CRM, fatiga de análisis, variación de Win Rate entre ejecutivos. El plan de mejora (bucle de retroalimentación, memoria histórica, detección de patrones estacionales) muestra visión a largo plazo."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "103108319800993678716",
+      "name": "Luis Francisco Zúñiga Mendoza",
+      "is_named": true,
+      "avg_score": 3.2,
+      "sprints_count": 4,
+      "total_sprints_with_work": 4,
+      "alchemist_class": "⚗️ Alquimista en Formación",
+      "progression": -2.0,
+      "scores": [
+        4.0,
+        4.0,
+        2.8,
+        2.0
+      ],
+      "levels": [
+        "Destacado",
+        "Destacado",
+        "Competente",
+        "En Desarrollo"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "Diseñó un sistema de auditoría con flujo lógico y separación clara de capas (técnica, identidad, estratégica), lo que demuestra pensamiento de arquitecto de prompts.",
+            "El formato de salida 'Reporte Zero Errors' es altamente específico y ejecutable, con criterios de calidad propios de su industria."
+          ],
+          "recommendations": [
+            "Agregar un ejemplo Few-Shot de auditoría para que el modelo entienda mejor el tono esperado en los 'Hallazgos Críticos'.",
+            "Incluir una instrucción de manejo de casos límite (¿qué hacer si el manual de marca no tiene criterio para cierto elemento?)."
+          ],
+          "alchemist_signals": [
+            "Señal de Alquimista Destacado: Creó un sistema de control de calidad propio con vocabulario propietario ('Zero Errors', 'Score de Alineación'), no solo aplicó una plantilla del sprint."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "El prompt presenta una estructura muy clara y profesional con SYSTEM ROLE, INPUTS numerados, WORKFLOW DE EJECUCIÓN en pasos y FORMATO DE SALIDA detallado. Va más allá de Rol/Contexto/Tarea/Formato con secciones bien diferenciadas."
+            },
+            "Aplicación a Caso Real": {
+              "score": 4,
+              "justification": "El prompt está directamente aplicado al rol de Brand Keeper de su agencia Gnius, con terminología específica (Brand Keeper, Score de Alineación, 'Reporte Zero Errors') que evidencia conocimiento profundo de su industria."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "Muestra diseño arquitectónico consciente al separar la auditoría en tres pasos lógicos (Técnica, Identidad, Estratégica) y define un formato de salida estructurado. El uso de '[Insertar...]' como placeholders revela comprensión de cómo el modelo necesita inputs definidos."
+            }
+          }
+        },
+        "sprint_2": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "El ejemplo Few-Shot es de nivel producción: tiene formato exacto, handles reales, estructura verificable, y funciona como contrato con el modelo.",
+            "El 'Protocolo Anti-Error' demuestra comprensión profunda de los modos de fallo del modelo y los mitiga de forma explícita y sistemática."
+          ],
+          "recommendations": [
+            "Podría agregar un segundo ejemplo Few-Shot negativo (qué NO debe hacer) para reforzar aún más el molde.",
+            "Documentar explícitamente cómo maneja el caso en que el episodio tenga más de 3 recomendaciones por host."
+          ],
+          "alchemist_signals": [
+            "Señal de Alquimista Destacado: Identificó un fallo sistémico (alucinación por sobrecarga de tareas) y resolvió con arquitectura (separación de herramientas), no solo con corrección del prompt."
+          ],
+          "criteria": {
+            "Dominio de Técnicas Avanzadas": {
+              "score": 4,
+              "justification": "Aplica Few-Shot de forma sofisticada y correcta: proporciona un ejemplo de oro completo con formato exacto que actúa como molde para el modelo. La técnica está bien justificada en contexto (separar entregas para evitar alucinaciones)."
+            },
+            "Control de Calidad (Anti-Slop)": {
+              "score": 4,
+              "justification": "El prompt tiene 'Protocolo Anti-Error' explícito con reglas concretas anti-alucinación ('No inventes', 'Si el contenido es ambiguo, señálalo') y estilo editorial directo ('Sin Relleno'). Densidad informativa muy alta."
+            },
+            "Iteración y Refinamiento": {
+              "score": 4,
+              "justification": "Narra claramente la evolución: de un asistente editorial general con alucinaciones a uno especializado por tipo de entregable. Explica la decisión de separar herramientas y el razonamiento detrás del uso de Few-Shot."
+            }
+          }
+        },
+        "sprint_3": {
+          "score": 2.8,
+          "level": "Competente",
+          "strengths": [
+            "El mecanismo de 'preguntar antes de generar' es una decisión de diseño sofisticada que mitiga alucinaciones en casos de ambigüedad, mostrando pensamiento de ingeniería real.",
+            "El contexto de agencia es claro y el problema (minutas fieles vs. inventadas) tiene consecuencias reales con clientes."
+          ],
+          "recommendations": [
+            "Articular mejor la diferencia arquitectónica: explicar que el sistema tiene memoria del protocolo de minutas cargado en Knowledge, lo cual es la ventaja real sobre un prompt aislado.",
+            "Agregar criterios de calidad explícitos: ¿cómo sabe el sistema si una minuta es 'accionable'? Definir qué constituye un 'punto crítico' que amerita preguntar."
+          ],
+          "alchemist_signals": [
+            "Señal positiva: La regla de 'preguntar antes de actuar cuando hay ambigüedad' es una decisión de diseño que muestra comprensión de los límites del modelo."
+          ],
+          "criteria": {
+            "Arquitectura del Sistema": {
+              "score": 3,
+              "justification": "El system prompt define rol específico ('Brand Keeper & Project Manager'), flujo de validación antes de generar (pregunta primero si hay ambigüedades) y acceso a conocimiento externo (Project Knowledge). Es un sistema funcional aunque no muestra la arquitectura Supervisor-Worker explícitamente."
+            },
+            "Relevancia del Problema": {
+              "score": 3,
+              "justification": "El problema de minutas inexactas es real y recurrente en agencias. El contexto de 'transcripciones de juntas' es genuino y el riesgo de inventar información es un problema real identificado."
+            },
+            "Justificación Técnica": {
+              "score": 2,
+              "justification": "La justificación de por qué es mejor que un prompt aislado es superficial: 'ayuda a revisar cualquier transcripción y detenerse en el momento necesario'. No articula claramente la ventaja arquitectónica del sistema vs. un prompt único."
+            },
+            "Calidad de la Evidencia": {
+              "score": 3,
+              "justification": "Incluye el System Prompt completo y funcional con reglas claras de comportamiento. No hay link al GPT pero el System Prompt mostrado es de calidad suficiente para evaluar el sistema."
+            }
+          }
+        },
+        "sprint_4": {
+          "score": 2.0,
+          "level": "En Desarrollo",
+          "strengths": [
+            "Muestra honestidad y metacognición al reconocer que el artefacto actual 'es muy descriptivo' y necesita refinamiento hacia lo ejecutivo.",
+            "El problema identificado (transformar juntas en briefs ejecutivos) es real y de alto valor para su rol en agencia."
+          ],
+          "recommendations": [
+            "Compartir el artefacto cognitivo real: incluir el System Prompt o la estructura del artefacto que se creó, no solo la descripción del problema que resuelve.",
+            "Articular el criterio de selección de modelo o herramienta: ¿por qué Claude/ChatGPT para este caso? ¿Qué herramienta eligió y por qué?"
+          ],
+          "alchemist_signals": [
+            "La autocrítica sobre el artefacto actual ('habría que refinarlo para hacerlo más ejecutivo') sugiere madurez reflexiva, pero faltó mostrar el trabajo concreto."
+          ],
+          "criteria": {
+            "Orquestación y Selección": {
+              "score": 2,
+              "justification": "La respuesta menciona el problema pero no muestra criterio explícito de selección de herramientas ni combina herramientas estratégicamente. No hay evidencia de orquestación multi-herramienta."
+            },
+            "Artefacto Cognitivo": {
+              "score": 2,
+              "justification": "No se comparte el artefacto como tal. La respuesta describe el problema y reconoce que el artefacto actual 'es muy descriptivo (para mal)' pero no presenta la estructura del artefacto ni su contenido."
+            },
+            "Visión de Workflow Profesional": {
+              "score": 2,
+              "justification": "Hay consciencia del problema (convertir minutas en briefs ejecutivos) y autocrítica sobre el estado actual del artefacto, pero la conexión con la práctica profesional es superficial y no articula un workflow completo."
             }
           }
         }
@@ -907,100 +741,6 @@ const DASHBOARD_DATA = {
       }
     },
     {
-      "id": "100844961474697007897",
-      "name": "Miguel Gomez",
-      "is_named": true,
-      "avg_score": 3.7,
-      "sprints_count": 1,
-      "total_sprints_with_work": 1,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        3.7
-      ],
-      "levels": [
-        "Destacado"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 3.7,
-          "level": "Destacado",
-          "strengths": [
-            "El principio de 'Validación Crítica' integrado en el prompt (qué preguntas hacerse para cuestionar el output de la IA) es un meta-diseño maduro que pocos estudiantes incorporan.",
-            "La consideración de la brecha generacional como restricción de diseño (lenguaje accesible a todas las edades) muestra aplicación contextual sofisticada al entorno real de OCESA."
-          ],
-          "recommendations": [
-            "Completar los placeholders con al menos un caso concreto (ej. área de Prensa y proceso de redacción de notas) para que el prompt sea ejecutable inmediatamente.",
-            "Añadir ejemplos concretos del tipo de 'Dinámica de 15 minutos' para anclar mejor el formato de salida esperado."
-          ],
-          "alchemist_signals": [
-            "El estudiante está pensando en la IA como un agente de cambio organizacional, no solo como una herramienta. La restricción de que 'la decisión final depende del humano' refleja una postura ética madura sobre la co-inteligencia."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "Estructura clara con Rol (Arquitecto de Innovación), Tarea específica (propuesta de piloto), Contexto rico (brecha generacional, líder de innovación, objetivo de co-inteligencia) y Formato de salida detallado con 4 secciones nombradas. Las 'Restricciones de Co-Inteligencia' como sección separada muestran diseño consciente y avanzado."
-            },
-            "Aplicación a Caso Real": {
-              "score": 3,
-              "justification": "El prompt aborda un problema real de adopción de IA en una organización con brecha generacional (Gen Z a Baby Boomers), que es un desafío genuino en OCESA. Sin embargo, el uso de placeholders como [Insertar Área] y [Describir proceso] indica que está parcialmente construido, sin anclar completamente a un caso específico."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "La inclusión del paso obligatorio de 'Validación Crítica' y las restricciones sobre el rol del humano vs la IA demuestran pensamiento meta-cognitivo sobre el uso responsable del modelo. El nombre 'Motor de Co-Inteligencia' y el flujo 'Proceso Actual vs. Proceso Co-Inteligente' revelan una visión sistémica sofisticada."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "108102483717301766206",
-      "name": "Jose Luis Salazar",
-      "is_named": true,
-      "avg_score": 3.7,
-      "sprints_count": 1,
-      "total_sprints_with_work": 1,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        3.7
-      ],
-      "levels": [
-        "Destacado"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 3.7,
-          "level": "Destacado",
-          "strengths": [
-            "Las restricciones técnicas de consistencia facial demuestran comprensión de las limitaciones de los modelos de generación de imagen, aplicando ingeniería de prompts para mitigar el problema de variación de personaje.",
-            "La especificidad de la vestimenta (color rojo, ribete amarillo, logotipo OXXO bordado en blanco y rojo) es un ejemplo de descripción visual de alta precisión que maximiza la fidelidad del output."
-          ],
-          "recommendations": [
-            "Conectar este caso de uso de generación de imágenes más explícitamente a un flujo de trabajo profesional en OCESA (ej. creación de personajes para campañas o contenido de redes sociales).",
-            "Explorar cómo este prompt podría evolucionar a un workflow multi-paso: generación del personaje → variaciones de expresión → integración en escenas de evento."
-          ],
-          "alchemist_signals": [
-            "El estudiante aplica ingeniería de prompts a generación de imagen con sofisticación técnica real: entiende el problema de consistencia en AI art y diseña restricciones explícitas para resolverlo. Es pensamiento de producto aplicado a prompting visual."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "Estructura perfectamente etiquetada con [ROL], [TAREA], [CONTEXTO], [RESTRICCIONES] y [FORMATO]. El formato de salida especifica tres planos de imagen (close-up, medium shot, cowboy shot) con escenarios concretos para cada uno. Es uno de los prompts más técnicamente completos del grupo."
-            },
-            "Aplicación a Caso Real": {
-              "score": 3,
-              "justification": "El prompt resuelve un caso real de generación de assets visuales consistentes (character sheet) para un personaje de uso recurrente. La especificidad de rasgos físicos, vestimenta OXXO y restricciones de consistencia refleja necesidades reales de producción de contenido visual, aunque el caso es de uso personal/creativo más que directamente de OCESA."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "Las restricciones de consistencia del rostro (idéntico en todas las tomas, sin vello facial, iluminación de set) demuestran comprensión del problema de inconsistencia en modelos de imagen generativa. La división en 3 planos en una sola imagen es una decisión de diseño sofisticada para maximizar eficiencia del output."
-            }
-          }
-        }
-      }
-    },
-    {
       "id": "113430405422314852108",
       "name": "Sandra Maciel Blancas Moncada",
       "is_named": true,
@@ -1227,240 +967,6 @@ const DASHBOARD_DATA = {
       }
     },
     {
-      "id": "105068241516045024966",
-      "name": "Paulina Albarran",
-      "is_named": true,
-      "avg_score": 3.5,
-      "sprints_count": 2,
-      "total_sprints_with_work": 2,
-      "alchemist_class": "⚗️ Alquimista en Formación",
-      "progression": 1.0,
-      "scores": [
-        3.0,
-        4.0
-      ],
-      "levels": [
-        "Competente",
-        "Destacado"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 3.0,
-          "level": "Competente",
-          "strengths": [
-            "El prompt captura bien la esencia de las experiencias de marca inmersivas, diferenciándose de activaciones funcionales con lenguaje específico del dominio.",
-            "La mención de 'recorrido físico y sensorial' como entregable es un formato de output implícito bien calibrado para su caso de uso."
-          ],
-          "recommendations": [
-            "Especificar el cliente o tipo de marca para anclar el prompt a un caso real y evitar conceptos excesivamente genéricos.",
-            "Agregar restricciones de formato: ¿concepto en una página?, ¿blueprint de experiencia?, ¿mood board verbal?, para obtener un output más accionable."
-          ],
-          "alchemist_signals": [
-            "Señal positiva: el dominio de experiencias inmersivas es un caso de uso de alto potencial para IA generativa que pocas personas del grupo tienen; hay una oportunidad de diferenciación."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 3,
-              "justification": "El prompt tiene Rol (Directora Creativa en Experiencias Inmersivas), Contexto (la marca quiere conexión emocional, no solo activación funcional), Tarea (diseñar experiencia con elementos sensoriales específicos: espacio, luz, interacción, narrativa). La estructura es sólida aunque el Formato de output no está explícitamente definido."
-            },
-            "Aplicación a Caso Real": {
-              "score": 3,
-              "justification": "El prompt aplica al trabajo real de diseño de experiencias de marca con énfasis en conexión emocional, que es claramente su dominio profesional. Sin embargo, al no nombrar una marca o cliente específico, pierde algo de especificidad de caso real."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 3,
-              "justification": "La decisión de especificar los elementos sensoriales (espacio, luz, interacción, narrativa) como variables del diseño muestra comprensión de que el modelo necesita parámetros concretos para no producir conceptos genéricos. Hay evidencia de diseño intencional."
-            }
-          }
-        },
-        "sprint_2": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "Documentó el ciclo completo: prompt roto → diagnóstico → técnica → resultado, lo que es un modelo a seguir para el grupo.",
-            "La aplicación de CoT a diseño de estructuras físicas de eventos es una transferencia creativa del framework a un dominio no convencional."
-          ],
-          "recommendations": [
-            "Formalizar el proceso CoT para diseño de experiencias como una plantilla reutilizable en futuros proyectos de activación.",
-            "Explorar cómo integrar verificación de factibilidad técnica (materiales disponibles, costo estimado) en el flujo de razonamiento."
-          ],
-          "alchemist_signals": [
-            "Señal de Alquimista Destacada: Paulina ha encontrado una aplicación de alto valor diferencial para su industria (diseño de experiencias físicas con IA) y la está ejecutando con rigor técnico."
-          ],
-          "criteria": {
-            "Dominio de Técnicas Avanzadas": {
-              "score": 4,
-              "justification": "Paulina aplica Chain-of-Thought de forma ejemplar: descompone el problema de diseño de una estructura Photo Opportunity en pasos secuenciales (briefing estético → referencias visuales → materiales → dimensiones → iluminación → render final), forzando al modelo a razonar antes de producir el output visual."
-            },
-            "Control de Calidad (Anti-Slop)": {
-              "score": 4,
-              "justification": "Identifica específicamente el problema del output anterior (genérico, sin jerarquía en composición, materiales poco definidos) y diseña el nuevo prompt para corregirlo con parámetros técnicos de diseño. El Anti-Slop está operacionalizado como corrección de defectos específicos."
-            },
-            "Iteración y Refinamiento": {
-              "score": 4,
-              "justification": "Documenta claramente el prompt roto inicial, el diagnóstico del problema (slop visual), la técnica elegida (CoT), y cómo la cadena de razonamiento resolvió la falta de jerarquía y especificidad de materiales. Es un ejemplo completo del ciclo de refinamiento."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "110196614206290248442",
-      "name": "Gerardo Pulido",
-      "is_named": true,
-      "avg_score": 3.5,
-      "sprints_count": 2,
-      "total_sprints_with_work": 2,
-      "alchemist_class": "⚗️ Alquimista en Formación",
-      "progression": -1.0,
-      "scores": [
-        4.0,
-        3.0
-      ],
-      "levels": [
-        "Destacado",
-        "Competente"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "El diseño de proceso en 3 pasos (Extrae → Valida → Presenta) es un ejemplo excelente de Chain-of-Thought aplicado desde el Sprint 1.",
-            "El caso de centralizar instrucciones caóticas de múltiples canales es un problema real de alta frecuencia que este prompt resuelve de forma inmediata y reutilizable."
-          ],
-          "recommendations": [
-            "Agregar criterios de validación explícitos en el Paso 2: ¿qué constituye una instrucción 'lógica' vs una 'inconsistente'?",
-            "Explorar cómo convertir este prompt en un Custom GPT que el equipo pueda usar directamente para procesar mensajes de cambio de campaña."
-          ],
-          "alchemist_signals": [
-            "Señal de Alquimista Destacado desde Sprint 1: este estudiante ya diseña workflows de 3 pasos en su primer sprint, lo que sugiere pensamiento de producto maduro y potencial de liderazgo técnico en el grupo."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "El prompt tiene todas las secciones bien definidas: Rol (experto en Ingeniería de Prompting y tráfico digital), Contexto específico (problema de comunicación por múltiples canales en su equipo), Tarea en 3 pasos explícitos (Extrae → Valida → Presenta), y un formato de proceso estructurado. Es un prompt maestro completo."
-            },
-            "Aplicación a Caso Real": {
-              "score": 4,
-              "justification": "El problema de instrucciones caóticas por múltiples canales (WhatsApp, Slack, Teams, Correo) es genuinamente real y de alta frecuencia en organizaciones de marketing. El contexto de campañas de marketing con riesgo de errores y fricciones sociales ancla el prompt en su trabajo diario."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "El diseño del prompt como un procesador de 3 pasos secuenciales (Extrae datos estructurados → Valida lógica → Presenta confirmación) muestra comprensión de cómo el modelo necesita instrucciones de flujo para no saltar directamente a conclusiones. Es ingeniería de workflow aplicada."
-            }
-          }
-        },
-        "sprint_2": {
-          "score": 3.0,
-          "level": "Competente",
-          "strengths": [
-            "El copy de Disney on Ice con detalles sensoriales ('1 metro de tu asiento', 'aire frío cuando pase Ansiedad') es un ejemplo efectivo de cómo los datos técnicos específicos eliminan el slop.",
-            "El caso real de vender un show con meses de anticipación es un desafío de marketing legítimo que el estudiante resolvió con IA de forma creativa."
-          ],
-          "recommendations": [
-            "Compartir el prompt completo que generó este copy para poder evaluar la técnica aplicada y su arquitectura.",
-            "Explorar cómo este proceso de 'copy out anti-slop' podría sistematizarse para otros shows del portafolio de OCESA."
-          ],
-          "alchemist_signals": [
-            "Señal de aplicación comercial directa: el copy generado es potencialmente utilizable en campañas reales, lo que demuestra que el estudiante está produciendo valor inmediato con IA."
-          ],
-          "criteria": {
-            "Dominio de Técnicas Avanzadas": {
-              "score": 3,
-              "justification": "El estudiante aplica técnicas Anti-Slop para generar copy de Disney on Ice con elementos técnicos concretos (distancia física de 1 metro, sensación de frío, adrenalina de Zootopia) que diferencian el texto de descripciones genéricas de shows familiares."
-            },
-            "Control de Calidad (Anti-Slop)": {
-              "score": 3,
-              "justification": "El copy resultante tiene densidad experiencial real: 'a solo 1 metro de tu asiento', 'sentir el aire frío cuando pase Ansiedad'. Hay criterio de calidad visible en la especificidad sensorial del output."
-            },
-            "Iteración y Refinamiento": {
-              "score": 3,
-              "justification": "El estudiante documenta el problema (slop genérico para Disney on Ice), la técnica (generar 'copy out' anti-slop), y el resultado con ejemplos concretos. El proceso está documentado aunque de forma narrativa."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "112535211651425914416",
-      "name": "Iliana Gallardo",
-      "is_named": true,
-      "avg_score": 3.5,
-      "sprints_count": 2,
-      "total_sprints_with_work": 2,
-      "alchemist_class": "⚗️ Alquimista en Formación",
-      "progression": -1.0,
-      "scores": [
-        4.0,
-        3.0
-      ],
-      "levels": [
-        "Destacado",
-        "Competente"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "El prompt diseña un workflow completo de automatización de reportes que va de datos crudos (PDF) a presentación ejecutiva (PPTX), lo cual es un caso de uso de IA de alto impacto.",
-            "La especificación del destinatario (Director de Contenido) como criterio de calibración del tono y nivel de detalle demuestra pensamiento de audiencia avanzado."
-          ],
-          "recommendations": [
-            "Agregar criterios de calidad del output: ¿cuántas diapositivas máximo?, ¿qué visualizaciones incluir?, ¿formato de los insights (bullets, narrativa, comparativa)?",
-            "Incluir una instrucción de verificación donde el modelo confirme los datos extraídos antes de generar el análisis."
-          ],
-          "alchemist_signals": [
-            "Señal de Alquimista Destacado desde Sprint 1: el diseño de un workflow de automatización de reportes con múltiples pasos y output específico en Sprint 1 es excepcional y sugiere potencial de productización acelerada."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "El prompt tiene Rol especializado (Data Scientist & BI Specialist en automatización de reportes), Objetivo claro (extraer datos de PDF y generar PPTX para Director de Contenido), y un flujo de instrucciones estructurado en pasos (Análisis → Cálculo de Insights → Generación de Presentación). La estructura es de alta densidad y funcionalidad."
-            },
-            "Aplicación a Caso Real": {
-              "score": 4,
-              "justification": "El caso de extraer métricas de contenido (Engagement, Alcance, Shares) de un PDF y generar una presentación para un Director de Contenido es genuinamente específico de su trabajo real. Los detalles de dominio (métricas de contenido, directivo destinatario, PDF como fuente) confirman aplicación real."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "El diseño como workflow multi-paso (Análisis de datos → Cálculo de Insights → Generación de output final en PPTX) con un destinatario específico (Director de Contenido) demuestra comprensión de cómo el modelo necesita instrucciones secuenciales para producir outputs complejos. Es ingeniería de workflow avanzada para Sprint 1."
-            }
-          }
-        },
-        "sprint_2": {
-          "score": 3.0,
-          "level": "Competente",
-          "strengths": [
-            "La transformación de texto genérico de Instagram a estrategias con benchmarks concretos de 2026 es un ejemplo claro del valor de la verificación con datos.",
-            "El proceso de iteración está bien documentado: problema inicial → técnica aplicada → resultado mejorado con evidencia del output."
-          ],
-          "recommendations": [
-            "Agregar el prompt completo con la instrucción de verificación para poder evaluar la arquitectura técnica de la solicitud de benchmarks.",
-            "Explorar cómo sistematizar este proceso de verificación con datos en un SOP Cognitivo para generación consistente de estrategias de Instagram con respaldo numérico."
-          ],
-          "alchemist_signals": [
-            "Señal de evolución consistente: de automatización de reportes en Sprint 1 a verificación con benchmarks en Sprint 2, este estudiante está construyendo un flujo de trabajo de BI/Contenido con IA de forma coherente."
-          ],
-          "criteria": {
-            "Dominio de Técnicas Avanzadas": {
-              "score": 3,
-              "justification": "El estudiante aplica verificación (ARV) al solicitar benchmarks que respalden las recomendaciones con datos numéricos, transformando un texto de best practices genérico en un output con métricas concretas. La técnica de verificación con datos es correcta y efectiva."
-            },
-            "Control de Calidad (Anti-Slop)": {
-              "score": 3,
-              "justification": "El resultado muestra transformación efectiva de texto impreciso a estrategias con métricas específicas (datos de 2026, señales de valor, benchmarks). El output tiene densidad informativa claramente superior al input."
-            },
-            "Iteración y Refinamiento": {
-              "score": 3,
-              "justification": "El estudiante documenta claramente el problema (texto sin métricas y sin sustento numérico), la técnica (solicitar benchmarks), y el resultado mejorado. El proceso de refinamiento está bien documentado aunque de forma narrativa."
-            }
-          }
-        }
-      }
-    },
-    {
       "id": "103542481943595887185",
       "name": "Magdalena Carolina Lara Velazquez",
       "is_named": true,
@@ -1681,228 +1187,6 @@ const DASHBOARD_DATA = {
             "Calidad de la Evidencia": {
               "score": 4,
               "justification": "Comparte System Prompt completo con estructura de datos (14 campos de evento), reglas de procesamiento, formato de output, y actualización mensual. Es el System Prompt más detallado y ejecutable del sprint en términos de gestión de datos."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "108184187733625290881",
-      "name": "Martha Martinez",
-      "is_named": true,
-      "avg_score": 3.35,
-      "sprints_count": 4,
-      "total_sprints_with_work": 4,
-      "alchemist_class": "⚗️ Alquimista en Formación",
-      "progression": 1.7,
-      "scores": [
-        2.3,
-        3.3,
-        3.8,
-        4.0
-      ],
-      "levels": [
-        "En Desarrollo",
-        "Competente",
-        "Destacado",
-        "Destacado"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 2.3,
-          "level": "En Desarrollo",
-          "strengths": [
-            "El correo generado demuestra que obtuvo resultados de alta calidad con la IA: tono apropiado, estructura clara, y mensaje ejecutivo efectivo para su equipo.",
-            "El caso de uso (ventas no registradas en forecast) es genuinamente relevante para su rol de Financial Controller."
-          ],
-          "recommendations": [
-            "La instrucción pedía compartir el prompt construido, no el output. Revisar esta distinción es clave: el prompt es el instrumento que diseñas, el output es lo que produce.",
-            "Reconstruir el prompt que generó este correo aplicando la estructura: Rol (Financial Controller que necesita un correo), Contexto (ventas sin registrar, equipo comercial), Tarea (redactar comunicación motivacional), Formato (correo profesional con plantilla de datos)."
-          ],
-          "alchemist_signals": [
-            "El output de calidad demuestra intuición para obtener buenos resultados, pero aún falta el paso de codificar ese conocimiento en un prompt estructurado y reutilizable."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 2,
-              "justification": "La respuesta comparte el output generado por la IA (un correo) en lugar del prompt que lo generó. No se puede evaluar la estructura Rol/Contexto/Tarea/Formato porque no está presente."
-            },
-            "Aplicación a Caso Real": {
-              "score": 3,
-              "justification": "El output sí refleja un caso real de su trabajo (forecast de ventas, equipo comercial), con detalles específicos de su industria y rol como Financial Controller. La intención de aplicación es clara aunque no se muestre el prompt."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 2,
-              "justification": "No se evidencia el proceso de diseño del prompt ni iteración. Compartir el output en lugar del prompt sugiere que aún no distingue entre el instrumento (prompt) y el producto (output)."
-            }
-          }
-        },
-        "sprint_2": {
-          "score": 3.3,
-          "level": "Competente",
-          "strengths": [
-            "El output financiero es de nivel profesional real: metodología auditable, diagnósticos basados en reglas, manejo correcto de datos insuficientes. Demuestra que sabe estructurar análisis complejos con la IA.",
-            "La densidad informativa del resultado (fórmulas, porcentajes, interpretación ejecutiva) demuestra dominio de Anti-Slop en la práctica, aunque no se nombre la técnica."
-          ],
-          "recommendations": [
-            "Compartir el prompt final que generó este análisis. El output es excelente pero sin el prompt no se puede evaluar la ingeniería que lo produjo.",
-            "Nombrar explícitamente la técnica usada (probablemente CoT con contexto estructurado) y describir qué cambios se hicieron en el proceso iterativo para llegar a este resultado."
-          ],
-          "alchemist_signals": [
-            "El nivel de sofisticación del análisis financiero sugiere una profesional con capacidad para trasladar su expertise al diseño de prompts complejos; el siguiente paso es documentar ese proceso."
-          ],
-          "criteria": {
-            "Dominio de Técnicas Avanzadas": {
-              "score": 3,
-              "justification": "La respuesta muestra el output de un análisis financiero sofisticado con metodología explícita (mapeos, cálculos, diagnósticos por reglas). Si bien el output es excelente, la técnica aplicada (CoT, Few-Shot, Step-Back) no se nombra explícitamente aunque el razonamiento paso a paso del modelo es evidente."
-            },
-            "Control de Calidad (Anti-Slop)": {
-              "score": 4,
-              "justification": "El output es excepcionalmente denso: fórmulas específicas, porcentajes exactos, diagnósticos categorizados por reglas, manejo explícito de datos insuficientes (N/A). Cero relleno, máxima precisión financiera."
-            },
-            "Iteración y Refinamiento": {
-              "score": 3,
-              "justification": "Se evidencia que hubo construcción progresiva del prompt (la IA nombra la instrucción del usuario 'Senior Financial Controller – Sponsorship Division'), aunque no se muestra el proceso iterativo explícito ni el prompt final que se usó."
-            }
-          }
-        },
-        "sprint_3": {
-          "score": 3.8,
-          "level": "Destacado",
-          "strengths": [
-            "El System Prompt incluye lógica de negocio real de OCESA (SAP, Ticketmaster, SSM) con fórmulas financieras específicas, lo que lo convierte en un activo productivo real, no un ejercicio académico.",
-            "La regla de auditoría del 5% de diferencia entre fuentes demuestra criterio profesional de conciliación contable integrado directamente en el sistema."
-          ],
-          "recommendations": [
-            "Articular más claramente la arquitectura Supervisor-Worker: ¿quién actúa como supervisor que valida la calidad antes de entregar el output? Actualmente es un sistema robusto pero sin capa de supervisión explícita.",
-            "Documentar cómo se reutilizaría mensualmente y qué tan difícil es actualizar el 'Maestro_Mapeo_Eventos' cuando cambian los eventos."
-          ],
-          "alchemist_signals": [
-            "Señal de Alquimista Destacado: Codificó reglas de negocio financiero reales (fórmulas de margen, umbrales de conciliación) en un sistema de IA, creando un activo institucional de alto valor."
-          ],
-          "criteria": {
-            "Arquitectura del Sistema": {
-              "score": 4,
-              "justification": "El System Prompt tiene arquitectura clara: rol definido (Senior Financial Process Engineer), objetivo explícito, algoritmo de procesamiento en pasos numerados con lógica de negocio (regla del 90%, fórmulas, auditoría del 5%), y formato de output estructurado."
-            },
-            "Relevancia del Problema": {
-              "score": 4,
-              "justification": "El problema de consolidar SAP + Ticketmaster + SSM para calcular márgenes de contribución es un pain point real y específico de su rol en OCESA. Requiere genuinamente un sistema por la complejidad y recurrencia del proceso."
-            },
-            "Justificación Técnica": {
-              "score": 3,
-              "justification": "Justifica con ejemplos concretos ('no repites instrucciones, tiene memoria', 'cruce de datos en segundos') pero la explicación es más práctica que técnica; no articula formalmente la ventaja de un sistema sobre un prompt aislado."
-            },
-            "Calidad de la Evidencia": {
-              "score": 4,
-              "justification": "Incluye System Prompt completo con nivel de detalle técnico-financiero excepcional: fórmulas reales (Ingreso Total, Margen), reglas de negocio específicas (90% coincidencia), alertas de conciliación. Es un activo usable de inmediato."
-            }
-          }
-        },
-        "sprint_4": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "El concepto de artefacto como 'consultor de ventas senior' que elimina el sesgo humano y garantiza consistencia entre el análisis del lunes y del viernes es una articulación de valor ejecutivo muy clara.",
-            "La visión de mejora futura (base de datos vectorial, comparación Q1 histórico, patrones estacionales) demuestra pensamiento de sistemas, no solo de herramientas."
-          ],
-          "recommendations": [
-            "Compartir el System Prompt real del SDA. La descripción conceptual es excelente pero falta ver la implementación técnica para completar la evaluación del artefacto.",
-            "Especificar qué herramienta/modelo eligió para el SDA y por qué (¿Claude por su capacidad analítica? ¿ChatGPT por la integración con Salesforce?). El criterio de selección de modelo es parte del aprendizaje del Sprint 4."
-          ],
-          "alchemist_signals": [
-            "Señal de Alquimista Destacado: Conceptualizó un artefacto con bucle de retroalimentación y memoria histórica, pensando en evolución del sistema, no solo en la solución inmediata."
-          ],
-          "criteria": {
-            "Orquestación y Selección": {
-              "score": 4,
-              "justification": "Demuestra criterio claro: nombra Salesforce como fuente, identifica KPIs específicos (CAC, valor promedio de contrato, ciclo de cierre), y articula por qué un artefacto supera a un prompt aislado (automatización, consistencia, reducción de sesgo). Menciona integración futura con base de datos vectorial."
-            },
-            "Artefacto Cognitivo": {
-              "score": 4,
-              "justification": "El SDA está estructurado en tres capas explícitas (Input, Motor de Análisis, Output), tiene nombre propio, propósito definido, y descripción de cada componente. Es un marco de trabajo bien conceptualizado y reutilizable."
-            },
-            "Visión de Workflow Profesional": {
-              "score": 4,
-              "justification": "Conecta directamente con la realidad de su trabajo: datos muertos en CRM, fatiga de análisis, variación de Win Rate entre ejecutivos. El plan de mejora (bucle de retroalimentación, memoria histórica, detección de patrones estacionales) muestra visión a largo plazo."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "109113403661754840853",
-      "name": "Rodrigo Topete",
-      "is_named": true,
-      "avg_score": 3.35,
-      "sprints_count": 2,
-      "total_sprints_with_work": 2,
-      "alchemist_class": "⚗️ Alquimista en Formación",
-      "progression": -0.7,
-      "scores": [
-        3.7,
-        3.0
-      ],
-      "levels": [
-        "Destacado",
-        "Competente"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 3.7,
-          "level": "Destacado",
-          "strengths": [
-            "El rol de 'Arquitecto de Experiencias' es excepcionalmente específico y calibrado para el dominio de eventos corporativos de alto nivel.",
-            "La combinación de diseño biofílico + diseño emocional como marco conceptual es una restricción creativa que diferencia el output de respuestas genéricas."
-          ],
-          "recommendations": [
-            "Agregar un Formato de output explícito: ¿brief creativo en una página?, ¿moodboard conceptual verbal?, ¿lista de elementos sensoriales por área del evento?",
-            "Incluir restricciones de presupuesto estimado o escala del evento para anclar las propuestas a factibilidad real."
-          ],
-          "alchemist_signals": [
-            "Señal positiva: Rodrigo tiene acceso a casos de uso de alto perfil (eventos Fortune 500) que pueden beneficiarse enormemente de IA si continúa desarrollando sus prompts con mayor especificidad técnica."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "El prompt tiene Rol específico (Arquitecto de Experiencias y Director Creativo para eventos Fortune 500), Contexto detallado (valores familiares, sostenibilidad, Convención Anual Global), Tarea clara (concepto de Ambiente y Atmósfera) y restricciones implícitas de dominio (diseño biofílico, diseño emocional). La estructura es sólida y el rol altamente especializado."
-            },
-            "Aplicación a Caso Real": {
-              "score": 4,
-              "justification": "El prompt es específico de su trabajo en eventos corporativos globales: la combinación de valores familiares con presencia mundial, la sostenibilidad como visión principal, y el contexto de Convención Anual de Colaboradores son marcadores claros de un caso real de alto impacto."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 3,
-              "justification": "La integración de diseño biofílico y emocional como parámetros del rol demuestra comprensión de que el modelo necesita marcos de referencia estéticos específicos para producir conceptos diferenciados. Sin embargo, no hay formato de output definido ni instrucciones de verificación."
-            }
-          }
-        },
-        "sprint_2": {
-          "score": 3.0,
-          "level": "Competente",
-          "strengths": [
-            "La identificación de que los datos técnicos del medicamento son el antídoto específico contra el slop genérico es un insight metodológico correcto y bien aplicado.",
-            "El contexto del evento de lanzamiento de medicamento es un caso de uso de alta complejidad que combina datos técnicos farmacéuticos con diseño de experiencias."
-          ],
-          "recommendations": [
-            "Documentar el prompt final completo para poder evaluar la implementación técnica completa de la técnica.",
-            "Estructurar el proceso de iteración de forma más formal: versión 1 (output genérico) → cambio aplicado → versión 2 (output mejorado)."
-          ],
-          "alchemist_signals": [
-            "Señal positiva: la combinación de diseño de eventos con datos técnicos farmacéuticos es un nicho de aplicación altamente especializado donde la IA puede generar valor diferencial significativo."
-          ],
-          "criteria": {
-            "Dominio de Técnicas Avanzadas": {
-              "score": 3,
-              "justification": "Rodrigo aplica 2B correctamente usando datos técnicos del medicamento, espacios físicos y parámetros del evento (lugar, área, presupuesto, asistentes) para eliminar el slop. La técnica de 'inyección de datos técnicos como filtro Anti-Slop' está correctamente identificada y aplicada."
-            },
-            "Control de Calidad (Anti-Slop)": {
-              "score": 3,
-              "justification": "Identifica que los datos técnicos específicos del medicamento y del espacio físico son los que matan el slop, lo cual es correcto. Sin embargo, no documenta criterios formales de calidad ni un protocolo de verificación del output."
-            },
-            "Iteración y Refinamiento": {
-              "score": 3,
-              "justification": "Describe el caso, la técnica y el cambio clave (datos técnicos específicos eliminaron el slop genérico), aunque de forma narrativa y no estructurada. Hay evidencia de proceso de refinamiento aunque no documentado formalmente."
             }
           }
         }
@@ -2361,150 +1645,6 @@ const DASHBOARD_DATA = {
       }
     },
     {
-      "id": "103108319800993678716",
-      "name": "Luis Francisco Zúñiga Mendoza",
-      "is_named": true,
-      "avg_score": 3.2,
-      "sprints_count": 4,
-      "total_sprints_with_work": 4,
-      "alchemist_class": "⚗️ Alquimista en Formación",
-      "progression": -2.0,
-      "scores": [
-        4.0,
-        4.0,
-        2.8,
-        2.0
-      ],
-      "levels": [
-        "Destacado",
-        "Destacado",
-        "Competente",
-        "En Desarrollo"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "Diseñó un sistema de auditoría con flujo lógico y separación clara de capas (técnica, identidad, estratégica), lo que demuestra pensamiento de arquitecto de prompts.",
-            "El formato de salida 'Reporte Zero Errors' es altamente específico y ejecutable, con criterios de calidad propios de su industria."
-          ],
-          "recommendations": [
-            "Agregar un ejemplo Few-Shot de auditoría para que el modelo entienda mejor el tono esperado en los 'Hallazgos Críticos'.",
-            "Incluir una instrucción de manejo de casos límite (¿qué hacer si el manual de marca no tiene criterio para cierto elemento?)."
-          ],
-          "alchemist_signals": [
-            "Señal de Alquimista Destacado: Creó un sistema de control de calidad propio con vocabulario propietario ('Zero Errors', 'Score de Alineación'), no solo aplicó una plantilla del sprint."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 4,
-              "justification": "El prompt presenta una estructura muy clara y profesional con SYSTEM ROLE, INPUTS numerados, WORKFLOW DE EJECUCIÓN en pasos y FORMATO DE SALIDA detallado. Va más allá de Rol/Contexto/Tarea/Formato con secciones bien diferenciadas."
-            },
-            "Aplicación a Caso Real": {
-              "score": 4,
-              "justification": "El prompt está directamente aplicado al rol de Brand Keeper de su agencia Gnius, con terminología específica (Brand Keeper, Score de Alineación, 'Reporte Zero Errors') que evidencia conocimiento profundo de su industria."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 4,
-              "justification": "Muestra diseño arquitectónico consciente al separar la auditoría en tres pasos lógicos (Técnica, Identidad, Estratégica) y define un formato de salida estructurado. El uso de '[Insertar...]' como placeholders revela comprensión de cómo el modelo necesita inputs definidos."
-            }
-          }
-        },
-        "sprint_2": {
-          "score": 4.0,
-          "level": "Destacado",
-          "strengths": [
-            "El ejemplo Few-Shot es de nivel producción: tiene formato exacto, handles reales, estructura verificable, y funciona como contrato con el modelo.",
-            "El 'Protocolo Anti-Error' demuestra comprensión profunda de los modos de fallo del modelo y los mitiga de forma explícita y sistemática."
-          ],
-          "recommendations": [
-            "Podría agregar un segundo ejemplo Few-Shot negativo (qué NO debe hacer) para reforzar aún más el molde.",
-            "Documentar explícitamente cómo maneja el caso en que el episodio tenga más de 3 recomendaciones por host."
-          ],
-          "alchemist_signals": [
-            "Señal de Alquimista Destacado: Identificó un fallo sistémico (alucinación por sobrecarga de tareas) y resolvió con arquitectura (separación de herramientas), no solo con corrección del prompt."
-          ],
-          "criteria": {
-            "Dominio de Técnicas Avanzadas": {
-              "score": 4,
-              "justification": "Aplica Few-Shot de forma sofisticada y correcta: proporciona un ejemplo de oro completo con formato exacto que actúa como molde para el modelo. La técnica está bien justificada en contexto (separar entregas para evitar alucinaciones)."
-            },
-            "Control de Calidad (Anti-Slop)": {
-              "score": 4,
-              "justification": "El prompt tiene 'Protocolo Anti-Error' explícito con reglas concretas anti-alucinación ('No inventes', 'Si el contenido es ambiguo, señálalo') y estilo editorial directo ('Sin Relleno'). Densidad informativa muy alta."
-            },
-            "Iteración y Refinamiento": {
-              "score": 4,
-              "justification": "Narra claramente la evolución: de un asistente editorial general con alucinaciones a uno especializado por tipo de entregable. Explica la decisión de separar herramientas y el razonamiento detrás del uso de Few-Shot."
-            }
-          }
-        },
-        "sprint_3": {
-          "score": 2.8,
-          "level": "Competente",
-          "strengths": [
-            "El mecanismo de 'preguntar antes de generar' es una decisión de diseño sofisticada que mitiga alucinaciones en casos de ambigüedad, mostrando pensamiento de ingeniería real.",
-            "El contexto de agencia es claro y el problema (minutas fieles vs. inventadas) tiene consecuencias reales con clientes."
-          ],
-          "recommendations": [
-            "Articular mejor la diferencia arquitectónica: explicar que el sistema tiene memoria del protocolo de minutas cargado en Knowledge, lo cual es la ventaja real sobre un prompt aislado.",
-            "Agregar criterios de calidad explícitos: ¿cómo sabe el sistema si una minuta es 'accionable'? Definir qué constituye un 'punto crítico' que amerita preguntar."
-          ],
-          "alchemist_signals": [
-            "Señal positiva: La regla de 'preguntar antes de actuar cuando hay ambigüedad' es una decisión de diseño que muestra comprensión de los límites del modelo."
-          ],
-          "criteria": {
-            "Arquitectura del Sistema": {
-              "score": 3,
-              "justification": "El system prompt define rol específico ('Brand Keeper & Project Manager'), flujo de validación antes de generar (pregunta primero si hay ambigüedades) y acceso a conocimiento externo (Project Knowledge). Es un sistema funcional aunque no muestra la arquitectura Supervisor-Worker explícitamente."
-            },
-            "Relevancia del Problema": {
-              "score": 3,
-              "justification": "El problema de minutas inexactas es real y recurrente en agencias. El contexto de 'transcripciones de juntas' es genuino y el riesgo de inventar información es un problema real identificado."
-            },
-            "Justificación Técnica": {
-              "score": 2,
-              "justification": "La justificación de por qué es mejor que un prompt aislado es superficial: 'ayuda a revisar cualquier transcripción y detenerse en el momento necesario'. No articula claramente la ventaja arquitectónica del sistema vs. un prompt único."
-            },
-            "Calidad de la Evidencia": {
-              "score": 3,
-              "justification": "Incluye el System Prompt completo y funcional con reglas claras de comportamiento. No hay link al GPT pero el System Prompt mostrado es de calidad suficiente para evaluar el sistema."
-            }
-          }
-        },
-        "sprint_4": {
-          "score": 2.0,
-          "level": "En Desarrollo",
-          "strengths": [
-            "Muestra honestidad y metacognición al reconocer que el artefacto actual 'es muy descriptivo' y necesita refinamiento hacia lo ejecutivo.",
-            "El problema identificado (transformar juntas en briefs ejecutivos) es real y de alto valor para su rol en agencia."
-          ],
-          "recommendations": [
-            "Compartir el artefacto cognitivo real: incluir el System Prompt o la estructura del artefacto que se creó, no solo la descripción del problema que resuelve.",
-            "Articular el criterio de selección de modelo o herramienta: ¿por qué Claude/ChatGPT para este caso? ¿Qué herramienta eligió y por qué?"
-          ],
-          "alchemist_signals": [
-            "La autocrítica sobre el artefacto actual ('habría que refinarlo para hacerlo más ejecutivo') sugiere madurez reflexiva, pero faltó mostrar el trabajo concreto."
-          ],
-          "criteria": {
-            "Orquestación y Selección": {
-              "score": 2,
-              "justification": "La respuesta menciona el problema pero no muestra criterio explícito de selección de herramientas ni combina herramientas estratégicamente. No hay evidencia de orquestación multi-herramienta."
-            },
-            "Artefacto Cognitivo": {
-              "score": 2,
-              "justification": "No se comparte el artefacto como tal. La respuesta describe el problema y reconoce que el artefacto actual 'es muy descriptivo (para mal)' pero no presenta la estructura del artefacto ni su contenido."
-            },
-            "Visión de Workflow Profesional": {
-              "score": 2,
-              "justification": "Hay consciencia del problema (convertir minutas en briefs ejecutivos) y autocrítica sobre el estado actual del artefacto, pero la conexión con la práctica profesional es superficial y no articula un workflow completo."
-            }
-          }
-        }
-      }
-    },
-    {
       "id": "100618581398728411983",
       "name": "Milton Barboza",
       "is_named": true,
@@ -2612,6 +1752,622 @@ const DASHBOARD_DATA = {
             "Calidad de la Evidencia": {
               "score": 2,
               "justification": "No se comparte el System Prompt ni el link al GPT. La respuesta describe el caso de uso pero no proporciona la evidencia requerida por la instrucción del sprint."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "113067069449122491348",
+      "name": "Javier Magallanes Galan",
+      "is_named": true,
+      "avg_score": 2.8,
+      "sprints_count": 3,
+      "total_sprints_with_work": 3,
+      "alchemist_class": "⚗️ Alquimista en Formación",
+      "progression": 1.3,
+      "scores": [
+        1.7,
+        3.7,
+        3.0
+      ],
+      "levels": [
+        "En Desarrollo",
+        "Destacado",
+        "Competente"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 1.7,
+          "level": "En Desarrollo",
+          "strengths": [
+            "El prompt tiene claridad en el objetivo deseado (página visual con etapas diferenciadas por color).",
+            "Hay al menos un criterio de formato implícito (limpia y profesional para presentación a cliente)."
+          ],
+          "recommendations": [
+            "Incorporar explícitamente las secciones Rol, Contexto, Tarea y Formato para estructurar el prompt según lo aprendido en el sprint.",
+            "Añadir detalles de su contexto real de trabajo: empresa, industria, herramienta destino (PPT, web, Canva) y público específico."
+          ],
+          "alchemist_signals": [
+            "Vacío detectado: el estudiante tiene claridad en lo que quiere lograr pero aún no ha incorporado los frameworks del sprint; con estructura adecuada, este prompt tiene potencial real."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 2,
+              "justification": "El prompt es muy breve y carece de las secciones explícitas de Rol, Contexto, Tarea y Formato definidas en el sprint. Solo expresa una tarea de forma directa con algo de contexto implícito sobre presentación a cliente."
+            },
+            "Aplicación a Caso Real": {
+              "score": 2,
+              "justification": "Si bien menciona una presentación a cliente y un funnel de marketing, el prompt es genérico y no refleja ningún contexto específico de su trabajo real en OCESA ni de su industria particular."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 1,
+              "justification": "No hay evidencia de comprensión de cómo funciona el modelo, ni iteración, ni decisiones de diseño conscientes. El prompt es conversacional y directo, sin estructura de ingeniería."
+            }
+          }
+        },
+        "sprint_2": {
+          "score": 3.7,
+          "level": "Destacado",
+          "strengths": [
+            "Creó un System Prompt de auditor técnico con métricas propias de calidad ('Densidad de Lógica') y un protocolo de dos niveles de solución.",
+            "La restricción de citación de fuentes técnicas de autoridad es una medida Anti-Slop avanzada que demuestra comprensión profunda del tema."
+          ],
+          "recommendations": [
+            "Documentar el proceso de iteración: qué versión del prompt produjo outputs genéricos y qué cambio específico eliminó el slop.",
+            "Incluir ejemplos concretos (few-shot) de código con 'alta' y 'baja' densidad de lógica para calibrar mejor al auditor."
+          ],
+          "alchemist_signals": [
+            "Señal de Alquimista Destacado: este estudiante está creando herramientas de control de calidad de IA para su propio flujo de trabajo técnico, lo cual es un nivel de meta-uso excepcional."
+          ],
+          "criteria": {
+            "Dominio de Técnicas Avanzadas": {
+              "score": 4,
+              "justification": "El estudiante aplica correctamente el Framework ARV (Ask, Refine, Verify) integrado en el System Prompt, y construye un protocolo de auditoría con criterios de detección, triangulación de soluciones y restricción de citación de fuentes técnicas. El dominio es genuino y sofisticado."
+            },
+            "Control de Calidad (Anti-Slop)": {
+              "score": 4,
+              "justification": "El prompt introduce el concepto de 'Densidad de Lógica' como métrica explícita, diferencia entre Quick-fix y Architectural solution, y obliga a citar fuentes de autoridad (Martin Fowler, Gergely Orosz). El Anti-Slop está operacionalizado como criterio del sistema, no solo mencionado."
+            },
+            "Iteración y Refinamiento": {
+              "score": 3,
+              "justification": "Aunque el prompt final es de alta calidad, el estudiante no documenta explícitamente el proceso de iteración ni comparte versiones previas o lo que cambió. La evidencia de refinamiento es implícita en la sofisticación del resultado."
+            }
+          }
+        },
+        "sprint_3": {
+          "score": 3.0,
+          "level": "Competente",
+          "strengths": [
+            "Incluye link funcional al GPT, lo que demuestra que el sistema fue efectivamente implementado y no solo descrito.",
+            "La coherencia entre sus entregas de sprint 2 y sprint 3 muestra un hilo conductor de desarrollo de producto real."
+          ],
+          "recommendations": [
+            "Explorar cómo el sistema puede escalar más allá de revisión individual para cubrir PRs en equipo o pipelines de CI/CD.",
+            "Añadir casos de ejemplo concretos en el System Prompt (few-shot de código con alta vs baja densidad lógica) para mejorar la calibración del auditor."
+          ],
+          "alchemist_signals": [
+            "Señal positiva: este estudiante está construyendo un ecosistema coherente de herramientas, no solo ejercicios aislados; eso es pensamiento de producto."
+          ],
+          "criteria": {
+            "Arquitectura del Sistema": {
+              "score": 3,
+              "justification": "El GPT tiene roles definidos (Supervisor con Framework ARV), criterios claros (Quick Fix vs Architectural Solution) y un flujo lógico de auditoría. Aunque es una extensión directa del prompt del sprint anterior, la arquitectura del sistema está bien articulada."
+            },
+            "Relevancia del Problema": {
+              "score": 3,
+              "justification": "El problema de detectar AI-generated technical debt es genuinamente relevante en su trabajo con proyectos de software y LLMs. Requiere un sistema persistente, no solo un prompt aislado."
+            },
+            "Justificación Técnica": {
+              "score": 3,
+              "justification": "Justifica correctamente por qué el sistema es superior: criterios consistentes de revisión, detección sistemática y dos niveles de solución. La justificación es sólida aunque no particularmente creativa."
+            },
+            "Calidad de la Evidencia": {
+              "score": 3,
+              "justification": "Incluye un link a ChatGPT Share, lo que constituye evidencia verificable del GPT construido. El link funcional eleva la calidad de la evidencia sobre los demás estudiantes sin link."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "116079253329523330287",
+      "name": "Carlos Contreras",
+      "is_named": true,
+      "avg_score": 2.43,
+      "sprints_count": 3,
+      "total_sprints_with_work": 4,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0.7,
+      "scores": [
+        2.3,
+        2.0,
+        3.0
+      ],
+      "levels": [
+        "En Desarrollo",
+        "En Desarrollo",
+        "Competente"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 2.3,
+          "level": "En Desarrollo",
+          "strengths": [
+            "El caso de uso es genuinamente de su trabajo: conocimiento específico de producción BTL (descarga, pesajes, Photo Opp) demuestra que no copió un ejemplo genérico.",
+            "La estructura de prioridades numeradas guía al modelo de forma efectiva para un cronograma operativo."
+          ],
+          "recommendations": [
+            "Agregar contexto operativo: número de personas en equipo, tipo de activación/evento, restricciones de espacio. El modelo genera mejores cronogramas con más contexto.",
+            "Definir mejor el formato de salida: ¿cuántas columnas en la tabla? ¿Qué significa 'Estado Crítico' exactamente? Un ejemplo o descripción más específica mejora la consistencia del output."
+          ],
+          "alchemist_signals": [
+            "El conocimiento operativo de producción BTL es una fortaleza real; el siguiente paso es aprender a codificar ese conocimiento en un prompt con la profundidad que merece."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 2,
+              "justification": "El prompt tiene rol (Director de Producción BTL) y tarea (cronograma), pero le falta contexto operativo y el formato es básico (solo menciona 'tabla'). La estructura es funcional pero no optimizada."
+            },
+            "Aplicación a Caso Real": {
+              "score": 3,
+              "justification": "El caso es completamente real y específico: montaje BTL con tiempos reales, prioridades operativas de producción (descarga, estructura, eléctricos, acabados), y objetivo concreto (entrega al 100% a las 14:00). Hay conocimiento genuino de la industria."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 2,
+              "justification": "El prompt es directo y funcional pero no muestra evidencia de diseño consciente o iteración. Es un prompt de primera versión bien orientado al problema, pero sin mecanismos de control ni consideración de casos borde."
+            }
+          }
+        },
+        "sprint_2": {
+          "score": 2.0,
+          "level": "En Desarrollo",
+          "strengths": [
+            "El ejemplo before/after es ilustrativo: demuestra cómo dar más contexto al modelo (urgencia de entrega, restricción de salir del inmueble) transforma radicalmente el output.",
+            "El caso es completamente real (My Chemical Romance, HSBC, catering), lo que demuestra que aplica la IA a situaciones concretas de su trabajo."
+          ],
+          "recommendations": [
+            "Practicar nombrar las técnicas que está usando intuitivamente: lo que hizo (agregar contexto de urgencia) tiene nombre técnico en el programa. Vincular la práctica con el marco teórico.",
+            "Explorar una técnica formal del sprint con este mismo caso: por ejemplo, aplicar CoT para que el modelo piense primero en el tono apropiado antes de redactar el correo."
+          ],
+          "alchemist_signals": [
+            "La comprensión intuitiva de que más contexto = mejor output es un buen punto de partida; el siguiente paso es formalizar esa intuición en técnicas replicables."
+          ],
+          "criteria": {
+            "Dominio de Técnicas Avanzadas": {
+              "score": 2,
+              "justification": "La respuesta muestra comprensión intuitiva de mejorar un prompt con más contexto, pero no nombra ni aplica formalmente ninguna técnica del sprint (CoT, Few-Shot, Step-Back, ARV, Anti-Slop). El refinamiento es contextual, no técnico."
+            },
+            "Control de Calidad (Anti-Slop)": {
+              "score": 2,
+              "justification": "El correo final es más profesional que el original, pero la mejora viene de agregar contexto operativo, no de aplicar criterios explícitos de calidad Anti-Slop. No hay evidencia de auditoría de densidad informativa."
+            },
+            "Iteración y Refinamiento": {
+              "score": 2,
+              "justification": "Muestra claramente el antes y después (texto informal → correo profesional con coordinación de catering) y la acción de refinamiento (agregar contexto de urgencia). Es una iteración real aunque no use terminología técnica del sprint."
+            }
+          }
+        },
+        "sprint_3": {
+          "score": 3.0,
+          "level": "Competente",
+          "strengths": [
+            "El System Prompt de la activación contiene conocimiento técnico real de producción de eventos (Truss de 12\"/20\", copete perimetral, 100 pax/hora) que va más allá de lo genérico.",
+            "La reflexión de que el sistema ayuda a 'encontrar puntos no considerados' refleja uso real y valor concreto en su práctica profesional."
+          ],
+          "recommendations": [
+            "Explicar la arquitectura completa: ¿hay un supervisor que valida la activación antes de presentarla al cliente? ¿Cómo fluye la información entre etapas?",
+            "Desarrollar la justificación técnica: el sistema tiene memoria de los requerimientos de producción de OCESA (capacidades del Foro Sol, restricciones del venue) que un prompt aislado perdería entre conversaciones."
+          ],
+          "alchemist_signals": [
+            "El nivel de detalle técnico en el System Prompt (especificaciones de Truss, flujo de pax) demuestra que está codificando conocimiento experto de producción en el sistema."
+          ],
+          "criteria": {
+            "Arquitectura del Sistema": {
+              "score": 3,
+              "justification": "El sistema mostrado tiene estructura de producción real con pasos técnicos específicos (CoT de viabilidad de flujo, requerimientos de estructura Truss, secciones de diseño), aunque la presentación muestra solo la parte del prompt sin describir la arquitectura del sistema completo."
+            },
+            "Relevancia del Problema": {
+              "score": 4,
+              "justification": "El problema (diseñar activaciones para marcas en festivales) es central a su trabajo, y el ejemplo de HSBC en festivales de música es un caso real específico. La utilidad del sistema para encontrar puntos no considerados es genuinamente valiosa."
+            },
+            "Justificación Técnica": {
+              "score": 2,
+              "justification": "La justificación de por qué es mejor que un prompt aislado ('mejoró el orden y me hizo ver partes en las que el ser más específico ayuda') es básica y descriptiva. No articula la ventaja arquitectónica del sistema."
+            },
+            "Calidad de la Evidencia": {
+              "score": 3,
+              "justification": "Comparte el System Prompt completo de la activación (con pasos CoT, requerimientos técnicos de Truss, capas de diseño), lo que evidencia implementación real con detalle técnico de producción."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "103035128104374350950",
+      "name": "Omar Cuauhtemoc Morfín López",
+      "is_named": true,
+      "avg_score": 4.0,
+      "sprints_count": 2,
+      "total_sprints_with_work": 3,
+      "alchemist_class": "⚗️ Alquimista en Formación",
+      "progression": 0.0,
+      "scores": [
+        4.0,
+        4.0
+      ],
+      "levels": [
+        "Destacado",
+        "Destacado"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "El workflow multi-paso con instrucciones de Arte y Verificación de Tono demuestra un nivel de ingeniería de prompting excepcional para el Sprint 1.",
+            "La restricción de tono ('no burlarse, sí validar') con una pregunta de verificación interna es una técnica avanzada de control de calidad aplicada intuitivamente."
+          ],
+          "recommendations": [
+            "Documentar el output que generó este prompt y compartirlo como caso de estudio para el grupo.",
+            "Explorar el uso de few-shot con ejemplos de posts reales de Purina que hayan funcionado bien, para calibrar el tono con mayor precisión."
+          ],
+          "alchemist_signals": [
+            "Señal de Alquimista Destacado desde el Sprint 1: Omar opera con pensamiento de workflow y control de calidad integrado desde el primer sprint, lo que sugiere adopción acelerada y potencial de liderazgo en el programa."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "El prompt tiene Rol explícito (Director Creativo Senior en real-time marketing), Contexto rico (fenómeno therian, postura de Purina), Objetivo con restricciones claras (humor elegante, no burla), e instrucciones de Workflow numeradas con múltiples pasos. Es un prompt maestro de alta densidad estructural."
+            },
+            "Aplicación a Caso Real": {
+              "score": 4,
+              "justification": "El caso es específico de su industria (marketing de mascota de marca real: Purina), trabaja un fenómeno cultural real (therian) con una estrategia de contenido de marca real-time. Solo alguien en ese contexto profesional podría construir este prompt."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "Diseña un workflow multi-paso (Concepto → Copywriting → Directrices de Arte → Verificación de Tono), incluye una restricción de verificación interna del modelo ('¿Se ríe con ellos o de ellos?') y demuestra comprensión de que el modelo necesita un checklist de salida para no producir contenido que dañe la marca."
+            }
+          }
+        },
+        "sprint_2": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "El diagnóstico de 'alucinaciones de sesgo positivo' en temas sensibles es una contribución conceptual avanzada que va más allá de lo visto en clase.",
+            "El proceso de razonamiento (por qué este tema produce slop → qué técnica lo contrarresta → cómo se implementó) es un modelo de pensamiento de ingeniero de prompting."
+          ],
+          "recommendations": [
+            "Compartir el prompt completo de la Misión 2C para que sirva como referencia técnica para el grupo.",
+            "Explorar cómo este protocolo Anti-Slop para investigación sensible podría sistematizarse en un GPT o SOP reutilizable."
+          ],
+          "alchemist_signals": [
+            "Señal de Alquimista Destacado: Omar tiene capacidad de diagnóstico técnico antes de diseñar soluciones, lo que lo distingue como pensador sistémico de alto nivel en el grupo."
+          ],
+          "criteria": {
+            "Dominio de Técnicas Avanzadas": {
+              "score": 4,
+              "justification": "Aplica Misión 2C con una sofisticación excepcional: entiende por qué la IA produce 'Slop de Sesgo Positivo' en temas sensibles, y diseña contra-medidas específicas (Verificación Extrema, triangulación de conflicto entre fuentes). El diagnóstico técnico del problema antes de aplicar la técnica es análisis de primer nivel."
+            },
+            "Control de Calidad (Anti-Slop)": {
+              "score": 4,
+              "justification": "Identifica un tipo específico de Slop (alucinaciones de sesgo positivo en temas sociales sensibles) y diseña un protocolo para contrarrestarlo. La distinción entre 'qué encontraron las fuentes' y 'qué quiere escuchar el usuario' es una aplicación de Anti-Slop de máxima madurez."
+            },
+            "Iteración y Refinamiento": {
+              "score": 4,
+              "justification": "El análisis del problema (por qué la IA tiende al Slop en este tema), la técnica seleccionada y el resultado están articulados como un proceso de ingeniería completo con razonamiento visible de cada decisión."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "105068241516045024966",
+      "name": "Paulina Albarran",
+      "is_named": true,
+      "avg_score": 3.5,
+      "sprints_count": 2,
+      "total_sprints_with_work": 2,
+      "alchemist_class": "⚗️ Alquimista en Formación",
+      "progression": 1.0,
+      "scores": [
+        3.0,
+        4.0
+      ],
+      "levels": [
+        "Competente",
+        "Destacado"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 3.0,
+          "level": "Competente",
+          "strengths": [
+            "El prompt captura bien la esencia de las experiencias de marca inmersivas, diferenciándose de activaciones funcionales con lenguaje específico del dominio.",
+            "La mención de 'recorrido físico y sensorial' como entregable es un formato de output implícito bien calibrado para su caso de uso."
+          ],
+          "recommendations": [
+            "Especificar el cliente o tipo de marca para anclar el prompt a un caso real y evitar conceptos excesivamente genéricos.",
+            "Agregar restricciones de formato: ¿concepto en una página?, ¿blueprint de experiencia?, ¿mood board verbal?, para obtener un output más accionable."
+          ],
+          "alchemist_signals": [
+            "Señal positiva: el dominio de experiencias inmersivas es un caso de uso de alto potencial para IA generativa que pocas personas del grupo tienen; hay una oportunidad de diferenciación."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 3,
+              "justification": "El prompt tiene Rol (Directora Creativa en Experiencias Inmersivas), Contexto (la marca quiere conexión emocional, no solo activación funcional), Tarea (diseñar experiencia con elementos sensoriales específicos: espacio, luz, interacción, narrativa). La estructura es sólida aunque el Formato de output no está explícitamente definido."
+            },
+            "Aplicación a Caso Real": {
+              "score": 3,
+              "justification": "El prompt aplica al trabajo real de diseño de experiencias de marca con énfasis en conexión emocional, que es claramente su dominio profesional. Sin embargo, al no nombrar una marca o cliente específico, pierde algo de especificidad de caso real."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 3,
+              "justification": "La decisión de especificar los elementos sensoriales (espacio, luz, interacción, narrativa) como variables del diseño muestra comprensión de que el modelo necesita parámetros concretos para no producir conceptos genéricos. Hay evidencia de diseño intencional."
+            }
+          }
+        },
+        "sprint_2": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "Documentó el ciclo completo: prompt roto → diagnóstico → técnica → resultado, lo que es un modelo a seguir para el grupo.",
+            "La aplicación de CoT a diseño de estructuras físicas de eventos es una transferencia creativa del framework a un dominio no convencional."
+          ],
+          "recommendations": [
+            "Formalizar el proceso CoT para diseño de experiencias como una plantilla reutilizable en futuros proyectos de activación.",
+            "Explorar cómo integrar verificación de factibilidad técnica (materiales disponibles, costo estimado) en el flujo de razonamiento."
+          ],
+          "alchemist_signals": [
+            "Señal de Alquimista Destacada: Paulina ha encontrado una aplicación de alto valor diferencial para su industria (diseño de experiencias físicas con IA) y la está ejecutando con rigor técnico."
+          ],
+          "criteria": {
+            "Dominio de Técnicas Avanzadas": {
+              "score": 4,
+              "justification": "Paulina aplica Chain-of-Thought de forma ejemplar: descompone el problema de diseño de una estructura Photo Opportunity en pasos secuenciales (briefing estético → referencias visuales → materiales → dimensiones → iluminación → render final), forzando al modelo a razonar antes de producir el output visual."
+            },
+            "Control de Calidad (Anti-Slop)": {
+              "score": 4,
+              "justification": "Identifica específicamente el problema del output anterior (genérico, sin jerarquía en composición, materiales poco definidos) y diseña el nuevo prompt para corregirlo con parámetros técnicos de diseño. El Anti-Slop está operacionalizado como corrección de defectos específicos."
+            },
+            "Iteración y Refinamiento": {
+              "score": 4,
+              "justification": "Documenta claramente el prompt roto inicial, el diagnóstico del problema (slop visual), la técnica elegida (CoT), y cómo la cadena de razonamiento resolvió la falta de jerarquía y especificidad de materiales. Es un ejemplo completo del ciclo de refinamiento."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "110196614206290248442",
+      "name": "Gerardo Pulido",
+      "is_named": true,
+      "avg_score": 3.5,
+      "sprints_count": 2,
+      "total_sprints_with_work": 2,
+      "alchemist_class": "⚗️ Alquimista en Formación",
+      "progression": -1.0,
+      "scores": [
+        4.0,
+        3.0
+      ],
+      "levels": [
+        "Destacado",
+        "Competente"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "El diseño de proceso en 3 pasos (Extrae → Valida → Presenta) es un ejemplo excelente de Chain-of-Thought aplicado desde el Sprint 1.",
+            "El caso de centralizar instrucciones caóticas de múltiples canales es un problema real de alta frecuencia que este prompt resuelve de forma inmediata y reutilizable."
+          ],
+          "recommendations": [
+            "Agregar criterios de validación explícitos en el Paso 2: ¿qué constituye una instrucción 'lógica' vs una 'inconsistente'?",
+            "Explorar cómo convertir este prompt en un Custom GPT que el equipo pueda usar directamente para procesar mensajes de cambio de campaña."
+          ],
+          "alchemist_signals": [
+            "Señal de Alquimista Destacado desde Sprint 1: este estudiante ya diseña workflows de 3 pasos en su primer sprint, lo que sugiere pensamiento de producto maduro y potencial de liderazgo técnico en el grupo."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "El prompt tiene todas las secciones bien definidas: Rol (experto en Ingeniería de Prompting y tráfico digital), Contexto específico (problema de comunicación por múltiples canales en su equipo), Tarea en 3 pasos explícitos (Extrae → Valida → Presenta), y un formato de proceso estructurado. Es un prompt maestro completo."
+            },
+            "Aplicación a Caso Real": {
+              "score": 4,
+              "justification": "El problema de instrucciones caóticas por múltiples canales (WhatsApp, Slack, Teams, Correo) es genuinamente real y de alta frecuencia en organizaciones de marketing. El contexto de campañas de marketing con riesgo de errores y fricciones sociales ancla el prompt en su trabajo diario."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "El diseño del prompt como un procesador de 3 pasos secuenciales (Extrae datos estructurados → Valida lógica → Presenta confirmación) muestra comprensión de cómo el modelo necesita instrucciones de flujo para no saltar directamente a conclusiones. Es ingeniería de workflow aplicada."
+            }
+          }
+        },
+        "sprint_2": {
+          "score": 3.0,
+          "level": "Competente",
+          "strengths": [
+            "El copy de Disney on Ice con detalles sensoriales ('1 metro de tu asiento', 'aire frío cuando pase Ansiedad') es un ejemplo efectivo de cómo los datos técnicos específicos eliminan el slop.",
+            "El caso real de vender un show con meses de anticipación es un desafío de marketing legítimo que el estudiante resolvió con IA de forma creativa."
+          ],
+          "recommendations": [
+            "Compartir el prompt completo que generó este copy para poder evaluar la técnica aplicada y su arquitectura.",
+            "Explorar cómo este proceso de 'copy out anti-slop' podría sistematizarse para otros shows del portafolio de OCESA."
+          ],
+          "alchemist_signals": [
+            "Señal de aplicación comercial directa: el copy generado es potencialmente utilizable en campañas reales, lo que demuestra que el estudiante está produciendo valor inmediato con IA."
+          ],
+          "criteria": {
+            "Dominio de Técnicas Avanzadas": {
+              "score": 3,
+              "justification": "El estudiante aplica técnicas Anti-Slop para generar copy de Disney on Ice con elementos técnicos concretos (distancia física de 1 metro, sensación de frío, adrenalina de Zootopia) que diferencian el texto de descripciones genéricas de shows familiares."
+            },
+            "Control de Calidad (Anti-Slop)": {
+              "score": 3,
+              "justification": "El copy resultante tiene densidad experiencial real: 'a solo 1 metro de tu asiento', 'sentir el aire frío cuando pase Ansiedad'. Hay criterio de calidad visible en la especificidad sensorial del output."
+            },
+            "Iteración y Refinamiento": {
+              "score": 3,
+              "justification": "El estudiante documenta el problema (slop genérico para Disney on Ice), la técnica (generar 'copy out' anti-slop), y el resultado con ejemplos concretos. El proceso está documentado aunque de forma narrativa."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "112535211651425914416",
+      "name": "Iliana Gallardo",
+      "is_named": true,
+      "avg_score": 3.5,
+      "sprints_count": 2,
+      "total_sprints_with_work": 2,
+      "alchemist_class": "⚗️ Alquimista en Formación",
+      "progression": -1.0,
+      "scores": [
+        4.0,
+        3.0
+      ],
+      "levels": [
+        "Destacado",
+        "Competente"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "El prompt diseña un workflow completo de automatización de reportes que va de datos crudos (PDF) a presentación ejecutiva (PPTX), lo cual es un caso de uso de IA de alto impacto.",
+            "La especificación del destinatario (Director de Contenido) como criterio de calibración del tono y nivel de detalle demuestra pensamiento de audiencia avanzado."
+          ],
+          "recommendations": [
+            "Agregar criterios de calidad del output: ¿cuántas diapositivas máximo?, ¿qué visualizaciones incluir?, ¿formato de los insights (bullets, narrativa, comparativa)?",
+            "Incluir una instrucción de verificación donde el modelo confirme los datos extraídos antes de generar el análisis."
+          ],
+          "alchemist_signals": [
+            "Señal de Alquimista Destacado desde Sprint 1: el diseño de un workflow de automatización de reportes con múltiples pasos y output específico en Sprint 1 es excepcional y sugiere potencial de productización acelerada."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "El prompt tiene Rol especializado (Data Scientist & BI Specialist en automatización de reportes), Objetivo claro (extraer datos de PDF y generar PPTX para Director de Contenido), y un flujo de instrucciones estructurado en pasos (Análisis → Cálculo de Insights → Generación de Presentación). La estructura es de alta densidad y funcionalidad."
+            },
+            "Aplicación a Caso Real": {
+              "score": 4,
+              "justification": "El caso de extraer métricas de contenido (Engagement, Alcance, Shares) de un PDF y generar una presentación para un Director de Contenido es genuinamente específico de su trabajo real. Los detalles de dominio (métricas de contenido, directivo destinatario, PDF como fuente) confirman aplicación real."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "El diseño como workflow multi-paso (Análisis de datos → Cálculo de Insights → Generación de output final en PPTX) con un destinatario específico (Director de Contenido) demuestra comprensión de cómo el modelo necesita instrucciones secuenciales para producir outputs complejos. Es ingeniería de workflow avanzada para Sprint 1."
+            }
+          }
+        },
+        "sprint_2": {
+          "score": 3.0,
+          "level": "Competente",
+          "strengths": [
+            "La transformación de texto genérico de Instagram a estrategias con benchmarks concretos de 2026 es un ejemplo claro del valor de la verificación con datos.",
+            "El proceso de iteración está bien documentado: problema inicial → técnica aplicada → resultado mejorado con evidencia del output."
+          ],
+          "recommendations": [
+            "Agregar el prompt completo con la instrucción de verificación para poder evaluar la arquitectura técnica de la solicitud de benchmarks.",
+            "Explorar cómo sistematizar este proceso de verificación con datos en un SOP Cognitivo para generación consistente de estrategias de Instagram con respaldo numérico."
+          ],
+          "alchemist_signals": [
+            "Señal de evolución consistente: de automatización de reportes en Sprint 1 a verificación con benchmarks en Sprint 2, este estudiante está construyendo un flujo de trabajo de BI/Contenido con IA de forma coherente."
+          ],
+          "criteria": {
+            "Dominio de Técnicas Avanzadas": {
+              "score": 3,
+              "justification": "El estudiante aplica verificación (ARV) al solicitar benchmarks que respalden las recomendaciones con datos numéricos, transformando un texto de best practices genérico en un output con métricas concretas. La técnica de verificación con datos es correcta y efectiva."
+            },
+            "Control de Calidad (Anti-Slop)": {
+              "score": 3,
+              "justification": "El resultado muestra transformación efectiva de texto impreciso a estrategias con métricas específicas (datos de 2026, señales de valor, benchmarks). El output tiene densidad informativa claramente superior al input."
+            },
+            "Iteración y Refinamiento": {
+              "score": 3,
+              "justification": "El estudiante documenta claramente el problema (texto sin métricas y sin sustento numérico), la técnica (solicitar benchmarks), y el resultado mejorado. El proceso de refinamiento está bien documentado aunque de forma narrativa."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "109113403661754840853",
+      "name": "Rodrigo Topete",
+      "is_named": true,
+      "avg_score": 3.35,
+      "sprints_count": 2,
+      "total_sprints_with_work": 2,
+      "alchemist_class": "⚗️ Alquimista en Formación",
+      "progression": -0.7,
+      "scores": [
+        3.7,
+        3.0
+      ],
+      "levels": [
+        "Destacado",
+        "Competente"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 3.7,
+          "level": "Destacado",
+          "strengths": [
+            "El rol de 'Arquitecto de Experiencias' es excepcionalmente específico y calibrado para el dominio de eventos corporativos de alto nivel.",
+            "La combinación de diseño biofílico + diseño emocional como marco conceptual es una restricción creativa que diferencia el output de respuestas genéricas."
+          ],
+          "recommendations": [
+            "Agregar un Formato de output explícito: ¿brief creativo en una página?, ¿moodboard conceptual verbal?, ¿lista de elementos sensoriales por área del evento?",
+            "Incluir restricciones de presupuesto estimado o escala del evento para anclar las propuestas a factibilidad real."
+          ],
+          "alchemist_signals": [
+            "Señal positiva: Rodrigo tiene acceso a casos de uso de alto perfil (eventos Fortune 500) que pueden beneficiarse enormemente de IA si continúa desarrollando sus prompts con mayor especificidad técnica."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "El prompt tiene Rol específico (Arquitecto de Experiencias y Director Creativo para eventos Fortune 500), Contexto detallado (valores familiares, sostenibilidad, Convención Anual Global), Tarea clara (concepto de Ambiente y Atmósfera) y restricciones implícitas de dominio (diseño biofílico, diseño emocional). La estructura es sólida y el rol altamente especializado."
+            },
+            "Aplicación a Caso Real": {
+              "score": 4,
+              "justification": "El prompt es específico de su trabajo en eventos corporativos globales: la combinación de valores familiares con presencia mundial, la sostenibilidad como visión principal, y el contexto de Convención Anual de Colaboradores son marcadores claros de un caso real de alto impacto."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 3,
+              "justification": "La integración de diseño biofílico y emocional como parámetros del rol demuestra comprensión de que el modelo necesita marcos de referencia estéticos específicos para producir conceptos diferenciados. Sin embargo, no hay formato de output definido ni instrucciones de verificación."
+            }
+          }
+        },
+        "sprint_2": {
+          "score": 3.0,
+          "level": "Competente",
+          "strengths": [
+            "La identificación de que los datos técnicos del medicamento son el antídoto específico contra el slop genérico es un insight metodológico correcto y bien aplicado.",
+            "El contexto del evento de lanzamiento de medicamento es un caso de uso de alta complejidad que combina datos técnicos farmacéuticos con diseño de experiencias."
+          ],
+          "recommendations": [
+            "Documentar el prompt final completo para poder evaluar la implementación técnica completa de la técnica.",
+            "Estructurar el proceso de iteración de forma más formal: versión 1 (output genérico) → cambio aplicado → versión 2 (output mejorado)."
+          ],
+          "alchemist_signals": [
+            "Señal positiva: la combinación de diseño de eventos con datos técnicos farmacéuticos es un nicho de aplicación altamente especializado donde la IA puede generar valor diferencial significativo."
+          ],
+          "criteria": {
+            "Dominio de Técnicas Avanzadas": {
+              "score": 3,
+              "justification": "Rodrigo aplica 2B correctamente usando datos técnicos del medicamento, espacios físicos y parámetros del evento (lugar, área, presupuesto, asistentes) para eliminar el slop. La técnica de 'inyección de datos técnicos como filtro Anti-Slop' está correctamente identificada y aplicada."
+            },
+            "Control de Calidad (Anti-Slop)": {
+              "score": 3,
+              "justification": "Identifica que los datos técnicos específicos del medicamento y del espacio físico son los que matan el slop, lo cual es correcto. Sin embargo, no documenta criterios formales de calidad ni un protocolo de verificación del output."
+            },
+            "Iteración y Refinamiento": {
+              "score": 3,
+              "justification": "Describe el caso, la técnica y el cambio clave (datos técnicos específicos eliminaron el slop genérico), aunque de forma narrativa y no estructurada. Hay evidencia de proceso de refinamiento aunque no documentado formalmente."
             }
           }
         }
@@ -2930,354 +2686,6 @@ const DASHBOARD_DATA = {
       }
     },
     {
-      "id": "103387490168955358425",
-      "name": "Jesus Manuel Romo Ortega",
-      "is_named": true,
-      "avg_score": 3.0,
-      "sprints_count": 1,
-      "total_sprints_with_work": 2,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        3.0
-      ],
-      "levels": [
-        "Competente"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 3.0,
-          "level": "Competente",
-          "strengths": [
-            "La granularidad de los datos solicitados (precio spot, variación diaria y semanal, comparativa XAU/XAG, precios de Libertad en el mercado mexicano) demuestra conocimiento experto del dominio.",
-            "El focus en el mercado mexicano con referencias específicas (Banorte, casas de moneda, premium sobre spot) ancla el prompt en un contexto de uso real y diferenciado."
-          ],
-          "recommendations": [
-            "Agregar una instrucción de verificación de fuentes: que el modelo declare de dónde obtuvo los precios (cotización en tiempo real vs memoria paramétrica) para evitar alucinaciones en datos financieros.",
-            "Incluir un Contexto explícito del uso de esta información (¿decisión de compra?, ¿reporte para cliente?, ¿gestión de portafolio?) para calibrar el nivel de detalle y el formato del output."
-          ],
-          "alchemist_signals": [
-            "Señal de especialización de nicho: el dominio de metales preciosos con enfoque en el mercado mexicano es un caso de uso de IA con valor diferencial alto en asesoría de inversión o trading."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 3,
-              "justification": "El prompt tiene un Rol claro (analista de metales preciosos actualizado al día), una Tarea estructurada en 5 puntos numerados con especificaciones concretas (XAU, XAG, variación diaria/semanal, moneda Libertad, diferencia spot). Es un prompt bien estructurado aunque sin sección de Contexto personal explícita."
-            },
-            "Aplicación a Caso Real": {
-              "score": 3,
-              "justification": "El análisis de metales preciosos con foco en el mercado mexicano (moneda Libertad, Banorte, casas de moneda) es específico de su trabajo o interés real. La granularidad de los datos solicitados (premium sobre spot, precios de compra/venta) indica conocimiento del dominio."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 3,
-              "justification": "La estructura en 5 puntos con especificaciones técnicas precisas (XAU, XAG, premium típico, diferencia entre spot y precio de moneda) demuestra comprensión de que el modelo necesita instrucciones granulares para producir datos específicos del mercado. Hay diseño consciente del output deseado."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "102214830195407912747",
-      "name": "Roberto Saldana",
-      "is_named": true,
-      "avg_score": 3.0,
-      "sprints_count": 1,
-      "total_sprints_with_work": 2,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        3.0
-      ],
-      "levels": [
-        "Competente"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 3.0,
-          "level": "Competente",
-          "strengths": [
-            "Incluye instrucciones explícitas de veracidad que demuestran comprensión de las limitaciones del modelo de lenguaje.",
-            "El formato de salida con estatus semáforo (rojo/amarillo/verde) es una solución práctica y profesional para su contexto laboral."
-          ],
-          "recommendations": [
-            "Definir el Rol de forma explícita al inicio del prompt para maximizar el contexto que el modelo recibe desde el primer token.",
-            "Agregar más detalles específicos de la industria de entretenimiento/producción de OCESA para evitar que el placeholder quede muy genérico y lograr un nivel Destacado."
-          ],
-          "alchemist_signals": [
-            "Las instrucciones de veracidad y solicitud de claridad muestran que el estudiante ya piensa como un ingeniero de prompts: diseña guardas contra las alucinaciones del modelo."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 3,
-              "justification": "El prompt tiene Rol implícito (evaluador de proyectos), Contexto claro (empresa con costos operativos altos), Tarea bien definida (evaluar bajo 4 pilares) y Formato de salida estructurado con esquema de estatus/evaluación/feedback. Falta definir el rol de forma explícita al inicio, pero la estructura general es sólida."
-            },
-            "Aplicación a Caso Real": {
-              "score": 3,
-              "justification": "El prompt aborda un problema real de evaluación de propuestas de diseño y materiales en producción, con criterios específicos como 'Eficiencia en Materiales' y 'Calidad de Renders'. El placeholder '[PÚBLICO OBJETIVO]' y '[PEGAR AQUÍ LOS DETALLES]' indica que el prompt está listo para uso iterativo en su trabajo."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 3,
-              "justification": "Demuestra comprensión del modelo al incluir instrucciones explícitas de veracidad ('No inventes datos', 'Solicitud de Claridad'), lo que evidencia conciencia de las limitaciones del modelo. El diseño en 4 pilares con formato de salida estandarizado refleja pensamiento sistemático."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "102542173536207744885",
-      "name": "Rodrigo Tellez Cabrera",
-      "is_named": true,
-      "avg_score": 3.0,
-      "sprints_count": 1,
-      "total_sprints_with_work": 1,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        3.0
-      ],
-      "levels": [
-        "Competente"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 3.0,
-          "level": "Competente",
-          "strengths": [
-            "La instrucción de reencuadre conceptual ('estilo de vida vs. logos') es una técnica de prompting avanzada que guía al modelo hacia un pensamiento estratégico, no descriptivo.",
-            "El prompt es conciso pero efectivo, demostrando capacidad de síntesis para el caso de ventas de patrocinios en festivales reales de OCESA."
-          ],
-          "recommendations": [
-            "Expandir el Contexto con datos específicos del público del Corona Capital (edad, comportamiento de compra, afinidad de marcas) para enriquecer el análisis psicológico.",
-            "Agregar una segunda tarea de iteración donde el modelo refine el párrafo narrativo según feedback, construyendo un workflow de dos pasos."
-          ],
-          "alchemist_signals": [
-            "El uso de reencuadre ('no logos, sino conexión con estilo de vida') muestra que el estudiante entiende cómo orientar el modelo hacia outputs de alto valor estratégico en negociaciones comerciales."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 3,
-              "justification": "El prompt tiene Rol (Senior Strategic Planner de OCESA), Tarea (definir 3 razones psicológicas), un Enfoque diferenciador y Formato de salida (párrafo narrativo). Los elementos están presentes pero comprimidos; el Contexto podría ser más rico y las instrucciones más granulares."
-            },
-            "Aplicación a Caso Real": {
-              "score": 3,
-              "justification": "Menciona Corona Capital y la industria automotriz, que son actores reales del ecosistema OCESA. El enfoque en psicología del consumidor y 'conectar con estilo de vida' en lugar de 'logos' refleja conocimiento real del mundo de patrocinios. Los placeholders indican adaptabilidad para múltiples festivales."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 3,
-              "justification": "La instrucción de reencuadre ('No hables de logos, habla de conectar con el estilo de vida') es una decisión de diseño consciente que dirige al modelo hacia un output diferenciado y de mayor valor comercial. Muestra comprensión de que el framing importa para el resultado."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "108863553751009295415",
-      "name": "Fernando Dominguez",
-      "is_named": true,
-      "avg_score": 3.0,
-      "sprints_count": 1,
-      "total_sprints_with_work": 1,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        3.0
-      ],
-      "levels": [
-        "Competente"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 3.0,
-          "level": "Competente",
-          "strengths": [
-            "El workflow de 4 pasos (Analizar, Conectar, Humanizar, Proyectar) es una cadena de razonamiento bien diseñada que guía al modelo a través de un proceso de análisis progresivo.",
-            "La restricción de identificar a Fernando como líder y el tono 'que empodere, no que juzgue' muestra personalización del output al contexto organizacional específico del estudiante."
-          ],
-          "recommendations": [
-            "Separar más claramente el CONTEXT (situación) del GOAL (objetivo) para que el modelo diferencie qué información es input y qué es el resultado esperado.",
-            "Agregar el formato de la 'Tabla de Hitos' con columnas de ejemplo para que el output sea consistente entre usos mensuales del prompt."
-          ],
-          "alchemist_signals": [
-            "El paso de 'Humanizar' (traducir logros numéricos en impacto para la comunidad) es una instrucción sofisticada que demuestra que el estudiante entiende el poder de la narrativa en reportes estratégicos, más allá de solo los datos."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 3,
-              "justification": "Usa headers # ROLE, # CONTEXT, # GOAL con claridad y el workflow está numerado con pasos accionables. El formato de salida especifica 4 secciones nombradas. Sin embargo, la Tarea y el Objetivo están fusionados sin distinguirse completamente, y las restricciones están algo dispersas."
-            },
-            "Aplicación a Caso Real": {
-              "score": 3,
-              "justification": "El prompt aborda la generación de informes mensuales integrados de Pauta, Alianzas y RRSS, que es un entregable real de un área de marketing. La mención de 'Fernando como líder de estrategia' y el 'Enfoque Filantrópico' sugieren personalización a un cliente o contexto organizacional específico."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 3,
-              "justification": "El workflow de 4 pasos (Analizar → Conectar → Humanizar → Proyectar) muestra pensamiento de diseño de proceso. La restricción de tratar datos faltantes con 'nota constructiva' demuestra conciencia de que el modelo puede alucinar al no tener datos. Es sólido pero sin el nivel de sofisticación técnica de los prompts Destacado."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "117171587541111185611",
-      "name": "Fernanda Ximena Gomez Gomez",
-      "is_named": true,
-      "avg_score": 3.0,
-      "sprints_count": 1,
-      "total_sprints_with_work": 1,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        3.0
-      ],
-      "levels": [
-        "Competente"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 3.0,
-          "level": "Competente",
-          "strengths": [
-            "El prompt funciona como una herramienta de negociación: genera ammunition analítica para cuestionar propuestas de proveedores, lo cual tiene valor comercial directo en el trabajo.",
-            "La tabla comparativa con 4 columnas es un formato de output elegante y ejecutable que puede usarse directamente en reuniones de auditoría."
-          ],
-          "recommendations": [
-            "Añadir Contexto con el tipo de servicios específicos que se auditarán (producción de eventos, servicios de marketing, tecnología) para que el modelo calibre los benchmarks de mercado correctamente.",
-            "Considerar agregar una sección de 'Alternativas Recomendadas' como quinta columna en la tabla para que el output no solo critique sino que proponga soluciones."
-          ],
-          "alchemist_signals": [
-            "El concepto del 'Filtro de Justicia' como nombre del prompt muestra que el estudiante está construyendo un arsenal de herramientas con nombres y funciones claras, lo cual es pensamiento de diseño de sistemas de IA."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 3,
-              "justification": "El prompt tiene Rol (Auditor de Proyectos Senior), Tarea (comparar propuesta vs benchmarks, identificar 3 costos inflados) y Formato de salida (tabla comparativa de 4 columnas). Falta un Contexto más desarrollado sobre la industria o el tipo de propuestas que maneja, y el prompt es relativamente corto."
-            },
-            "Aplicación a Caso Real": {
-              "score": 3,
-              "justification": "El prompt resuelve un problema real de auditoría de propuestas de agencias, que es un desafío frecuente en OCESA al contratar servicios. Los 15 años de experiencia del Rol y la detección de 'servicios ambiguos' sugieren un uso frecuente y profesional, aunque sin datos específicos de OCESA."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 3,
-              "justification": "La especificación de '3 puntos de costos inflados' como output delimitado es una decisión de diseño consciente que evita outputs excesivos o vagos. El formato tabla con columnas específicas (Concepto, Costo Propuesto, Costo Estimado, Observación) demuestra comprensión de cómo estructurar outputs útiles."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "113067069449122491348",
-      "name": "Javier Magallanes Galan",
-      "is_named": true,
-      "avg_score": 2.8,
-      "sprints_count": 3,
-      "total_sprints_with_work": 3,
-      "alchemist_class": "⚗️ Alquimista en Formación",
-      "progression": 1.3,
-      "scores": [
-        1.7,
-        3.7,
-        3.0
-      ],
-      "levels": [
-        "En Desarrollo",
-        "Destacado",
-        "Competente"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 1.7,
-          "level": "En Desarrollo",
-          "strengths": [
-            "El prompt tiene claridad en el objetivo deseado (página visual con etapas diferenciadas por color).",
-            "Hay al menos un criterio de formato implícito (limpia y profesional para presentación a cliente)."
-          ],
-          "recommendations": [
-            "Incorporar explícitamente las secciones Rol, Contexto, Tarea y Formato para estructurar el prompt según lo aprendido en el sprint.",
-            "Añadir detalles de su contexto real de trabajo: empresa, industria, herramienta destino (PPT, web, Canva) y público específico."
-          ],
-          "alchemist_signals": [
-            "Vacío detectado: el estudiante tiene claridad en lo que quiere lograr pero aún no ha incorporado los frameworks del sprint; con estructura adecuada, este prompt tiene potencial real."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 2,
-              "justification": "El prompt es muy breve y carece de las secciones explícitas de Rol, Contexto, Tarea y Formato definidas en el sprint. Solo expresa una tarea de forma directa con algo de contexto implícito sobre presentación a cliente."
-            },
-            "Aplicación a Caso Real": {
-              "score": 2,
-              "justification": "Si bien menciona una presentación a cliente y un funnel de marketing, el prompt es genérico y no refleja ningún contexto específico de su trabajo real en OCESA ni de su industria particular."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 1,
-              "justification": "No hay evidencia de comprensión de cómo funciona el modelo, ni iteración, ni decisiones de diseño conscientes. El prompt es conversacional y directo, sin estructura de ingeniería."
-            }
-          }
-        },
-        "sprint_2": {
-          "score": 3.7,
-          "level": "Destacado",
-          "strengths": [
-            "Creó un System Prompt de auditor técnico con métricas propias de calidad ('Densidad de Lógica') y un protocolo de dos niveles de solución.",
-            "La restricción de citación de fuentes técnicas de autoridad es una medida Anti-Slop avanzada que demuestra comprensión profunda del tema."
-          ],
-          "recommendations": [
-            "Documentar el proceso de iteración: qué versión del prompt produjo outputs genéricos y qué cambio específico eliminó el slop.",
-            "Incluir ejemplos concretos (few-shot) de código con 'alta' y 'baja' densidad de lógica para calibrar mejor al auditor."
-          ],
-          "alchemist_signals": [
-            "Señal de Alquimista Destacado: este estudiante está creando herramientas de control de calidad de IA para su propio flujo de trabajo técnico, lo cual es un nivel de meta-uso excepcional."
-          ],
-          "criteria": {
-            "Dominio de Técnicas Avanzadas": {
-              "score": 4,
-              "justification": "El estudiante aplica correctamente el Framework ARV (Ask, Refine, Verify) integrado en el System Prompt, y construye un protocolo de auditoría con criterios de detección, triangulación de soluciones y restricción de citación de fuentes técnicas. El dominio es genuino y sofisticado."
-            },
-            "Control de Calidad (Anti-Slop)": {
-              "score": 4,
-              "justification": "El prompt introduce el concepto de 'Densidad de Lógica' como métrica explícita, diferencia entre Quick-fix y Architectural solution, y obliga a citar fuentes de autoridad (Martin Fowler, Gergely Orosz). El Anti-Slop está operacionalizado como criterio del sistema, no solo mencionado."
-            },
-            "Iteración y Refinamiento": {
-              "score": 3,
-              "justification": "Aunque el prompt final es de alta calidad, el estudiante no documenta explícitamente el proceso de iteración ni comparte versiones previas o lo que cambió. La evidencia de refinamiento es implícita en la sofisticación del resultado."
-            }
-          }
-        },
-        "sprint_3": {
-          "score": 3.0,
-          "level": "Competente",
-          "strengths": [
-            "Incluye link funcional al GPT, lo que demuestra que el sistema fue efectivamente implementado y no solo descrito.",
-            "La coherencia entre sus entregas de sprint 2 y sprint 3 muestra un hilo conductor de desarrollo de producto real."
-          ],
-          "recommendations": [
-            "Explorar cómo el sistema puede escalar más allá de revisión individual para cubrir PRs en equipo o pipelines de CI/CD.",
-            "Añadir casos de ejemplo concretos en el System Prompt (few-shot de código con alta vs baja densidad lógica) para mejorar la calibración del auditor."
-          ],
-          "alchemist_signals": [
-            "Señal positiva: este estudiante está construyendo un ecosistema coherente de herramientas, no solo ejercicios aislados; eso es pensamiento de producto."
-          ],
-          "criteria": {
-            "Arquitectura del Sistema": {
-              "score": 3,
-              "justification": "El GPT tiene roles definidos (Supervisor con Framework ARV), criterios claros (Quick Fix vs Architectural Solution) y un flujo lógico de auditoría. Aunque es una extensión directa del prompt del sprint anterior, la arquitectura del sistema está bien articulada."
-            },
-            "Relevancia del Problema": {
-              "score": 3,
-              "justification": "El problema de detectar AI-generated technical debt es genuinamente relevante en su trabajo con proyectos de software y LLMs. Requiere un sistema persistente, no solo un prompt aislado."
-            },
-            "Justificación Técnica": {
-              "score": 3,
-              "justification": "Justifica correctamente por qué el sistema es superior: criterios consistentes de revisión, detección sistemática y dos niveles de solución. La justificación es sólida aunque no particularmente creativa."
-            },
-            "Calidad de la Evidencia": {
-              "score": 3,
-              "justification": "Incluye un link a ChatGPT Share, lo que constituye evidencia verificable del GPT construido. El link funcional eleva la calidad de la evidencia sobre los demás estudiantes sin link."
-            }
-          }
-        }
-      }
-    },
-    {
       "id": "104211778387333554478",
       "name": "Lilia Selene Herrera Soto",
       "is_named": true,
@@ -3350,166 +2758,6 @@ const DASHBOARD_DATA = {
             "Iteración y Refinamiento": {
               "score": 2,
               "justification": "El prompt está bien construido pero el estudiante no documenta el proceso de iteración ni muestra versiones anteriores. La evidencia de refinamiento es implícita en la calidad del resultado."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "112880746027068223653",
-      "name": "Miranda Ramirez Camacho",
-      "is_named": true,
-      "avg_score": 2.7,
-      "sprints_count": 1,
-      "total_sprints_with_work": 1,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0,
-      "scores": [
-        2.7
-      ],
-      "levels": [
-        "Competente"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 2.7,
-          "level": "Competente",
-          "strengths": [
-            "El contexto del target ('instagrammable pero con profundidad narrativa', 'diferenciación por exclusividad y misterio') es una descripción psicográfica sofisticada que guía al modelo hacia comunicación de alto valor.",
-            "Mencionar el nombre real del proyecto ('Lexus') y la ciudad (CDMX) ancla el prompt en una realidad operativa concreta."
-          ],
-          "recommendations": [
-            "Eliminar la instrucción de 'buscar casos de éxito en la web' y reemplazarla por descripción del estilo de comunicación deseado o ejemplos de referencia concretos proporcionados en el prompt.",
-            "Agregar Formato de salida explícito especificando el canal (ads vs. mailing), la extensión esperada de cada ángulo y el tono para cada uno."
-          ],
-          "alchemist_signals": [
-            "El estudiante ya diseña prompts orientados a lanzamientos reales con segmentación psicográfica. Cuando incorpore comprensión de la memoria paramétrica del modelo, sus prompts darán el salto a nivel Destacado."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 3,
-              "justification": "El prompt tiene Rol (Senior Growth Strategist), Contexto con datos del target (profesionales 25-35, mercado saturado, diferenciación por exclusividad y misterio) y Tarea (secuencia de 3 ángulos de comunicación). Falta un Formato de salida explícito, y la instrucción de 'puedes basarte en históricos de casos de éxito de la web' añade ambigüedad innecesaria."
-            },
-            "Aplicación a Caso Real": {
-              "score": 3,
-              "justification": "El prompt aborda el lanzamiento de 'Lexus', una experiencia de teatro inmersivo real en CDMX, con un desafío concreto (agotar preventa). El segmento de público está bien definido y el problema de diferenciación en mercado saturado es auténtico. Es aplicación real aunque podría tener más datos operativos."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 2,
-              "justification": "La instrucción de 'no sentirse como venta forzada' muestra conciencia del tono, pero la petición de 'basarse en casos de éxito de la web' revela que el estudiante no comprende aún que el modelo trabaja con memoria paramétrica, no busca en internet en tiempo real. Esto reduce el puntaje de comprensión del modelo."
-            }
-          }
-        }
-      }
-    },
-    {
-      "id": "116079253329523330287",
-      "name": "Carlos Contreras",
-      "is_named": true,
-      "avg_score": 2.43,
-      "sprints_count": 3,
-      "total_sprints_with_work": 4,
-      "alchemist_class": "🧪 Aprendiz Activo",
-      "progression": 0.7,
-      "scores": [
-        2.3,
-        2.0,
-        3.0
-      ],
-      "levels": [
-        "En Desarrollo",
-        "En Desarrollo",
-        "Competente"
-      ],
-      "sprints": {
-        "sprint_1": {
-          "score": 2.3,
-          "level": "En Desarrollo",
-          "strengths": [
-            "El caso de uso es genuinamente de su trabajo: conocimiento específico de producción BTL (descarga, pesajes, Photo Opp) demuestra que no copió un ejemplo genérico.",
-            "La estructura de prioridades numeradas guía al modelo de forma efectiva para un cronograma operativo."
-          ],
-          "recommendations": [
-            "Agregar contexto operativo: número de personas en equipo, tipo de activación/evento, restricciones de espacio. El modelo genera mejores cronogramas con más contexto.",
-            "Definir mejor el formato de salida: ¿cuántas columnas en la tabla? ¿Qué significa 'Estado Crítico' exactamente? Un ejemplo o descripción más específica mejora la consistencia del output."
-          ],
-          "alchemist_signals": [
-            "El conocimiento operativo de producción BTL es una fortaleza real; el siguiente paso es aprender a codificar ese conocimiento en un prompt con la profundidad que merece."
-          ],
-          "criteria": {
-            "Estructura del Prompt": {
-              "score": 2,
-              "justification": "El prompt tiene rol (Director de Producción BTL) y tarea (cronograma), pero le falta contexto operativo y el formato es básico (solo menciona 'tabla'). La estructura es funcional pero no optimizada."
-            },
-            "Aplicación a Caso Real": {
-              "score": 3,
-              "justification": "El caso es completamente real y específico: montaje BTL con tiempos reales, prioridades operativas de producción (descarga, estructura, eléctricos, acabados), y objetivo concreto (entrega al 100% a las 14:00). Hay conocimiento genuino de la industria."
-            },
-            "Pensamiento de Ingeniero": {
-              "score": 2,
-              "justification": "El prompt es directo y funcional pero no muestra evidencia de diseño consciente o iteración. Es un prompt de primera versión bien orientado al problema, pero sin mecanismos de control ni consideración de casos borde."
-            }
-          }
-        },
-        "sprint_2": {
-          "score": 2.0,
-          "level": "En Desarrollo",
-          "strengths": [
-            "El ejemplo before/after es ilustrativo: demuestra cómo dar más contexto al modelo (urgencia de entrega, restricción de salir del inmueble) transforma radicalmente el output.",
-            "El caso es completamente real (My Chemical Romance, HSBC, catering), lo que demuestra que aplica la IA a situaciones concretas de su trabajo."
-          ],
-          "recommendations": [
-            "Practicar nombrar las técnicas que está usando intuitivamente: lo que hizo (agregar contexto de urgencia) tiene nombre técnico en el programa. Vincular la práctica con el marco teórico.",
-            "Explorar una técnica formal del sprint con este mismo caso: por ejemplo, aplicar CoT para que el modelo piense primero en el tono apropiado antes de redactar el correo."
-          ],
-          "alchemist_signals": [
-            "La comprensión intuitiva de que más contexto = mejor output es un buen punto de partida; el siguiente paso es formalizar esa intuición en técnicas replicables."
-          ],
-          "criteria": {
-            "Dominio de Técnicas Avanzadas": {
-              "score": 2,
-              "justification": "La respuesta muestra comprensión intuitiva de mejorar un prompt con más contexto, pero no nombra ni aplica formalmente ninguna técnica del sprint (CoT, Few-Shot, Step-Back, ARV, Anti-Slop). El refinamiento es contextual, no técnico."
-            },
-            "Control de Calidad (Anti-Slop)": {
-              "score": 2,
-              "justification": "El correo final es más profesional que el original, pero la mejora viene de agregar contexto operativo, no de aplicar criterios explícitos de calidad Anti-Slop. No hay evidencia de auditoría de densidad informativa."
-            },
-            "Iteración y Refinamiento": {
-              "score": 2,
-              "justification": "Muestra claramente el antes y después (texto informal → correo profesional con coordinación de catering) y la acción de refinamiento (agregar contexto de urgencia). Es una iteración real aunque no use terminología técnica del sprint."
-            }
-          }
-        },
-        "sprint_3": {
-          "score": 3.0,
-          "level": "Competente",
-          "strengths": [
-            "El System Prompt de la activación contiene conocimiento técnico real de producción de eventos (Truss de 12\"/20\", copete perimetral, 100 pax/hora) que va más allá de lo genérico.",
-            "La reflexión de que el sistema ayuda a 'encontrar puntos no considerados' refleja uso real y valor concreto en su práctica profesional."
-          ],
-          "recommendations": [
-            "Explicar la arquitectura completa: ¿hay un supervisor que valida la activación antes de presentarla al cliente? ¿Cómo fluye la información entre etapas?",
-            "Desarrollar la justificación técnica: el sistema tiene memoria de los requerimientos de producción de OCESA (capacidades del Foro Sol, restricciones del venue) que un prompt aislado perdería entre conversaciones."
-          ],
-          "alchemist_signals": [
-            "El nivel de detalle técnico en el System Prompt (especificaciones de Truss, flujo de pax) demuestra que está codificando conocimiento experto de producción en el sistema."
-          ],
-          "criteria": {
-            "Arquitectura del Sistema": {
-              "score": 3,
-              "justification": "El sistema mostrado tiene estructura de producción real con pasos técnicos específicos (CoT de viabilidad de flujo, requerimientos de estructura Truss, secciones de diseño), aunque la presentación muestra solo la parte del prompt sin describir la arquitectura del sistema completo."
-            },
-            "Relevancia del Problema": {
-              "score": 4,
-              "justification": "El problema (diseñar activaciones para marcas en festivales) es central a su trabajo, y el ejemplo de HSBC en festivales de música es un caso real específico. La utilidad del sistema para encontrar puntos no considerados es genuinamente valiosa."
-            },
-            "Justificación Técnica": {
-              "score": 2,
-              "justification": "La justificación de por qué es mejor que un prompt aislado ('mejoró el orden y me hizo ver partes en las que el ser más específico ayuda') es básica y descriptiva. No articula la ventaja arquitectónica del sistema."
-            },
-            "Calidad de la Evidencia": {
-              "score": 3,
-              "justification": "Comparte el System Prompt completo de la activación (con pasos CoT, requerimientos técnicos de Truss, capas de diseño), lo que evidencia implementación real con detalle técnico de producción."
             }
           }
         }
@@ -3826,6 +3074,758 @@ const DASHBOARD_DATA = {
             "Iteración y Refinamiento": {
               "score": 1,
               "justification": "No hay evidencia de iteración, proceso de refinamiento ni comparación de versiones. El esquema presentado parece un plan de prompt, no el resultado de un proceso de refinamiento."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "106910608619500189439",
+      "name": "Paulina Rodriguez",
+      "is_named": true,
+      "avg_score": 4.0,
+      "sprints_count": 1,
+      "total_sprints_with_work": 2,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        4.0
+      ],
+      "levels": [
+        "Destacado"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "Integra datos cuantitativos reales de OCESA (600 eventos, umbrales de venta del 30% y 40%) que hacen el prompt altamente ejecutable en un entorno profesional real.",
+            "El pensamiento de edge cases (múltiples preventas el mismo día para un usuario) demuestra dominio de la ingeniería de prompts: anticipa escenarios complejos y pide al modelo que los resuelva de forma lógica."
+          ],
+          "recommendations": [
+            "Considerar añadir un paso de validación donde el modelo confirme su comprensión del esquema antes de generar el output, para prompts tan complejos.",
+            "Explorar la adición de ejemplos concretos (few-shot) de una campaña exitosa para anclar mejor el output del modelo hacia el estilo deseado."
+          ],
+          "alchemist_signals": [
+            "Este prompt es de nivel profesional senior: diseña un sistema completo de automatización de marketing con lógica de negocio real, no solo un ejercicio académico. El estudiante ya piensa en pipelines de IA, no en prompts aislados."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "Estructura ejemplar con Rol muy específico (Arquitecto de Soluciones CRM Senior en SFMC), Contexto con datos cuantitativos reales (600 eventos/año, proceso manual), Tarea desglosada en 3 objetivos numerados y Formato de salida explícito (tabla de flujo lógico + recomendaciones). Va más allá al añadir una sección de 'Prioridad de Negocio' que muestra diseño iterativo."
+            },
+            "Aplicación a Caso Real": {
+              "score": 4,
+              "justification": "El prompt está completamente enraizado en la realidad operativa de OCESA: 600 eventos anuales, Salesforce Marketing Cloud, reglas de negocio reales (Sold Out = cero campañas), triggers de crisis con porcentajes concretos y la Regla de Patrocinio Bancaria como disparador #1. Es altamente específico y operacionalizable."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "Demuestra pensamiento sistémico avanzado: diseña lógica de priorización para evitar saturación de usuarios, propone 'Hierarchy of Send', anticipa edge cases (fan de 3 géneros recibiendo 3 mails el mismo día) y plantea consolidación de campañas. La 'Regla de Coexistencia' añadida evidencia iteración consciente y refinamiento del prompt."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "100303443825812603046",
+      "name": "Yesenia Martinez Cruz",
+      "is_named": true,
+      "avg_score": 4.0,
+      "sprints_count": 1,
+      "total_sprints_with_work": 1,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        4.0
+      ],
+      "levels": [
+        "Destacado"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "La inclusión de nombres reales, fechas concretas y estimaciones de horas convierte este prompt en un instrumento de trabajo real, no en un ejercicio teórico.",
+            "El criterio de priorización por 'entregas que bloquean a otros departamentos' muestra sofisticación gerencial traducida directamente al diseño del prompt."
+          ],
+          "recommendations": [
+            "Añadir una restricción explícita sobre qué hacer si la carga total supera la capacidad del equipo (ej. ¿qué tareas eliminar o renegociar con el cliente?).",
+            "Incluir el formato de la tabla de cronograma esperada con columnas ejemplo para que el output sea más consistente entre usos."
+          ],
+          "alchemist_signals": [
+            "El estudiante usa la IA como un verdadero copiloto de gestión de proyectos: alimenta el modelo con los datos operativos reales de su equipo y le pide un output ejecutable. Es exactamente el uso de IA que transforma la productividad profesional."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "Usa etiquetado explícito [ROL], [CONTEXTO], [TAREAS], [FORMATO DE SALIDA] e [INPUTS ACTUALES] con gran claridad. Las tareas están numeradas con verbos de acción, los insumos están clasificados por prioridad, y el formato de salida especifica tanto el entregable como el destinatario (Yess), lo cual es sofisticado."
+            },
+            "Aplicación a Caso Real": {
+              "score": 4,
+              "justification": "Menciona nombres reales de colaboradores (Mauricio, Luis, Andrés), capacidades específicas (8 horas cada uno), fechas concretas de entrega (24 feb, 12 marzo), y entregables reales de OCESA (Guiones Alta Producción, Vive Latino). El nivel de especificidad es excepcional y demuestra aplicación directa al trabajo diario."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "Estima tiempos por tipo de entregable (Guiones: 4-6h, Conceptos: 3-4h, Copies: 1-2h) como inputs explícitos para que el modelo razone con datos reales. Solicita análisis de riesgos y tiene lógica de priorización por bloqueo de dependencias, lo que demuestra comprensión de cómo guiar al modelo hacia razonamiento estructurado."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "105654336832879521757",
+      "name": "Heidy Paola Fuentes Torres",
+      "is_named": true,
+      "avg_score": 4.0,
+      "sprints_count": 1,
+      "total_sprints_with_work": 1,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        4.0
+      ],
+      "levels": [
+        "Destacado"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "La identificación de KPIs específicos de la industria FMCG (penetración, trial, frecuencia de compra) como parámetros de evaluación demuestra dominio del contexto de negocio y diseño de prompts de alta precisión.",
+            "El dual output (guía de workshop + talking points) convierte un prompt en una herramienta de trabajo completa, demostrando visión de producto en la ingeniería de prompts."
+          ],
+          "recommendations": [
+            "Agregar ejemplos de los beneficios actuales de la sábana de OCESA como pocos ejemplos de referencia para que el modelo calibre el nivel de detalle esperado.",
+            "Incluir una restricción sobre la longitud del output para asegurar que sea accionable en una sesión de trabajo real."
+          ],
+          "alchemist_signals": [
+            "El estudiante diseña herramientas de trabajo, no consultas aisladas. El prompt está pensado para reproducirse en múltiples sesiones estratégicas con diferentes marcas FMCG, lo cual es pensar en IA como infraestructura profesional."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "Rol muy específico (Senior Manager de Patrocinios en OCESA con 15 años y expertise en FMCG), Contexto con problema de negocio claro (priorizar sábana de beneficios), Tarea con doble objetivo (workshop + talking points), y restricciones de tono y lenguaje explícitas. La estructura está completamente desarrollada."
+            },
+            "Aplicación a Caso Real": {
+              "score": 4,
+              "justification": "Menciona la 'sábana de beneficios' de OCESA como artefacto real, los KPIs específicos de FMCG (awareness, penetración, trial, frecuencia de compra, distribución) y la distinción entre beneficios de 'venta vs. brand awareness' y 'aspiracionales vs. transaccionales'. Es un prompt completamente operativo para el trabajo real."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "Solicita dos formatos de output simultáneos (guía de workshop + talking points para presentación), establece un tono consultivo y analítico específico, y el prompt está diseñado para ser reutilizado en diferentes sesiones estratégicas. Demuestra pensamiento sistémico sobre cómo el output se integrará en flujos de trabajo reales."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "108527896667514209095",
+      "name": "Jose Valdez",
+      "is_named": true,
+      "avg_score": 4.0,
+      "sprints_count": 1,
+      "total_sprints_with_work": 1,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        4.0
+      ],
+      "levels": [
+        "Destacado"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "La 'Matriz de Barreras' como herramienta de discriminación entre ruido de redes sociales y problemas reales de conversión es una innovación estratégica dentro del diseño del prompt que agrega valor analítico real.",
+            "El destinatario específico del output (Subdirección de Marketing) y el formato ejecutivo (Quick Wins) convierten el prompt en una herramienta lista para usar en reuniones reales de estrategia."
+          ],
+          "recommendations": [
+            "Agregar un ejemplo de dato de entrada (una crítica de red social y un resultado de encuesta) para que el modelo calibre el nivel de análisis esperado.",
+            "Considerar añadir una cuarta sección al formato de salida: 'Métricas de Seguimiento' para cada Quick Win, completando el ciclo de acción-medición."
+          ],
+          "alchemist_signals": [
+            "Este prompt está diseñado para ser usado en ciclos de mejora continua de ventas en OCESA. La estructura es reproducible para cada show, lo que convierte a la IA en un analista permanente del equipo, no en un asistente de uso puntual."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "Estructura impecable con headers # ROL, # CONTEXTO, # TAREA, # DATOS y # FORMATO DE SALIDA bien diferenciados. El formato de salida detalla tres secciones específicas (Síntesis, Matriz de Barreras, Roadmap) con definiciones de lo que contiene cada una. La claridad estructural es ejemplar."
+            },
+            "Aplicación a Caso Real": {
+              "score": 4,
+              "justification": "El prompt está construido para un problema real y recurrente en OCESA: analizar datos mixtos post-show (redes + encuestas) para mejorar la venta del siguiente evento. La distinción 'Ruido de redes vs. Problemas reales de conversión' y el destinatario específico (Subdirección de Marketing) lo anclan completamente en el entorno profesional."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "Solicita un 'Quick Wins Roadmap' para el equipo de pauta y operaciones, demostrando que diseñó el output para ser accionable, no solo informativo. La distinción entre barreras de compra reales vs. ruido en redes muestra comprensión del problema de signal vs. noise en análisis de datos, una decisión de diseño muy madura."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "114103931418907515524",
+      "name": "Pamela Morales",
+      "is_named": true,
+      "avg_score": 4.0,
+      "sprints_count": 1,
+      "total_sprints_with_work": 1,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        4.0
+      ],
+      "levels": [
+        "Destacado"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "El mecanismo de validación ('Información no disponible en manuales oficiales. Consultar con Pame') es una solución elegante al problema de alucinaciones: el modelo admite sus límites en lugar de inventar.",
+            "El diseño de un 'Next Step inmediato' como cierre obligatorio convierte cada respuesta del modelo en una instrucción accionable para el equipo operativo, maximizando el valor práctico."
+          ],
+          "recommendations": [
+            "Agregar instrucciones sobre cómo proporcionar la documentación al modelo (formato, estructura del input) para completar el workflow de uso.",
+            "Considerar una variante del prompt para el modo 'onboarding de nuevos colaboradores' que adapte el nivel de detalle de las respuestas según la experiencia del usuario."
+          ],
+          "alchemist_signals": [
+            "Este prompt es un sistema de soporte técnico construido sobre IA: está diseñado para ser escalable, consistente y seguro (sin alucinaciones). El estudiante piensa en prompts como infraestructura operativa, no como consultas individuales."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "El prompt tiene un Rol ultra-específico ('Asistente Técnico de Operaciones de Pame'), un Protocolo de Respuesta estructurado con 4 pasos nombrados (Contexto, Instrucción Directa, Validación, Cierre) y una Restricción explícita. El diseño de un protocolo de respuesta dentro del prompt es una técnica avanzada."
+            },
+            "Aplicación a Caso Real": {
+              "score": 4,
+              "justification": "El prompt está diseñado para resolver el problema real de un equipo que necesita respuestas rápidas y consistentes basadas en documentación oficial. Los tres contextos operativos (Venta, Auditoría, Evento) y la referencia a 'Pame' como persona real muestran una aplicación completamente personalizada al entorno laboral."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "La restricción de 'usar exclusivamente la documentación proporcionada' y el mecanismo de 'Información no disponible en manuales oficiales. Consultar con Pame' son guardas explícitas contra alucinaciones, demostrando comprensión sofisticada de las limitaciones del modelo. El diseño de pasos numerados ($1, 2, 3$) muestra control del formato de output."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "116333425705445925015",
+      "name": "Axel Arredondo",
+      "is_named": true,
+      "avg_score": 4.0,
+      "sprints_count": 1,
+      "total_sprints_with_work": 1,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        4.0
+      ],
+      "levels": [
+        "Destacado"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "El chain-of-thought implícito (Para Qué → Hallazgo → Visualización → Storytelling) guía al modelo a través de un proceso de análisis de datos completo y reproducible, demostrando dominio avanzado de la técnica.",
+            "La restricción de lenguaje específica ('Prohibido usar el desempeño fue positivo') muestra que el estudiante ya diseña prompts para combatir el lenguaje genérico del modelo, buscando outputs de alta precisión."
+          ],
+          "recommendations": [
+            "Agregar un ejemplo de dato de entrada (una métrica de social media) y su interpretación esperada para calibrar al modelo con few-shot prompting.",
+            "Especificar el cliente de referencia en el Formato (¿qué tipo de marca o industria es 'Modelo'?) para obtener recomendaciones más específicas en cada uso."
+          ],
+          "alchemist_signals": [
+            "Este prompt convierte a la IA en un mentor de equipo: está diseñado no solo para generar contenido, sino para desarrollar las capacidades analíticas del equipo de Social Media. Es una aplicación transformacional de la ingeniería de prompts."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "Estructura completamente desarrollada con Rol (Chief Data Officer + Storytelling), Contexto (equipo de Social Media que pasa de ejecutivo a consultor), Tarea (guía de interpretación de datos), sección de Razonamiento con 4 pasos numerados, Restricciones explícitas y Formato de salida con 5 diapositivas definidas. Es uno de los prompts más completos del grupo."
+            },
+            "Aplicación a Caso Real": {
+              "score": 4,
+              "justification": "El prompt está diseñado para transformar un equipo real de Social Media de 'tomadores de pedidos' a 'consultores estratégicos'. La referencia a 'reporte mensual de Modelo' y las instrucciones anti-frases vacías ('Prohibido: el desempeño fue positivo') muestran aplicación a un entregable real y recurrente del trabajo."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "La sección de 'Instrucciones de Razonamiento' (con el símbolo ()) que guía al modelo paso a paso (Para Qué → Hallazgo → Visualización → Storytelling) es técnica de chain-of-thought aplicada de forma consciente. La restricción de 'Recomendación Accionable al final de cada interpretación' es una decisión de diseño que maximiza el valor del output."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "116428279246995737033",
+      "name": "Paulina Teja",
+      "is_named": true,
+      "avg_score": 4.0,
+      "sprints_count": 1,
+      "total_sprints_with_work": 1,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        4.0
+      ],
+      "levels": [
+        "Destacado"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "Los Lineamientos de Innovación con ejemplos concretos (ej. LED para momentos de antojo) funcionan como few-shot prompting implícito: le muestran al modelo el tipo de creatividad esperada sin decírselo explícitamente.",
+            "El concepto de paquetes de 'Costo Cero con utilidad superior al 90%' es un constraint de negocio sofisticado que hace el output directamente presentable a un cliente real."
+          ],
+          "recommendations": [
+            "Añadir una restricción sobre el presupuesto máximo de implementación para la marca patrocinadora, completando el modelo de negocio.",
+            "Considerar una versión del prompt parametrizable por tipo de marca (botanas, bebidas, tecnología) para reutilizarlo con diferentes clientes."
+          ],
+          "alchemist_signals": [
+            "El estudiante construyó una herramienta de ventas real con este prompt: los outputs son directamente presentables como propuesta comercial a marcas. Esto es prompting como generador de valor de negocio, no como experimento académico."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "Estructura completa con Rol ultra-específico (Estratega Senior de Patrocinios en Inmuebles Deportivos), Tarea concreta (10 beneficios innovadores para Marca de Botanas), Contexto detallado con activos disponibles numerados, Lineamientos de Innovación y Formato de salida con tabla de 5 columnas con nombres exactos. La precisión es ejemplar."
+            },
+            "Aplicación a Caso Real": {
+              "score": 4,
+              "justification": "El prompt está construido sobre activos reales de un estadio (LED Ribbon 360°, Barras de Alimentos, pantallas gigantes) y resuelve un problema comercial real: diseñar paquetes de patrocinio de costo cero para el estadio. La especificidad del cliente (Marca de Botanas) y la restricción de 'costo CERO para el estadio' refleja lógica de negocio real."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "Los 'Lineamientos de Innovación' con casos de uso específicos (LED Ribbon para 'Momentos de Antojo' tras un gol) son ejemplos few-shot integrados en el prompt que anclan el modelo hacia el tipo de creatividad esperada. El Precio Sugerido en USD como columna del output demuestra pensamiento de producto aplicado al output."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "117460584845700163992",
+      "name": "Daniela Ibarra",
+      "is_named": true,
+      "avg_score": 4.0,
+      "sprints_count": 1,
+      "total_sprints_with_work": 1,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        4.0
+      ],
+      "levels": [
+        "Destacado"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 4.0,
+          "level": "Destacado",
+          "strengths": [
+            "Los datos cuantitativos del Contexto (60% de venta, estadio de 20k, 3 semanas, presupuesto bajo) crean un escenario de alta especificidad que obliga al modelo a generar soluciones creativas bajo restricciones reales.",
+            "La distribución de ideas por área (PR, Digital, BTL) es un formato de output inteligente que hace el resultado directamente accionable por diferentes equipos dentro de OCESA."
+          ],
+          "recommendations": [
+            "Agregar datos del headliner (nombre del artista o referencias de estilo) para que el modelo genere ideas de guerrilla marketing más específicas al universo del fan.",
+            "Considerar un paso de iteración donde el modelo evalúe el impacto estimado de cada idea antes de presentarla en la tabla, añadiendo criterio de priorización."
+          ],
+          "alchemist_signals": [
+            "El prompt 'Headliner' está diseñado para situaciones de crisis de ventas reales, un escenario que OCESA enfrenta regularmente. El estudiante ya usa la IA como herramienta de aceleración en momentos de alta presión, que es exactamente el caso de uso de mayor valor."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "Estructura perfectamente etiquetada con (Rol), (Contexto), (Tarea), (Restricciones) y (Formato). Cada sección es densa y específica: el Contexto incluye datos numéricos (estadio 20k personas, 60% de venta, 3 semanas), la Tarea especifica 3 ideas con destinatario por área, y el Formato define tabla con columnas exactas."
+            },
+            "Aplicación a Caso Real": {
+              "score": 4,
+              "justification": "El prompt aborda un escenario real y urgente de ventas de eventos (concierto estancado al 60% a 3 semanas), que es el corazón del negocio de OCESA. Las tres áreas de trabajo (PR, Digital, BTL) y la restricción de no usar descuentos reflejan lógica real de marketing de eventos masivos."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "La restricción explícita de 'No sugieras descuentos directos de precio (2x1)' es una decisión de diseño sofisticada que protege la propuesta de valor del evento. El foco en FOMO y urgencia como palancas psicológicas muestra comprensión de la psicología del consumidor integrada en el diseño del prompt."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "100844961474697007897",
+      "name": "Miguel Gomez",
+      "is_named": true,
+      "avg_score": 3.7,
+      "sprints_count": 1,
+      "total_sprints_with_work": 1,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        3.7
+      ],
+      "levels": [
+        "Destacado"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 3.7,
+          "level": "Destacado",
+          "strengths": [
+            "El principio de 'Validación Crítica' integrado en el prompt (qué preguntas hacerse para cuestionar el output de la IA) es un meta-diseño maduro que pocos estudiantes incorporan.",
+            "La consideración de la brecha generacional como restricción de diseño (lenguaje accesible a todas las edades) muestra aplicación contextual sofisticada al entorno real de OCESA."
+          ],
+          "recommendations": [
+            "Completar los placeholders con al menos un caso concreto (ej. área de Prensa y proceso de redacción de notas) para que el prompt sea ejecutable inmediatamente.",
+            "Añadir ejemplos concretos del tipo de 'Dinámica de 15 minutos' para anclar mejor el formato de salida esperado."
+          ],
+          "alchemist_signals": [
+            "El estudiante está pensando en la IA como un agente de cambio organizacional, no solo como una herramienta. La restricción de que 'la decisión final depende del humano' refleja una postura ética madura sobre la co-inteligencia."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "Estructura clara con Rol (Arquitecto de Innovación), Tarea específica (propuesta de piloto), Contexto rico (brecha generacional, líder de innovación, objetivo de co-inteligencia) y Formato de salida detallado con 4 secciones nombradas. Las 'Restricciones de Co-Inteligencia' como sección separada muestran diseño consciente y avanzado."
+            },
+            "Aplicación a Caso Real": {
+              "score": 3,
+              "justification": "El prompt aborda un problema real de adopción de IA en una organización con brecha generacional (Gen Z a Baby Boomers), que es un desafío genuino en OCESA. Sin embargo, el uso de placeholders como [Insertar Área] y [Describir proceso] indica que está parcialmente construido, sin anclar completamente a un caso específico."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "La inclusión del paso obligatorio de 'Validación Crítica' y las restricciones sobre el rol del humano vs la IA demuestran pensamiento meta-cognitivo sobre el uso responsable del modelo. El nombre 'Motor de Co-Inteligencia' y el flujo 'Proceso Actual vs. Proceso Co-Inteligente' revelan una visión sistémica sofisticada."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "108102483717301766206",
+      "name": "Jose Luis Salazar",
+      "is_named": true,
+      "avg_score": 3.7,
+      "sprints_count": 1,
+      "total_sprints_with_work": 1,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        3.7
+      ],
+      "levels": [
+        "Destacado"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 3.7,
+          "level": "Destacado",
+          "strengths": [
+            "Las restricciones técnicas de consistencia facial demuestran comprensión de las limitaciones de los modelos de generación de imagen, aplicando ingeniería de prompts para mitigar el problema de variación de personaje.",
+            "La especificidad de la vestimenta (color rojo, ribete amarillo, logotipo OXXO bordado en blanco y rojo) es un ejemplo de descripción visual de alta precisión que maximiza la fidelidad del output."
+          ],
+          "recommendations": [
+            "Conectar este caso de uso de generación de imágenes más explícitamente a un flujo de trabajo profesional en OCESA (ej. creación de personajes para campañas o contenido de redes sociales).",
+            "Explorar cómo este prompt podría evolucionar a un workflow multi-paso: generación del personaje → variaciones de expresión → integración en escenas de evento."
+          ],
+          "alchemist_signals": [
+            "El estudiante aplica ingeniería de prompts a generación de imagen con sofisticación técnica real: entiende el problema de consistencia en AI art y diseña restricciones explícitas para resolverlo. Es pensamiento de producto aplicado a prompting visual."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 4,
+              "justification": "Estructura perfectamente etiquetada con [ROL], [TAREA], [CONTEXTO], [RESTRICCIONES] y [FORMATO]. El formato de salida especifica tres planos de imagen (close-up, medium shot, cowboy shot) con escenarios concretos para cada uno. Es uno de los prompts más técnicamente completos del grupo."
+            },
+            "Aplicación a Caso Real": {
+              "score": 3,
+              "justification": "El prompt resuelve un caso real de generación de assets visuales consistentes (character sheet) para un personaje de uso recurrente. La especificidad de rasgos físicos, vestimenta OXXO y restricciones de consistencia refleja necesidades reales de producción de contenido visual, aunque el caso es de uso personal/creativo más que directamente de OCESA."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 4,
+              "justification": "Las restricciones de consistencia del rostro (idéntico en todas las tomas, sin vello facial, iluminación de set) demuestran comprensión del problema de inconsistencia en modelos de imagen generativa. La división en 3 planos en una sola imagen es una decisión de diseño sofisticada para maximizar eficiencia del output."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "103387490168955358425",
+      "name": "Jesus Manuel Romo Ortega",
+      "is_named": true,
+      "avg_score": 3.0,
+      "sprints_count": 1,
+      "total_sprints_with_work": 2,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        3.0
+      ],
+      "levels": [
+        "Competente"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 3.0,
+          "level": "Competente",
+          "strengths": [
+            "La granularidad de los datos solicitados (precio spot, variación diaria y semanal, comparativa XAU/XAG, precios de Libertad en el mercado mexicano) demuestra conocimiento experto del dominio.",
+            "El focus en el mercado mexicano con referencias específicas (Banorte, casas de moneda, premium sobre spot) ancla el prompt en un contexto de uso real y diferenciado."
+          ],
+          "recommendations": [
+            "Agregar una instrucción de verificación de fuentes: que el modelo declare de dónde obtuvo los precios (cotización en tiempo real vs memoria paramétrica) para evitar alucinaciones en datos financieros.",
+            "Incluir un Contexto explícito del uso de esta información (¿decisión de compra?, ¿reporte para cliente?, ¿gestión de portafolio?) para calibrar el nivel de detalle y el formato del output."
+          ],
+          "alchemist_signals": [
+            "Señal de especialización de nicho: el dominio de metales preciosos con enfoque en el mercado mexicano es un caso de uso de IA con valor diferencial alto en asesoría de inversión o trading."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 3,
+              "justification": "El prompt tiene un Rol claro (analista de metales preciosos actualizado al día), una Tarea estructurada en 5 puntos numerados con especificaciones concretas (XAU, XAG, variación diaria/semanal, moneda Libertad, diferencia spot). Es un prompt bien estructurado aunque sin sección de Contexto personal explícita."
+            },
+            "Aplicación a Caso Real": {
+              "score": 3,
+              "justification": "El análisis de metales preciosos con foco en el mercado mexicano (moneda Libertad, Banorte, casas de moneda) es específico de su trabajo o interés real. La granularidad de los datos solicitados (premium sobre spot, precios de compra/venta) indica conocimiento del dominio."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 3,
+              "justification": "La estructura en 5 puntos con especificaciones técnicas precisas (XAU, XAG, premium típico, diferencia entre spot y precio de moneda) demuestra comprensión de que el modelo necesita instrucciones granulares para producir datos específicos del mercado. Hay diseño consciente del output deseado."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "102214830195407912747",
+      "name": "Roberto Saldana",
+      "is_named": true,
+      "avg_score": 3.0,
+      "sprints_count": 1,
+      "total_sprints_with_work": 2,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        3.0
+      ],
+      "levels": [
+        "Competente"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 3.0,
+          "level": "Competente",
+          "strengths": [
+            "Incluye instrucciones explícitas de veracidad que demuestran comprensión de las limitaciones del modelo de lenguaje.",
+            "El formato de salida con estatus semáforo (rojo/amarillo/verde) es una solución práctica y profesional para su contexto laboral."
+          ],
+          "recommendations": [
+            "Definir el Rol de forma explícita al inicio del prompt para maximizar el contexto que el modelo recibe desde el primer token.",
+            "Agregar más detalles específicos de la industria de entretenimiento/producción de OCESA para evitar que el placeholder quede muy genérico y lograr un nivel Destacado."
+          ],
+          "alchemist_signals": [
+            "Las instrucciones de veracidad y solicitud de claridad muestran que el estudiante ya piensa como un ingeniero de prompts: diseña guardas contra las alucinaciones del modelo."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 3,
+              "justification": "El prompt tiene Rol implícito (evaluador de proyectos), Contexto claro (empresa con costos operativos altos), Tarea bien definida (evaluar bajo 4 pilares) y Formato de salida estructurado con esquema de estatus/evaluación/feedback. Falta definir el rol de forma explícita al inicio, pero la estructura general es sólida."
+            },
+            "Aplicación a Caso Real": {
+              "score": 3,
+              "justification": "El prompt aborda un problema real de evaluación de propuestas de diseño y materiales en producción, con criterios específicos como 'Eficiencia en Materiales' y 'Calidad de Renders'. El placeholder '[PÚBLICO OBJETIVO]' y '[PEGAR AQUÍ LOS DETALLES]' indica que el prompt está listo para uso iterativo en su trabajo."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 3,
+              "justification": "Demuestra comprensión del modelo al incluir instrucciones explícitas de veracidad ('No inventes datos', 'Solicitud de Claridad'), lo que evidencia conciencia de las limitaciones del modelo. El diseño en 4 pilares con formato de salida estandarizado refleja pensamiento sistemático."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "102542173536207744885",
+      "name": "Rodrigo Tellez Cabrera",
+      "is_named": true,
+      "avg_score": 3.0,
+      "sprints_count": 1,
+      "total_sprints_with_work": 1,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        3.0
+      ],
+      "levels": [
+        "Competente"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 3.0,
+          "level": "Competente",
+          "strengths": [
+            "La instrucción de reencuadre conceptual ('estilo de vida vs. logos') es una técnica de prompting avanzada que guía al modelo hacia un pensamiento estratégico, no descriptivo.",
+            "El prompt es conciso pero efectivo, demostrando capacidad de síntesis para el caso de ventas de patrocinios en festivales reales de OCESA."
+          ],
+          "recommendations": [
+            "Expandir el Contexto con datos específicos del público del Corona Capital (edad, comportamiento de compra, afinidad de marcas) para enriquecer el análisis psicológico.",
+            "Agregar una segunda tarea de iteración donde el modelo refine el párrafo narrativo según feedback, construyendo un workflow de dos pasos."
+          ],
+          "alchemist_signals": [
+            "El uso de reencuadre ('no logos, sino conexión con estilo de vida') muestra que el estudiante entiende cómo orientar el modelo hacia outputs de alto valor estratégico en negociaciones comerciales."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 3,
+              "justification": "El prompt tiene Rol (Senior Strategic Planner de OCESA), Tarea (definir 3 razones psicológicas), un Enfoque diferenciador y Formato de salida (párrafo narrativo). Los elementos están presentes pero comprimidos; el Contexto podría ser más rico y las instrucciones más granulares."
+            },
+            "Aplicación a Caso Real": {
+              "score": 3,
+              "justification": "Menciona Corona Capital y la industria automotriz, que son actores reales del ecosistema OCESA. El enfoque en psicología del consumidor y 'conectar con estilo de vida' en lugar de 'logos' refleja conocimiento real del mundo de patrocinios. Los placeholders indican adaptabilidad para múltiples festivales."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 3,
+              "justification": "La instrucción de reencuadre ('No hables de logos, habla de conectar con el estilo de vida') es una decisión de diseño consciente que dirige al modelo hacia un output diferenciado y de mayor valor comercial. Muestra comprensión de que el framing importa para el resultado."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "108863553751009295415",
+      "name": "Fernando Dominguez",
+      "is_named": true,
+      "avg_score": 3.0,
+      "sprints_count": 1,
+      "total_sprints_with_work": 1,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        3.0
+      ],
+      "levels": [
+        "Competente"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 3.0,
+          "level": "Competente",
+          "strengths": [
+            "El workflow de 4 pasos (Analizar, Conectar, Humanizar, Proyectar) es una cadena de razonamiento bien diseñada que guía al modelo a través de un proceso de análisis progresivo.",
+            "La restricción de identificar a Fernando como líder y el tono 'que empodere, no que juzgue' muestra personalización del output al contexto organizacional específico del estudiante."
+          ],
+          "recommendations": [
+            "Separar más claramente el CONTEXT (situación) del GOAL (objetivo) para que el modelo diferencie qué información es input y qué es el resultado esperado.",
+            "Agregar el formato de la 'Tabla de Hitos' con columnas de ejemplo para que el output sea consistente entre usos mensuales del prompt."
+          ],
+          "alchemist_signals": [
+            "El paso de 'Humanizar' (traducir logros numéricos en impacto para la comunidad) es una instrucción sofisticada que demuestra que el estudiante entiende el poder de la narrativa en reportes estratégicos, más allá de solo los datos."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 3,
+              "justification": "Usa headers # ROLE, # CONTEXT, # GOAL con claridad y el workflow está numerado con pasos accionables. El formato de salida especifica 4 secciones nombradas. Sin embargo, la Tarea y el Objetivo están fusionados sin distinguirse completamente, y las restricciones están algo dispersas."
+            },
+            "Aplicación a Caso Real": {
+              "score": 3,
+              "justification": "El prompt aborda la generación de informes mensuales integrados de Pauta, Alianzas y RRSS, que es un entregable real de un área de marketing. La mención de 'Fernando como líder de estrategia' y el 'Enfoque Filantrópico' sugieren personalización a un cliente o contexto organizacional específico."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 3,
+              "justification": "El workflow de 4 pasos (Analizar → Conectar → Humanizar → Proyectar) muestra pensamiento de diseño de proceso. La restricción de tratar datos faltantes con 'nota constructiva' demuestra conciencia de que el modelo puede alucinar al no tener datos. Es sólido pero sin el nivel de sofisticación técnica de los prompts Destacado."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "117171587541111185611",
+      "name": "Fernanda Ximena Gomez Gomez",
+      "is_named": true,
+      "avg_score": 3.0,
+      "sprints_count": 1,
+      "total_sprints_with_work": 1,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        3.0
+      ],
+      "levels": [
+        "Competente"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 3.0,
+          "level": "Competente",
+          "strengths": [
+            "El prompt funciona como una herramienta de negociación: genera ammunition analítica para cuestionar propuestas de proveedores, lo cual tiene valor comercial directo en el trabajo.",
+            "La tabla comparativa con 4 columnas es un formato de output elegante y ejecutable que puede usarse directamente en reuniones de auditoría."
+          ],
+          "recommendations": [
+            "Añadir Contexto con el tipo de servicios específicos que se auditarán (producción de eventos, servicios de marketing, tecnología) para que el modelo calibre los benchmarks de mercado correctamente.",
+            "Considerar agregar una sección de 'Alternativas Recomendadas' como quinta columna en la tabla para que el output no solo critique sino que proponga soluciones."
+          ],
+          "alchemist_signals": [
+            "El concepto del 'Filtro de Justicia' como nombre del prompt muestra que el estudiante está construyendo un arsenal de herramientas con nombres y funciones claras, lo cual es pensamiento de diseño de sistemas de IA."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 3,
+              "justification": "El prompt tiene Rol (Auditor de Proyectos Senior), Tarea (comparar propuesta vs benchmarks, identificar 3 costos inflados) y Formato de salida (tabla comparativa de 4 columnas). Falta un Contexto más desarrollado sobre la industria o el tipo de propuestas que maneja, y el prompt es relativamente corto."
+            },
+            "Aplicación a Caso Real": {
+              "score": 3,
+              "justification": "El prompt resuelve un problema real de auditoría de propuestas de agencias, que es un desafío frecuente en OCESA al contratar servicios. Los 15 años de experiencia del Rol y la detección de 'servicios ambiguos' sugieren un uso frecuente y profesional, aunque sin datos específicos de OCESA."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 3,
+              "justification": "La especificación de '3 puntos de costos inflados' como output delimitado es una decisión de diseño consciente que evita outputs excesivos o vagos. El formato tabla con columnas específicas (Concepto, Costo Propuesto, Costo Estimado, Observación) demuestra comprensión de cómo estructurar outputs útiles."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "112880746027068223653",
+      "name": "Miranda Ramirez Camacho",
+      "is_named": true,
+      "avg_score": 2.7,
+      "sprints_count": 1,
+      "total_sprints_with_work": 1,
+      "alchemist_class": "🧪 Aprendiz Activo",
+      "progression": 0,
+      "scores": [
+        2.7
+      ],
+      "levels": [
+        "Competente"
+      ],
+      "sprints": {
+        "sprint_1": {
+          "score": 2.7,
+          "level": "Competente",
+          "strengths": [
+            "El contexto del target ('instagrammable pero con profundidad narrativa', 'diferenciación por exclusividad y misterio') es una descripción psicográfica sofisticada que guía al modelo hacia comunicación de alto valor.",
+            "Mencionar el nombre real del proyecto ('Lexus') y la ciudad (CDMX) ancla el prompt en una realidad operativa concreta."
+          ],
+          "recommendations": [
+            "Eliminar la instrucción de 'buscar casos de éxito en la web' y reemplazarla por descripción del estilo de comunicación deseado o ejemplos de referencia concretos proporcionados en el prompt.",
+            "Agregar Formato de salida explícito especificando el canal (ads vs. mailing), la extensión esperada de cada ángulo y el tono para cada uno."
+          ],
+          "alchemist_signals": [
+            "El estudiante ya diseña prompts orientados a lanzamientos reales con segmentación psicográfica. Cuando incorpore comprensión de la memoria paramétrica del modelo, sus prompts darán el salto a nivel Destacado."
+          ],
+          "criteria": {
+            "Estructura del Prompt": {
+              "score": 3,
+              "justification": "El prompt tiene Rol (Senior Growth Strategist), Contexto con datos del target (profesionales 25-35, mercado saturado, diferenciación por exclusividad y misterio) y Tarea (secuencia de 3 ángulos de comunicación). Falta un Formato de salida explícito, y la instrucción de 'puedes basarte en históricos de casos de éxito de la web' añade ambigüedad innecesaria."
+            },
+            "Aplicación a Caso Real": {
+              "score": 3,
+              "justification": "El prompt aborda el lanzamiento de 'Lexus', una experiencia de teatro inmersivo real en CDMX, con un desafío concreto (agotar preventa). El segmento de público está bien definido y el problema de diferenciación en mercado saturado es auténtico. Es aplicación real aunque podría tener más datos operativos."
+            },
+            "Pensamiento de Ingeniero": {
+              "score": 2,
+              "justification": "La instrucción de 'no sentirse como venta forzada' muestra conciencia del tono, pero la petición de 'basarse en casos de éxito de la web' revela que el estudiante no comprende aún que el modelo trabaja con memoria paramétrica, no busca en internet en tiempo real. Esto reduce el puntaje de comprensión del modelo."
             }
           }
         }
