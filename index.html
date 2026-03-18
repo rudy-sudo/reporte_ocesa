@@ -40,6 +40,7 @@
       <a href="#overview" class="nav-link active" data-section="overview">Resumen</a>
       <a href="#sprints" class="nav-link" data-section="sprints">Sprints</a>
       <a href="#ranking" class="nav-link" data-section="ranking">Ranking</a>
+      <a href="#maturity" class="nav-link" data-section="maturity">Madurez IA</a>
       <a href="#alchemists" class="nav-link" data-section="alchemists">Alquimistas</a>
     </div>
     <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">
@@ -273,8 +274,54 @@
   </div>
 </section>
 
+<!-- Maturity Map Section -->
+<section class="section section-alt" id="maturity">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Mapa de Madurez IA en OCESA</h2>
+      <p class="section-desc">¿Dónde están los colaboradores en su camino de adopción de IA y cómo pueden dar el siguiente salto?</p>
+    </div>
+
+    <!-- Maturity KPIs -->
+    <div class="maturity-kpi-row" id="maturityKpis">
+      <!-- Populated by JS -->
+    </div>
+
+    <!-- Charts row -->
+    <div class="charts-grid">
+      <div class="chart-card">
+        <h3 class="chart-title">Nivel de Madurez IA</h3>
+        <div class="chart-container">
+          <canvas id="maturityChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <h3 class="chart-title">¿Dónde aplican la IA?</h3>
+        <div class="chart-container">
+          <canvas id="areasChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sprint maturity progression -->
+    <div class="charts-grid">
+      <div class="chart-card chart-card-wide">
+        <h3 class="chart-title">Evolución de Madurez por Sprint</h3>
+        <div class="chart-container chart-container-wide">
+          <canvas id="maturityProgressionChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Level-up cards -->
+    <div class="level-up-grid" id="levelUpGrid">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
 <!-- Alchemists Spotlight -->
-<section class="section section-alt" id="alchemists">
+<section class="section" id="alchemists">
   <div class="section-inner">
     <div class="section-header">
       <h2 class="section-title">Verdaderos Alquimistas de IA</h2>

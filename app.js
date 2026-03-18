@@ -14,6 +14,7 @@
     setTimeout(() => {
       initCharts();
       renderSprintContent(currentSprint);
+      renderMaturitySection();
     }, 50);
   });
   
@@ -635,6 +636,12 @@ function openStudentModal(studentId) {
             <span class="modal-sprint-score score-pill ${scoreClass(sp.score)}">${sp.score.toFixed(1)} — ${sp.level}</span>
           </div>
           <div class="modal-sprint-body open">
+            ${sp.work_synthesis ? `
+              <div class="modal-synthesis">
+                <div class="modal-synthesis-text">${sp.work_synthesis}</div>
+                ${sp.maturity_level ? `<span class="maturity-badge ${maturityCSS(sp.maturity_level)}">${sp.maturity_level}</span>` : ''}
+              </div>
+            ` : ''}
             <div class="modal-criteria">
               ${Object.entries(sp.criteria || {}).map(([name, data]) => `
                 <div class="modal-criterion">
@@ -682,9 +689,211 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
+// ===== Maturity Map Section =====
+function maturityCSS(level) {
+  if (level.includes('Destacado')) return 'maturity-destacado';
+  if (level.includes('Práctica')) return 'maturity-practica';
+  return 'maturity-aprendiz';
+}
+
+function renderMaturitySection() {
+  const mat = D.overview.maturity_distribution;
+  const areas = D.overview.application_areas;
+  const levelUp = D.overview.level_up_summary;
+  const textColor = getCSS('--color-text') || '#1a1814';
+  const textMuted = getCSS('--color-text-muted') || '#9e9b93';
+  const gridColor = getCSS('--color-divider') || '#ece9e3';
+  
+  // KPI row
+  const kpiEl = document.getElementById('maturityKpis');
+  const total = (mat['Aprendiz Activo'] || 0) + (mat['Alquimista en Práctica'] || 0) + (mat['Alquimista Destacado'] || 0);
+  const practicaPlus = (mat['Alquimista en Práctica'] || 0) + (mat['Alquimista Destacado'] || 0);
+  const pctProficient = total > 0 ? Math.round((practicaPlus / total) * 100) : 0;
+  
+  kpiEl.innerHTML = `
+    <div class="maturity-kpi">
+      <div class="maturity-kpi-value" style="color:var(--color-violet);">${mat['Aprendiz Activo'] || 0}</div>
+      <div class="maturity-kpi-label">Aprendiz Activo</div>
+      <div class="maturity-kpi-sub">Experimentan sin caso de uso definido</div>
+    </div>
+    <div class="maturity-kpi">
+      <div class="maturity-kpi-value" style="color:var(--color-teal);">${mat['Alquimista en Práctica'] || 0}</div>
+      <div class="maturity-kpi-label">Alquimista en Práctica</div>
+      <div class="maturity-kpi-sub">Aplican IA a problemas reales de su puesto</div>
+    </div>
+    <div class="maturity-kpi">
+      <div class="maturity-kpi-value" style="color:var(--color-amber);">${mat['Alquimista Destacado'] || 0}</div>
+      <div class="maturity-kpi-label">Alquimista Destacado</div>
+      <div class="maturity-kpi-sub">Construyen soluciones escalables</div>
+    </div>
+    <div class="maturity-kpi">
+      <div class="maturity-kpi-value" style="color:var(--color-primary);">${pctProficient}%</div>
+      <div class="maturity-kpi-label">Proficiencia IA</div>
+      <div class="maturity-kpi-sub">En Práctica + Destacado sobre el total</div>
+    </div>
+  `;
+  
+  // Maturity donut chart
+  destroyChart('maturityChart');
+  const matCtx = document.getElementById('maturityChart');
+  if (matCtx) {
+    chartInstances['maturityChart'] = new Chart(matCtx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Aprendiz Activo', 'Alquimista en Práctica', 'Alquimista Destacado'],
+        datasets: [{
+          data: [
+            mat['Aprendiz Activo'] || 0,
+            mat['Alquimista en Práctica'] || 0,
+            mat['Alquimista Destacado'] || 0
+          ],
+          backgroundColor: [
+            getCSS('--color-violet') || '#6b3fa0',
+            getCSS('--color-teal') || '#0a7b6f',
+            getCSS('--color-amber') || '#c77d0a'
+          ],
+          borderWidth: 0, hoverOffset: 8
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false, cutout: '65%',
+        plugins: {
+          legend: { position: 'bottom', labels: { padding: 16, usePointStyle: true, pointStyle: 'circle', font: { size: 12 } } },
+          tooltip: {
+            backgroundColor: getCSS('--color-surface') || '#fff',
+            titleColor: textColor, bodyColor: textColor,
+            borderColor: gridColor, borderWidth: 1, padding: 12, cornerRadius: 8,
+            callbacks: { label: ctx => ` ${ctx.raw} estudiantes (${Math.round(ctx.raw / total * 100)}%)` }
+          }
+        }
+      }
+    });
+  }
+  
+  // Application areas horizontal bar
+  destroyChart('areasChart');
+  const areasCtx = document.getElementById('areasChart');
+  if (areasCtx) {
+    const sortedAreas = Object.entries(areas).sort((a, b) => b[1] - a[1]);
+    const areaColors = [
+      getCSS('--color-primary') || '#3b2d7e',
+      getCSS('--color-teal') || '#0a7b6f',
+      getCSS('--color-amber') || '#c77d0a',
+      getCSS('--color-violet') || '#6b3fa0',
+      getCSS('--color-rose') || '#b5365a',
+      getCSS('--color-green') || '#2a7a3a',
+      '#5a8a9a', '#9a6b5a', '#6a9a5a', '#8a5a9a', '#5a6a8a'
+    ];
+    chartInstances['areasChart'] = new Chart(areasCtx, {
+      type: 'bar',
+      data: {
+        labels: sortedAreas.map(a => a[0]),
+        datasets: [{
+          data: sortedAreas.map(a => a[1]),
+          backgroundColor: sortedAreas.map((_, i) => areaColors[i % areaColors.length]),
+          borderRadius: 6, maxBarThickness: 32
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: getCSS('--color-surface') || '#fff',
+            titleColor: textColor, bodyColor: textColor,
+            borderColor: gridColor, borderWidth: 1, padding: 12, cornerRadius: 8,
+            callbacks: { label: ctx => ` ${ctx.raw} estudiantes` }
+          }
+        },
+        scales: {
+          x: { beginAtZero: true, grid: { color: gridColor, drawBorder: false }, ticks: { stepSize: 5 } },
+          y: { grid: { display: false }, ticks: { font: { size: 11 } } }
+        }
+      }
+    });
+  }
+  
+  // Sprint maturity progression stacked bar
+  destroyChart('maturityProgressionChart');
+  const progCtx = document.getElementById('maturityProgressionChart');
+  if (progCtx) {
+    const sm = D.overview.sprint_maturity;
+    const sprintLabels = ['Sprint 1', 'Sprint 2', 'Sprint 3', 'Sprint 4'];
+    const sprintIds = ['sprint_1', 'sprint_2', 'sprint_3', 'sprint_4'];
+    
+    chartInstances['maturityProgressionChart'] = new Chart(progCtx, {
+      type: 'bar',
+      data: {
+        labels: sprintLabels,
+        datasets: [
+          {
+            label: 'Aprendiz Activo',
+            data: sprintIds.map(s => (sm[s] && sm[s]['Aprendiz Activo']) || 0),
+            backgroundColor: getCSS('--color-violet') || '#6b3fa0',
+            borderRadius: 4, maxBarThickness: 56
+          },
+          {
+            label: 'Alquimista en Práctica',
+            data: sprintIds.map(s => (sm[s] && sm[s]['Alquimista en Práctica']) || 0),
+            backgroundColor: getCSS('--color-teal') || '#0a7b6f',
+            borderRadius: 4, maxBarThickness: 56
+          },
+          {
+            label: 'Alquimista Destacado',
+            data: sprintIds.map(s => (sm[s] && sm[s]['Alquimista Destacado']) || 0),
+            backgroundColor: getCSS('--color-amber') || '#c77d0a',
+            borderRadius: 4, maxBarThickness: 56
+          }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', align: 'end', labels: { usePointStyle: true, pointStyle: 'circle', padding: 16, font: { size: 12 } } },
+          tooltip: {
+            backgroundColor: getCSS('--color-surface') || '#fff',
+            titleColor: textColor, bodyColor: textColor,
+            borderColor: gridColor, borderWidth: 1, padding: 12, cornerRadius: 8
+          }
+        },
+        scales: {
+          x: { stacked: true, grid: { display: false } },
+          y: { stacked: true, beginAtZero: true, grid: { color: gridColor, drawBorder: false }, title: { display: true, text: 'Estudiantes', font: { size: 11 } } }
+        }
+      }
+    });
+  }
+  
+  // Level-up cards
+  const luGrid = document.getElementById('levelUpGrid');
+  const levels = ['Aprendiz Activo', 'Alquimista en Práctica', 'Alquimista Destacado'];
+  const levelIcons = { 'Aprendiz Activo': '🧪', 'Alquimista en Práctica': '⚗️', 'Alquimista Destacado': '🔮' };
+  const levelColors = { 'Aprendiz Activo': 'var(--color-violet)', 'Alquimista en Práctica': 'var(--color-teal)', 'Alquimista Destacado': 'var(--color-amber)' };
+  
+  luGrid.innerHTML = levels.map(level => {
+    const info = levelUp[level] || {};
+    return `
+      <div class="level-up-card animate-in">
+        <div class="level-up-header">
+          <span class="level-up-icon">${levelIcons[level]}</span>
+          <div>
+            <div class="level-up-title">${level}</div>
+            <div class="level-up-count" style="color:${levelColors[level]};">${info.count || 0} estudiantes</div>
+          </div>
+        </div>
+        <div class="level-up-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+          <span>Hacia ${info.next_level || '—'}</span>
+        </div>
+        <p class="level-up-advice">${info.general_advice || ''}</p>
+      </div>
+    `;
+  }).join('');
+}
+
 // ===== Navigation =====
 function updateNavActive() {
-  const sections = ['overview', 'sprints', 'ranking', 'alchemists'];
+  const sections = ['overview', 'sprints', 'ranking', 'maturity', 'alchemists'];
   const scrollY = window.scrollY + 100;
   
   let current = sections[0];
@@ -750,4 +959,5 @@ window.addEventListener('scroll', updateNavActive, { passive: true });
 initCharts();
 renderSprintContent('sprint_1');
 renderRanking(D.students);
+renderMaturitySection();
 renderAlchemists();

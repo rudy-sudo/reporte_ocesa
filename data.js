@@ -79,7 +79,63 @@ const DASHBOARD_DATA = {
       "1.3": 1,
       "1.0": 1
     },
-    "inactive_students": 34
+    "inactive_students": 34,
+    "maturity_distribution": {
+      "Alquimista Destacado": 10,
+      "Alquimista en Práctica": 23,
+      "Aprendiz Activo": 19
+    },
+    "application_areas": {
+      "Ventas y Propuestas": 8,
+      "Marketing y Contenido": 20,
+      "Producción de Eventos": 5,
+      "Otro": 2,
+      "Recursos Humanos": 1,
+      "Tecnología y Desarrollo": 1,
+      "Análisis de Datos": 6,
+      "Gestión de Proyectos": 7,
+      "Operaciones": 1,
+      "Educación y Capacitación": 1
+    },
+    "sprint_maturity": {
+      "sprint_1": {
+        "Alquimista en Práctica": 18,
+        "Aprendiz Activo": 30,
+        "Alquimista Destacado": 1
+      },
+      "sprint_2": {
+        "Alquimista en Práctica": 15,
+        "Aprendiz Activo": 12,
+        "Alquimista Destacado": 3
+      },
+      "sprint_3": {
+        "Alquimista Destacado": 6,
+        "Alquimista en Práctica": 10,
+        "Aprendiz Activo": 1
+      },
+      "sprint_4": {
+        "Alquimista en Práctica": 3,
+        "Aprendiz Activo": 1,
+        "Alquimista Destacado": 1
+      }
+    },
+    "level_up_summary": {
+      "Aprendiz Activo": {
+        "count": 19,
+        "next_level": "Alquimista en Práctica",
+        "general_advice": "Necesitan identificar un problema recurrente en su trabajo diario y construir una solución de IA específica para resolverlo. El salto clave es pasar de usar IA como herramienta genérica a tener un caso de uso real y medible."
+      },
+      "Alquimista en Práctica": {
+        "count": 23,
+        "next_level": "Alquimista Destacado",
+        "general_advice": "Ya tienen casos de uso reales. El siguiente paso es construir soluciones reutilizables: GPTs personalizados, flujos automatizados, o sistemas que otros compañeros puedan usar sin necesidad de saber de IA."
+      },
+      "Alquimista Destacado": {
+        "count": 10,
+        "next_level": "Multiplicador",
+        "general_advice": "Están construyendo herramientas escalables. Su siguiente impacto es documentar y socializar sus soluciones para que otros equipos las adopten, convirtiéndose en referentes de IA dentro de la organización."
+      }
+    }
   },
   "students": [
     {
@@ -131,7 +187,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Las restricciones negativas ('No inventes roles', 'No incluyas creación de contenidos', 'No plantees por fases') son un mecanismo anti-expansión creativa sofisticado. Demuestra comprensión de los modos de fallo del modelo y los mitiga preventivamente."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado para generar propuestas técnicas ejecutivas de desarrollo web, diseñado para traducir requerimientos técnicos a lenguaje comprensible para tomadores de decisiones no técnicos. El prompt incluye restricciones de alcance, estructura de entrega y gestión de supuestos/riesgos, lo que lo convierte en una herramienta replicable para el área de ventas o desarrollo de proyectos digitales.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Generación de propuestas técnicas ejecutivas para proyectos de desarrollo web, con claridad de alcance, esfuerzo por perfil y gestión de expectativas con clientes.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt resuelve un problema real y recurrente en contextos de consultoría o desarrollo: traducir requerimientos técnicos a documentos ejecutivos sin ambigüedades. La estructura detallada con restricciones explícitas, supuestos, riesgos y formato de entrega muestra aplicación profesional directa, no solo experimentación básica.",
+          "level_up_suggestion": "Para alcanzar el nivel Alquimista Destacado, convierte este prompt en un GPT personalizado donde otros colegas solo ingresen el contexto del cliente y obtengan la propuesta lista, eliminando la necesidad de conocer la anatomía del prompt. Agrega un paso de validación automática que compare el alcance con una plantilla maestra de exclusiones comunes en OCESA."
         },
         "sprint_2": {
           "score": 4.0,
@@ -160,7 +222,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Documenta el proceso con precisión: lista los 5 fallos del modelo anterior, nombra las 3 palancas de mejora que activó, y describe el resultado transformado con 6 mejoras específicas. Es un caso de estudio completo de iteración."
             }
-          }
+          },
+          "work_synthesis": "Desarrolló un sistema de prompting de alta precisión para generar propuestas técnicas ejecutivas sin ambigüedades de alcance, aplicado directamente a proyectos reales en Laravel 5.6. El sistema usa razonamiento forzado previo, restricciones negativas explícitas y gobernanza de roles para eliminar supuestos tecnológicos no autorizados y sobrealcance contractual.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Generación de propuestas técnicas ejecutivas para proyectos de desarrollo web, con control de alcance y separación de responsabilidades por perfil.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Resuelve un problema recurrente y real de su trabajo (desalineación técnica en propuestas), con una solución estructural documentada y reproducible. Aunque el prompt es sofisticado, aún no construye un artefacto reutilizable por otros (GPT, flujo automatizado o plantilla compartida).",
+          "level_up_suggestion": "Empaqueta este prompt como un GPT personalizado o plantilla estructurada que cualquier colega pueda usar sin conocer la ingeniería detrás, y agrégale un paso de validación automática del output contra un checklist de alcance definido."
         },
         "sprint_3": {
           "score": 4.0,
@@ -193,7 +261,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Proporciona link funcional al GPT 'Arquitecto de Cotizaciones' en ChatGPT, lo que constituye evidencia de implementación real, no solo diseño teórico."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un GPT llamado 'Arquitecto de Cotizaciones' que implementa una arquitectura Supervisor-Worker para generar y auditar propuestas técnicas, detectando scope creep, cruces de perfiles y supuestos implícitos antes de que lleguen al cliente. El sistema convierte un proceso manual y riesgoso en un flujo controlado que protege la rentabilidad y el blindaje contractual de la empresa.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Generación y auditoría automatizada de cotizaciones técnicas con control de alcance y consistencia contractual",
+          "maturity_level": "Alquimista Destacado",
+          "maturity_justification": "Construyó y publicó un GPT funcional con arquitectura multi-capa (Supervisor-Worker) que otros miembros del equipo pueden reutilizar como estándar interno, superando el nivel de uso personal para convertirse en una solución institucionalizable con lógica de calidad incorporada.",
+          "level_up_suggestion": "Integrar el GPT con herramientas como HubSpot o Notion vía API para que las cotizaciones aprobadas se registren automáticamente, y añadir un módulo que aprenda de propuestas ganadoras/perdidas para refinar los criterios del Supervisor con datos reales."
         },
         "sprint_4": {
           "score": 3.3,
@@ -222,9 +296,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Conecta claramente con su práctica (transformar requerimientos en propuestas técnicas con estimaciones) y tiene visión de evolución (tablas de horas base por complejidad). Sin embargo, la explicación de por qué es mejor que un prompt aislado es breve ('estructura fija y reglas')."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un artefacto cognitivo que actúa como arquitecto de soluciones senior para transformar requerimientos de clientes en propuestas técnicas estructuradas con fases, roles y estimación de horas. El sistema incluye reglas de manejo de ambigüedad, radar de riesgos y formato ejecutivo, funcionando como una plantilla reutilizable para generar consistencia en todas las propuestas comerciales de proyectos web.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Generación de propuestas técnicas con desglose de fases, roles y estimación de horas para proyectos digitales dirigidos a clientes o stakeholders.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El artefacto resuelve un problema real y recurrente de su trabajo (cotización y propuesta de proyectos), con estructura fija, reglas de comportamiento explícitas y salidas estandarizadas que van más allá de un prompt aislado. Sin embargo, aún no construye un GPT o flujo automatizado que otros puedan usar sin su intervención directa.",
+          "level_up_suggestion": "Convertir este artefacto en un GPT personalizado con tablas de horas base precargadas por nivel de complejidad, para que otros miembros del equipo de ventas o tecnología puedan generar propuestas sin necesitar al experto en el loop."
         }
-      }
+      },
+      "maturity_level": "Alquimista Destacado",
+      "primary_area": "Ventas y Propuestas",
+      "level_up_suggestion": "Convertir este artefacto en un GPT personalizado con tablas de horas base precargadas por nivel de complejidad, para que otros miembros del equipo de ventas o tecnología puedan generar propuestas sin necesitar al experto en el loop."
     },
     {
       "id": "108184187733625290881",
@@ -275,7 +358,13 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "No se evidencia el proceso de diseño del prompt ni iteración. Compartir el output en lugar del prompt sugiere que aún no distingue entre el instrumento (prompt) y el producto (output)."
             }
-          }
+          },
+          "work_synthesis": "Martha construyó un prompt para generar un correo formal dirigido a su equipo comercial, solicitando el registro completo de ventas para integrarlas al forecast oficial. El output resuelve un problema de comunicación interna real: motivar al equipo a completar datos de ventas incompletas sin que su esfuerzo quede fuera de las proyecciones.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Comunicación interna para cierre y registro de ventas en sistema de forecast comercial",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "Martha demuestra habilidad para usar IA en generación de comunicaciones profesionales con tono y estructura adecuados, pero el trabajo muestra solo el output (el correo), no el prompt estructurado que lo generó, lo que impide evaluar la ingeniería detrás. No hay evidencia de un caso de uso recurrente ni de integración a un flujo de trabajo sistematizado.",
+          "level_up_suggestion": "Comparte el prompt exacto que usaste (con contexto, instrucción, tono, restricciones) para evidenciar tu habilidad de ingeniería; luego crea una plantilla reutilizable que tu equipo pueda usar cada semana para solicitar actualizaciones de CRM o forecast, convirtiendo este ejercicio en un proceso recurrente real."
         },
         "sprint_2": {
           "score": 3.3,
@@ -304,7 +393,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Se evidencia que hubo construcción progresiva del prompt (la IA nombra la instrucción del usuario 'Senior Financial Controller – Sponsorship Division'), aunque no se muestra el proceso iterativo explícito ni el prompt final que se usó."
             }
-          }
+          },
+          "work_synthesis": "Martha construyó un reporte automatizado de variaciones financieras (Actual vs Forecast) para la división de patrocinios, con cálculos de margen, diagnósticos por categoría y formato listo para Excel. La solución transforma datos crudos de contratos en inteligencia accionable para tomar decisiones sobre rentabilidad de patrocinadores por evento.",
+          "application_area": "Análisis de Datos",
+          "application_detail": "Control financiero de patrocinios: comparación Actual vs Forecast con diagnósticos automáticos de desviación por ingreso o costo de activación.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Martha aplicó la IA a un problema real y recurrente de su trabajo como Senior Financial Controller, definiendo reglas de negocio específicas (diagnósticos, mapeo de columnas, normalización de signos) y obteniendo un output directamente utilizable en su flujo de trabajo. Sin embargo, la solución aún depende de su operación manual y no está empaquetada para que otros la reusen.",
+          "level_up_suggestion": "Construye un GPT personalizado o una plantilla de prompt documentada que cualquier analista de la división pueda usar con sus propios datos, añadiendo una capa de visualización automática (ej. formato condicional sugerido o gráfico de waterfall) para escalar el impacto más allá de tu propio uso."
         },
         "sprint_3": {
           "score": 3.8,
@@ -337,7 +432,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Incluye System Prompt completo con nivel de detalle técnico-financiero excepcional: fórmulas reales (Ingreso Total, Margen), reglas de negocio específicas (90% coincidencia), alertas de conciliación. Es un activo usable de inmediato."
             }
-          }
+          },
+          "work_synthesis": "Martha diseñó un sistema de inteligencia financiera que automatiza la consolidación de tres fuentes de datos (SSM, Ticketmaster y SAP) para calcular el margen de contribución por cliente y evento, eliminando el trabajo manual de cruce en Excel. El sistema incluye lógica de normalización con tolerancia al error, auditoría automática de discrepancias mayores al 5%, y genera un ranking de clientes por rentabilidad listo para toma de decisiones.",
+          "application_area": "Análisis de Datos",
+          "application_detail": "Conciliación financiera multi-fuente para cálculo de margen de contribución por evento/cliente en OCESA",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El system prompt resuelve un problema real, recurrente y específico de su operación diaria —el cruce doloroso entre SAP, SSM y Ticketmaster— con lógica de negocio propia (umbral del 90% para matching, alerta del 5% de discrepancia), lo que va claramente más allá de prompting básico y demuestra aplicación directa al trabajo.",
+          "level_up_suggestion": "Para dar el salto a Alquimista Destacado, Martha debería convertir este system prompt en un GPT compartible con el equipo de finanzas, o bien encadenarlo en un flujo automatizado (ej. con Make o Zapier) que tome los archivos directamente desde una carpeta compartida y entregue el reporte sin intervención manual."
         },
         "sprint_4": {
           "score": 4.0,
@@ -366,9 +467,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Conecta directamente con la realidad de su trabajo: datos muertos en CRM, fatiga de análisis, variación de Win Rate entre ejecutivos. El plan de mejora (bucle de retroalimentación, memoria histórica, detección de patrones estacionales) muestra visión a largo plazo."
             }
-          }
+          },
+          "work_synthesis": "Martha construyó un marco de análisis estructurado llamado 'Sponsorship Deal Analyzer' que transforma datos brutos de Salesforce en reportes ejecutivos con decisiones comerciales claras. El artefacto actúa como un consultor de ventas senior automatizado, identificando cuellos de botella en el pipeline, variaciones en win rate entre ejecutivos y patrones de pérdida en negociaciones de patrocinios. Va más allá de un prompt simple al incorporar capas de contexto de CRM, lógica de análisis y generación de insights reutilizables.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Análisis automatizado de pipeline de patrocinios en Salesforce para equipos comerciales de OCESA",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Martha demuestra aplicación a un problema real y recurrente de su trabajo diario (análisis de CRM de patrocinios), con estructura de tres capas y KPIs específicos del negocio; sin embargo, el artefacto parece diseñado para uso propio y no hay evidencia concreta de que otros equipos puedan reutilizarlo de forma autónoma, lo que la mantiene en el nivel Practicante.",
+          "level_up_suggestion": "Para dar el salto a Alquimista Destacado, Martha debería publicar el SDA como un GPT personalizado o un flujo en Make/Zapier conectado directamente a Salesforce, de modo que cualquier ejecutivo de ventas de OCESA pueda usarlo sin necesidad de conocer los prompts subyacentes."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Ventas y Propuestas",
+      "level_up_suggestion": "Para dar el salto a Alquimista Destacado, Martha debería publicar el SDA como un GPT personalizado o un flujo en Make/Zapier conectado directamente a Salesforce, de modo que cualquier ejecutivo de ventas de OCESA pueda usarlo sin necesidad de conocer los prompts subyacentes."
     },
     {
       "id": "103108319800993678716",
@@ -419,7 +529,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Muestra diseño arquitectónico consciente al separar la auditoría en tres pasos lógicos (Técnica, Identidad, Estratégica) y define un formato de salida estructurado. El uso de '[Insertar...]' como placeholders revela comprensión de cómo el modelo necesita inputs definidos."
             }
-          }
+          },
+          "work_synthesis": "Luis construyó un sistema de prompt estructurado que simula una Directora de QA para auditar entregables de comunicación contra un manual de marca y un brief estratégico. El sistema genera reportes estandarizados con hallazgos, score de alineación y recomendaciones, funcionando como un revisor de marca automatizable para una agencia.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Auditoría de entregables de comunicación y control de calidad de marca en agencia Gnius",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Va más allá del prompting básico: construyó un workflow de ejecución de 3 pasos con inputs modulares y formato de salida estandarizado (reporte ZERO ERRORS), lo que indica aplicación a un proceso de trabajo real y recurrente en su agencia, no solo experimentación.",
+          "level_up_suggestion": "Para dar el salto a Alquimista Destacado, convierte este prompt en un GPT publicable que otros miembros de Gnius puedan usar sin conocer la ingeniería detrás, e integra la variable del Manual de Marca como documento cargable para eliminar el paso manual de inserción."
         },
         "sprint_2": {
           "score": 4.0,
@@ -448,7 +564,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Narra claramente la evolución: de un asistente editorial general con alucinaciones a uno especializado por tipo de entregable. Explica la decisión de separar herramientas y el razonamiento detrás del uso de Few-Shot."
             }
-          }
+          },
+          "work_synthesis": "Luis Francisco construyó un asistente editorial especializado para extraer y formatear las recomendaciones semanales del podcast 'Mundo Futuro', separando responsabilidades que antes causaban errores en un prompt general. El sistema usa Few-Shot con un ejemplo de 'estándar de oro' para garantizar consistencia de formato, reglas anti-alucinación y manejo de múltiples formatos de entrada (PDF, texto, adjuntos). Resuelve un problema recurrente real de producción de contenido con una herramienta reutilizable semana a semana.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Curación y formateo automatizado de recomendaciones para publicación en redes sociales del podcast Mundo Futuro (OCESA/entretenimiento).",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Evidencia clara de aplicación a un flujo de trabajo real y recurrente: identifica un problema concreto (alucinaciones por sobrecarga en prompt general), lo diagnostica correctamente y construye una solución especializada con Few-Shot, protocolo anti-error y manejo de entradas variables. Va más allá del prompting básico al diseñar arquitectura de herramientas separadas por entregable.",
+          "level_up_suggestion": "Para alcanzar Alquimista Destacado, empaqueta este asistente como un GPT publicado o instrucción de sistema en una herramienta compartida (Notion AI, Make, etc.) para que el equipo editorial lo use sin depender de él. Agrega un paso de verificación automática que compare los handles detectados contra la lista fija y alerte si hay discrepancias antes de publicar."
         },
         "sprint_3": {
           "score": 2.8,
@@ -481,7 +603,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Incluye el System Prompt completo y funcional con reglas claras de comportamiento. No hay link al GPT pero el System Prompt mostrado es de calidad suficiente para evaluar el sistema."
             }
-          }
+          },
+          "work_synthesis": "Luis diseñó un asistente especializado en generación de minutas que opera bajo un protocolo definido ('Brand Keeper & Project Manager Assistant'), conectado a un Knowledge Base de su agencia. El sistema prioriza la verificación de ambigüedades antes de redactar, garantizando que cada minuta sea accionable y fiel a lo acordado en junta.",
+          "application_area": "Gestión de Proyectos",
+          "application_detail": "Procesamiento de transcripciones de reuniones de agencia para generación de minutas verificadas y accionables para clientes.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Va más allá de un prompt básico al implementar lógica condicional (preguntar antes de redactar si hay ambigüedades) y anclar el sistema a un protocolo documentado en Project Knowledge, aplicado a un problema real y recurrente de su flujo de trabajo en agencia.",
+          "level_up_suggestion": "Para escalar a Alquimista Destacado, conecta este GPT a un flujo automatizado (ej. Zapier/Make) que capture la transcripción desde Meet/Zoom y distribuya la minuta final por correo o Slack, haciendo el sistema reutilizable por todo tu equipo sin intervención manual."
         },
         "sprint_4": {
           "score": 2.0,
@@ -510,9 +638,18 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "Hay consciencia del problema (convertir minutas en briefs ejecutivos) y autocrítica sobre el estado actual del artefacto, pero la conexión con la práctica profesional es superficial y no articula un workflow completo."
             }
-          }
+          },
+          "work_synthesis": "Luis Francisco creó un artefacto cognitivo orientado a transformar notas de juntas en briefs ejecutables para el equipo creativo. El sistema busca estructurar visualmente los puntos clave de las reuniones y derivarlos en acciones concretas, aunque en su estado actual el estudiante reconoce que el output es demasiado descriptivo y poco ejecutivo.",
+          "application_area": "Gestión de Proyectos",
+          "application_detail": "Procesamiento de juntas y generación de briefs creativos accionables para equipos de producción/contenido en OCESA.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "Identifica un problema real de trabajo (convertir juntas en briefs), pero el artefacto permanece en nivel conceptual-descriptivo sin evidencia de un flujo estructurado, prompts encadenados o lógica reutilizable por otros. El propio estudiante admite que aún no logra hacerlo ejecutivo.",
+          "level_up_suggestion": "Diseña un artefacto de dos pasos: primero un prompt que extraiga decisiones, responsables y fechas de las notas de junta en formato tabla; luego un segundo prompt que convierta esa tabla en un brief con secciones fijas (objetivo, entregables, fechas límite, owner). Documenta ambos pasos para que cualquier colega del equipo creativo pueda usarlo sin ayuda."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Diseña un artefacto de dos pasos: primero un prompt que extraiga decisiones, responsables y fechas de las notas de junta en formato tabla; luego un segundo prompt que convierta esa tabla en un brief con secciones fijas (objetivo, entregables, fechas límite, owner). Documenta ambos pasos para que cualquier colega del equipo creativo pueda usarlo sin ayuda."
     },
     {
       "id": "112513403353463085294",
@@ -561,7 +698,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Documenta el contexto creativo (Biblia de Ejecución Sensorial), el riesgo identificado (caer en Slop publicitario), las restricciones aplicadas, y el prompt resultante. El proceso de refinamiento es claro y el resultado es de alta calidad demostrable."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó una 'Biblia de Ejecución Sensorial' usando prompt engineering avanzado para definir el lenguaje visual, sonoro y narrativo de piezas audiovisuales, combinando referencias cinematográficas de autor con restricciones explícitas de vocabulario para eliminar jerga de marketing vacía. El entregable sirve como hoja de ruta técnica y creativa que un equipo de producción puede ejecutar directamente, traduciendo intención estética en especificaciones concretas de encuadre, paleta, sonido y ritmo.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Dirección creativa y producción audiovisual de campañas de alto impacto para OCESA o clientes del sector entretenimiento.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "Demuestra dominio técnico sofisticado del prompting (Archetype Anchoring, Negative Prompting, densidad de datos) con resultados cualitativos claros, pero el caso de uso es una campaña inventada, no un problema real y recurrente de su trabajo diario, lo que lo mantiene en la etapa de experimentador avanzado.",
+          "level_up_suggestion": "Aplica exactamente esta misma ingeniería de prompt a una campaña real actual de OCESA (un concierto, un festival) y documenta cómo el output impactó decisiones concretas de producción o cliente; eso lo mueve inmediatamente a Alquimista en Práctica con evidencia de impacto real."
         },
         "sprint_3": {
           "score": 3.5,
@@ -594,7 +737,13 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "No se incluye link funcional ni se cita un System Prompt textual concreto; la descripción es rica pero la evidencia directa brilla por su ausencia. Sin poder verificar el artefacto real, la calidad de evidencia es parcial."
             }
-          }
+          },
+          "work_synthesis": "Diseñó un sistema Supervisor-Worker que actúa como 'traductor de densidad creativa' para producción audiovisual, asegurando que las decisiones técnicas (scripts, edición, organización de archivos) mantengan coherencia con la visión artística original definida en pre-producción. El sistema funciona como auditor estético persistente que rechaza soluciones genéricas y exige métricas técnicas concretas, preservando el ADN visual y sonoro del proyecto a lo largo de todo el flujo de trabajo.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Consistencia creativa entre dirección artística y ejecución técnica en producciones audiovisuales de OCESA",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Describe un caso de uso real y específico de su trabajo diario (producción audiovisual), con lógica de sistema multi-capa que resuelve un problema recurrente concreto —la pérdida del tono creativo en la ejecución técnica. Sin embargo, no presenta evidencia tangible del GPT o system prompt construido (el campo de evidencia no muestra link funcional), lo que impide confirmar si es reutilizable por otros.",
+          "level_up_suggestion": "Publica el system prompt completo o el GPT compartible con un caso de uso documentado paso a paso, de modo que otro miembro de tu equipo pueda usarlo sin tu intervención; eso es lo que separa a un Alquimista Destacado: que la solución vive sin ti."
         },
         "sprint_4": {
           "score": 4.0,
@@ -623,9 +772,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Conecta directamente con su práctica en producciones de alto impacto, define un estándar operativo para validación técnica y estética de rodajes, e imagina una evolución hacia generación automática de scripts Python. La visión de workflow es concreta, ambiciosa y profesionalmente anclada."
             }
-          }
+          },
+          "work_synthesis": "Construyó un sistema GPT con arquitectura Supervisor-Worker llamado 'Checheme Sensorial 1.0' que actúa como filtro de calidad creativo-técnico para producciones audiovisuales: el Supervisor rechaza automáticamente propuestas genéricas y exige parámetros medibles (Hz, ISO, mm, f-stop) mientras mantiene memoria persistente de las referencias estéticas del director. Su propósito es garantizar que cada entregable de IA preserve la densidad sensorial y el rigor técnico de producciones de alto impacto, eliminando el 'slop' generativo.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Control de calidad creativo-técnico para preproducción audiovisual: auditoría de guiones, validación estética y generación de parámetros de rodaje bajo un estándar reutilizable por el equipo.",
+          "maturity_level": "Alquimista Destacado",
+          "maturity_justification": "Va más allá del uso personal: diseñó un GPT con roles diferenciados (Supervisor/Worker), memoria persistente y filtros activos que su equipo puede reutilizar como estándar operativo. La visión de integrar una API para generación automática de scripts Python confirma pensamiento sistémico y arquitectura multi-paso.",
+          "level_up_suggestion": "Documenta el flujo completo como un SOP (Standard Operating Procedure) con ejemplos de inputs/outputs reales para que cualquier miembro del equipo pueda operarlo sin depender de ti. Como siguiente sprint técnico, prioriza la integración de la API de automatización para cerrar el ciclo entre auditoría de guion y organización de media en producción."
         }
-      }
+      },
+      "maturity_level": "Alquimista Destacado",
+      "primary_area": "Producción de Eventos",
+      "level_up_suggestion": "Documenta el flujo completo como un SOP (Standard Operating Procedure) con ejemplos de inputs/outputs reales para que cualquier miembro del equipo pueda operarlo sin depender de ti. Como siguiente sprint técnico, prioriza la integración de la API de automatización para cerrar el ciclo entre auditoría de guion y organización de media en producción."
     },
     {
       "id": "103325120233395822923",
@@ -674,7 +832,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "El prompt tiene reglas de fidelidad explícitas ('No reescritas creativas, solo correcciones técnicas'), manejo de incertidumbre ('Si no puedes leer una sección, indica que está ilegible'), y criterio de priorización por severidad. Muestra diseño defensivo avanzado."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt de sistema para un corrector de estilo automatizado en español mexicano, orientado a agencias de marketing. La herramienta revisa contenido multimedia (imágenes, PDFs, videos) detectando errores ortográficos, gramaticales y de estilo, con capacidad de personalización por cliente mediante diccionarios de términos prohibidos y aprobados.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Revisión y control de calidad de materiales visuales y documentales para agencias de marketing digital en México.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt va más allá del uso básico: define un sistema estructurado con roles, actividades jerarquizadas, reglas de operación y configuración personalizable por usuario, lo que indica aplicación a un problema de trabajo real y recurrente en su industria. Sin embargo, no hay evidencia de que la solución sea reutilizable por otros usuarios de forma autónoma (GPT publicado, flujo automatizado o documentación para equipo).",
+          "level_up_suggestion": "Empaqueta este prompt como un GPT personalizado con instrucciones de sistema y compártelo con tu equipo o clientes para que lo usen sin necesidad de copiar el prompt manualmente. Agrega un paso de entrada estructurado donde el usuario cargue su lista de términos prohibidos al inicio de cada sesión."
         },
         "sprint_2": {
           "score": 4.0,
@@ -703,7 +867,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Documenta el problema inicial (storytelling vs. ejecutivo), la técnica aplicada (Anti-Slop con criterios cualitativos), la evolución del prompt, y el proceso de revisión por etapas. El resultado final tiene evidencia clara de múltiples ciclos de refinamiento."
             }
-          }
+          },
+          "work_synthesis": "El estudiante aplicó la técnica Anti-Slop para auditar y optimizar una propuesta comercial real dirigida a Scotiabank (nivel C-Level), identificando contenido genérico slide por slide y reescribiéndolo con evidencia transferible y densidad narrativa. El resultado es una propuesta más precisa que convierte casos de referencia en pruebas estratégicas aplicables al contexto del cliente.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Revisión y optimización de propuestas comerciales para clientes corporativos de alto nivel en el sector bancario/entretenimiento.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Hay un caso de uso real, recurrente y de alto impacto comercial: una propuesta activa para un banco. El prompt está diseñado con rol específico, restricciones de contexto y reglas de no-invención, mostrando ingeniería deliberada más allá del uso básico.",
+          "level_up_suggestion": "Construir un GPT o prompt reutilizable de 'Auditor Anti-Slop para Propuestas OCESA' que otros equipos puedan usar en futuras propuestas comerciales, estandarizando las leyes de densidad narrativa como checklist interno."
         },
         "sprint_3": {
           "score": 3.3,
@@ -736,9 +906,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Comparte System Prompt con contexto de marca, proceso definido, y restricciones claras. Sin embargo, no hay link al GPT y el prompt podría ser más profundo dado el nivel demostrado en los sprints anteriores."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un GPT configurado como asistente especializado en estructurar presentaciones ejecutivas (casos de negocio, planes operativos, visibilidad estratégica), diseñado para sintetizar información compleja en narrativas de alto impacto. El sistema actúa como supervisor cognitivo que valida que el contenido presentado sea realmente el de mayor valor, resolviendo un problema recurrente de 2-3 presentaciones diarias con un flujo estandarizado y escalable para su equipo.",
+          "application_area": "Gestión de Proyectos",
+          "application_detail": "Estructuración y síntesis de presentaciones ejecutivas de alto volumen en operaciones corporativas",
+          "maturity_level": "Alquimista Destacado",
+          "maturity_justification": "Construyó y publicó un GPT funcional con instrucciones configuradas y memoria persistente (evidenciado por el link), y explícitamente planea compartirlo con su equipo como flujo de trabajo escalable, lo cual representa construcción de soluciones reusables por otros — criterio definitorio del nivel Experto.",
+          "level_up_suggestion": "Documenta un SOP formal que acompañe el GPT con instrucciones de uso para tu equipo, e integra el output del asistente directamente con Gamma o Copilot mediante un flujo automatizado (ej. Make/Zapier) para eliminar el paso manual de copiar la estructura generada."
         }
-      }
+      },
+      "maturity_level": "Alquimista Destacado",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Documenta un SOP formal que acompañe el GPT con instrucciones de uso para tu equipo, e integra el output del asistente directamente con Gamma o Copilot mediante un flujo automatizado (ej. Make/Zapier) para eliminar el paso manual de copiar la estructura generada."
     },
     {
       "id": "113430405422314852108",
@@ -787,7 +966,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Define restricciones de output claras (solo tabla + párrafo final), columnas específicas con nombres descriptivos, y un tono calibrado (ejecutivo, desafiante, constructivo). El diseño consciente del formato evidencia comprensión de cómo el modelo produce outputs de mayor valor con instrucciones precisas."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt de alta ingeniería para generar una Tabla de Tensión Estratégica orientada a un taller directivo de diagnóstico de marca para el 40 aniversario de Banco BASE. El entregable es un insumo ejecutivo listo para facilitar debate entre líderes sobre la brecha de percepción entre 'especialistas' vs 'banco integral', con preguntas disruptivas y oportunidades concretas de posicionamiento.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Diagnóstico estratégico de marca y posicionamiento bancario para taller directivo de aniversario institucional.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt resuelve un problema real, específico y recurrente de su trabajo: preparar insumos estratégicos para talleres directivos. La definición de rol, contexto, estructura de output y restricciones de tono demuestra uso aplicado, no experimental.",
+          "level_up_suggestion": "Para avanzar a Alquimista Destacado, convierte este prompt en un GPT o plantilla reutilizable que cualquier colega de Marketing pueda usar para preparar talleres estratégicos, parametrizando variables como 'nombre de marca', 'brecha de percepción' y 'hito institucional'."
         },
         "sprint_2": {
           "score": 3.7,
@@ -816,7 +1001,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "El estudiante menciona el contexto del problema y la técnica (2C con cláusula anti-drift) pero no comparte versiones anteriores del prompt ni describe explícitamente qué cambió entre iteraciones. La evidencia de proceso de refinamiento es implícita."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un sistema de investigación de inteligencia cultural con controles de calidad epistémica integrados, diseñado para extraer y auditar hallazgos sobre comportamiento de la Gen Z frente a marcas. El prompt actúa como un protocolo de análisis reutilizable que fuerza la distinción entre dato verificable e inferencia, útil para informar estrategias de marca y comunicación corporativa en OCESA.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Investigación de audiencias Gen Z para decisiones de estrategia de marca, posicionamiento y comunicación en entretenimiento.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El estudiante va más allá del prompting básico al construir un protocolo estructurado con capas de validación (triangulación de fuentes, diferenciación dato/deducción, auto-auditoría de veracidad), demostrando aplicación a un problema de trabajo real y recurrente. Sin embargo, el sistema aún no es un activo reutilizable por otros (GPT, flujo automatizado) que lo proyecte al nivel Experto.",
+          "level_up_suggestion": "Empaqueta este protocolo como un GPT o plantilla compartida que cualquier colega de marketing pueda usar para investigar audiencias sin conocimiento técnico de prompting. Agregar un paso de output estructurado (tabla comparativa fuentes vs. deducciones) haría el entregable directamente accionable para presentaciones ejecutivas."
         },
         "sprint_3": {
           "score": 3.2,
@@ -849,9 +1040,18 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "No se incluye link ni System Prompt completo; hay una descripción del sistema pero sin la evidencia artefactual que permita verificar su implementación real."
             }
-          }
+          },
+          "work_synthesis": "Diseñó un SOP Cognitivo que funciona como consultor senior de estrategia de marca, aplicado a un caso real: el diagnóstico de NIDO ante una categoría en declive y una audiencia Gen Z difícil de conquistar. El sistema obliga al estratega a confrontar el brief corporativo contra la realidad del mercado a través de tres tensiones cognitivas estructuradas (categoría, relevancia y conversión), convirtiendo ambigüedad estratégica en hipótesis accionables de negocio.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Auditoría estratégica de marca y pre-diagnóstico de planning para cuentas con pérdida de relevancia o sell-out débil.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Hay un caso de uso real y recurrente (brief de cliente con problema de negocio concreto), y construyó un sistema con rol definido, filtros cognitivos explícitos y reglas de operación que van más allá de un prompt aislado. Sin embargo, no se evidencia un GPT publicado, automatización reutilizable por otros ni documentación de flujo multi-agente que lo lleve al nivel Experto.",
+          "level_up_suggestion": "Publica este SOP como un GPT compartible para que otros estrategas del equipo lo usen sin necesidad de copiar el prompt manualmente. Como siguiente capa, diseña un flujo Supervisor-Worker donde este CSO delegue tareas específicas a agentes secundarios (uno para análisis de competencia, otro para generación de mensajes clave por tensión) y documenta el output esperado de cada nodo."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Publica este SOP como un GPT compartible para que otros estrategas del equipo lo usen sin necesidad de copiar el prompt manualmente. Como siguiente capa, diseña un flujo Supervisor-Worker donde este CSO delegue tareas específicas a agentes secundarios (uno para análisis de competencia, otro para generación de mensajes clave por tensión) y documenta el output esperado de cada nodo."
     },
     {
       "id": "107646318512708736570",
@@ -900,7 +1100,13 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "La respuesta describe el problema inicial y el enfoque de solución, pero la presentación es muy breve. No se muestra el proceso iterativo completo ni el prompt final íntegro."
             }
-          }
+          },
+          "work_synthesis": "El estudiante exploró técnicas de verificación y control de alucinaciones en prompts, buscando restringir que la IA invente información cuando no cuenta con datos suficientes. El trabajo muestra comprensión conceptual del problema, pero no lo ancla a un caso de uso específico de su rol en OCESA ni demuestra aplicación práctica en tareas reales.",
+          "application_area": "Otro",
+          "application_detail": "Experimentación técnica con control de calidad de outputs de IA, sin contexto laboral definido",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El estudiante describe el problema de las alucinaciones con precisión conceptual y menciona técnicas avanzadas, pero no presenta un prompt final concreto ni un caso de uso real de su trabajo diario en OCESA, lo que lo mantiene en nivel experimentador.",
+          "level_up_suggestion": "Toma este mismo problema de alucinaciones y aplícalo a una tarea real y recurrente de tu trabajo, por ejemplo, redactar fichas técnicas de artistas, generar reportes de asistencia o responder solicitudes de patrocinadores. Comparte el prompt completo con el resultado antes/después para evidenciar impacto real."
         },
         "sprint_3": {
           "score": 3.8,
@@ -933,7 +1139,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Describe la arquitectura en detalle y menciona el link al GPT, pero el System Prompt completo no está transcrito en la respuesta. La descripción es de alta calidad aunque falta el artefacto directo."
             }
-          }
+          },
+          "work_synthesis": "Diseñó un sistema cognitivo basado en Claude Projects que transforma contratos de patrocinio en briefs técnico-creativos ejecutables para agencias, incorporando contexto permanente sobre venues (Foro Sol, Curva 4), manuales de marca y KPIs. El sistema estandariza la calidad de entregables del equipo de patrocinios, eliminando ambigüedades que generan retrabajos costosos.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Generación automatizada de briefs de activación para marcas patrocinadoras a partir de contratos comerciales",
+          "maturity_level": "Alquimista Destacado",
+          "maturity_justification": "Construyó un activo departamental reutilizable con SOP Cognitivo y memoria de contexto persistente (Claude Projects), diseñado explícitamente para que cualquier miembro del equipo lo opere con resultados consistentes, lo que trasciende el uso personal hacia una solución institucional escalable.",
+          "level_up_suggestion": "Conecta el sistema a un flujo automatizado (vía Make o Zapier) que se dispare al recibir un contrato en PDF por correo o Drive, generando el brief sin intervención manual y notificando al equipo, convirtiendo el activo en un proceso autónomo de principio a fin."
         },
         "sprint_4": {
           "score": 4.0,
@@ -962,9 +1174,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Conecta directamente con el problema de 'parálisis por análisis' en dashboards de KPIs, articulando el valor de negocio: 'Convierte filas de Excel en tres pilares: Contexto, Riesgo y Acción Prioritaria'. Es una visión de workflow profesional completa."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un artefacto cognitivo llamado SAO (Sistema de Análisis Operativo) que transforma datos crudos de KPIs en decisiones ejecutivas estructuradas bajo tres pilares: Contexto, Riesgo y Acción Prioritaria. Actúa como un COO virtual con metaprompting, validación lógica por pasos y variables modulares de negocio, eliminando la parálisis por análisis en cierres de mes.",
+          "application_area": "Análisis de Datos",
+          "application_detail": "Interpretación de dashboards y reportes de KPIs para traducir métricas operativas en recomendaciones ejecutivas accionables por departamento.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Demuestra un caso de uso real y recurrente (cierre de mes) con una arquitectura de prompt superior al básico: metaprompting, asignación de rol y validación por pasos. Sin embargo, aún no hay evidencia de que otros equipos lo estén reutilizando ni de automatización o flujo multi-sistema.",
+          "level_up_suggestion": "Empaqueta el SAO como un GPT personalizado o plantilla compartida en Notion/Drive para que cualquier gerente de departamento lo use sin depender de ti; agregar la fase 'Abogado del Diablo' que ya mencionas como mejora lo acercaría a una solución que otros pueden operar de forma autónoma."
         }
-      }
+      },
+      "maturity_level": "Alquimista Destacado",
+      "primary_area": "Otro",
+      "level_up_suggestion": "Empaqueta el SAO como un GPT personalizado o plantilla compartida en Notion/Drive para que cualquier gerente de departamento lo use sin depender de ti; agregar la fase 'Abogado del Diablo' que ya mencionas como mejora lo acercaría a una solución que otros pueden operar de forma autónoma."
     },
     {
       "id": "103542481943595887185",
@@ -1013,7 +1234,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "El diseño del formato de salida con guion estructurado para mediación (apertura sin acusaciones, diagnóstico de causas raíz, cierre con compromisos) muestra comprensión de cómo el modelo debe razonar sobre un problema de psicología organizacional."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado para generar un guion de mediación 1:1 entre un PM y un desarrollador en conflicto por sobrecarga de tareas fuera de su rol. La herramienta sirve para que líderes de proyecto conduzcan conversaciones difíciles con un marco empático y técnicas de comunicación no violenta, reduciendo el riesgo de escalamiento de conflictos.",
+          "application_area": "Recursos Humanos",
+          "application_detail": "Mediación de conflictos de carga laboral y redistribución de tareas en equipos de tecnología/proyectos.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt está muy bien construido técnicamente —rol, contexto, restricciones y formato de salida claramente definidos— pero no hay evidencia de que resuelva un problema recurrente y real del trabajo cotidiano del estudiante en OCESA; parece un ejercicio de construcción de prompt sobre un escenario plausible, no un caso aplicado a su función actual.",
+          "level_up_suggestion": "Identifica un conflicto o conversación difícil recurrente en tu equipo real de OCESA (ej. redistribución de tareas en producción de eventos) y aplica este guion en una reunión real, luego documenta qué ajustaste. Eso lo convierte en un caso de uso de Alquimista en Práctica."
         },
         "sprint_2": {
           "score": 3.0,
@@ -1042,7 +1269,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Documenta el contexto inicial, los ajustes de refinamiento (contexto quirúrgico, triangulación, especificidad de plataformas), y el resultado. Es un proceso de iteración bien documentado aunque conciso."
             }
-          }
+          },
+          "work_synthesis": "El estudiante diseñó un prompt de investigación UX avanzado para identificar fricciones específicas en apps de festivales de música, utilizando triangulación de fuentes (desarrolladores vs. usuarios reales) y enfoque en tasas de abandono. El resultado es una herramienta de inteligencia competitiva que podría informar decisiones de producto o partnerships tecnológicos en OCESA.",
+          "application_area": "Tecnología y Desarrollo",
+          "application_detail": "Auditoría de UX para apps de festivales de música, comparando perspectiva técnica vs. experiencia real del usuario.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El estudiante demuestra dominio técnico sólido de ingeniería de prompts (contexto quirúrgico, triangulación, anti-slop) y formula preguntas inteligentes, pero el ejercicio queda en un caso hipotético de investigación sin evidencia de aplicación a un problema real y recurrente de su trabajo en OCESA.",
+          "level_up_suggestion": "Conecta este prompt a un proyecto concreto de OCESA, por ejemplo, auditando la app de un festival específico como Corona Capital o Vive Latino, y comparte los hallazgos con el equipo de producto o tecnología para validar decisiones reales."
         },
         "sprint_3": {
           "score": 3.5,
@@ -1075,9 +1308,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Comparte fragmentos del System Prompt pero no el documento completo. La evidencia es parcial aunque lo compartido tiene calidad técnica real."
             }
-          }
+          },
+          "work_synthesis": "El estudiante diseñó un SOP cognitivo con arquitectura Supervisor-Worker para automatizar la transformación de archivos de funciones con promociones en bloques XML listos para cargar en el sitio del Rey León. El sistema filtra solo las funciones con descuento, extrae datos clave y genera código estructurado según un 'Golden Output' de referencia, eliminando errores manuales en un proceso que se repite mensualmente.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Carga técnica de funciones con promociones en cartelera digital de espectáculos en vivo",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El estudiante resolvió un problema real, recurrente y específico de su trabajo (carga mensual de funciones con promo para el sitio del Rey León), con un SOP estructurado en pasos de escaneo, extracción, filtrado y generación XML con Golden Output. Falta evidencia de que otros puedan reutilizarlo independientemente (GPT publicado o documentación para terceros), lo que lo mantiene en Practicante y no en Experto.",
+          "level_up_suggestion": "Publica este SOP como un GPT personalizado al que Lara o cualquier miembro del equipo pueda acceder directamente, sin necesitar copiar el prompt cada vez. Agrega validación automática del output XML contra un checklist de errores comunes para fortalecer la capa de Control de Calidad del Supervisor."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Recursos Humanos",
+      "level_up_suggestion": "Publica este SOP como un GPT personalizado al que Lara o cualquier miembro del equipo pueda acceder directamente, sin necesitar copiar el prompt cada vez. Agrega validación automática del output XML contra un checklist de errores comunes para fortalecer la capa de Control de Calidad del Supervisor."
     },
     {
       "id": "112450398914974608080",
@@ -1126,7 +1368,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Las restricciones de comportamiento ('No diseñas, redactas', 'Solo textos de alto impacto', 'No generalices') muestran pensamiento de ingeniería para delimitar el rol. Sin embargo, no hay evidencia clara de iteración ni de un sistema más complejo."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt de sistema para un asistente especializado en copywriting audiovisual, diseñado para generar textos creativos para comerciales, spots y videos de marca. El prompt establece un flujo de recopilación de información (tono, objetivo, audiencia) antes de generar 3-6 opciones de copy en distintos registros, con mecanismo de iteración incorporado.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Generación de copies creativos para producción audiovisual y campañas de marca en el contexto de entretenimiento y eventos.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt está bien estructurado con roles, restricciones y formatos definidos, lo que demuestra comprensión sólida de ingeniería de prompting. Sin embargo, no evidencia aplicación a un proyecto real o recurrente de trabajo en OCESA; parece un ejercicio de construcción de prompt sin contexto operativo documentado.",
+          "level_up_suggestion": "Aplica este asistente a un brief real de una campaña o evento de OCESA (por ejemplo, un aftermovie de Festival Corona o un spot de Ticketmaster), documenta el output generado y cómo lo usaste o modificaste en el proceso creativo real; eso lo convierte en un caso de uso de trabajo."
         },
         "sprint_2": {
           "score": 3.3,
@@ -1155,7 +1403,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Documenta la técnica usada y el prompt resultante. El proceso de razonamiento del modelo (objetivo → emoción → concepto → estructura) muestra iteración de diseño aunque no se describe explícitamente el proceso previo al prompt final."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado con Chain-of-Thought para generar ideas creativas y guiones de video corto para anunciar conciertos en redes sociales (Reels, TikTok, Shorts). El sistema guía a la IA a razonar secuencialmente por objetivo, audiencia, emoción, concepto y estructura narrativa antes de producir el guion final, siendo aplicable a campañas digitales reales de OCESA.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Generación de guiones y conceptos creativos para videos de anuncio de conciertos en redes sociales verticales.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt resuelve un problema recurrente y específico de su área (producción de contenido de conciertos) con una cadena de razonamiento estructurada que va más allá del prompting básico. Sin embargo, el resultado es un entregable de uso personal y no una solución reutilizable por otros, lo que lo mantiene en Practicante.",
+          "level_up_suggestion": "Convierte este prompt en un GPT o plantilla parametrizable donde cualquier colega del equipo de marketing pueda ingresar el nombre del artista, fecha y plataforma, y obtenga automáticamente el guion adaptado; eso lo elevaría a Alquimista Destacado."
         },
         "sprint_3": {
           "score": 3.8,
@@ -1188,9 +1442,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Comparte System Prompt completo con estructura de datos (14 campos de evento), reglas de procesamiento, formato de output, y actualización mensual. Es el System Prompt más detallado y ejecutable del sprint en términos de gestión de datos."
             }
-          }
+          },
+          "work_synthesis": "Diseñó un sistema Supervisor-Worker con arquitectura de doble fase (extracción + auditoría de calidad) para procesar datos de eventos de entretenimiento y estructurarlos automáticamente en formato Excel-ready. El sistema valida coherencia temporal, asignación de responsables y geografía mediante un scorecard interno, y genera notificaciones listas para WhatsApp/Slack, eliminando errores logísticos y correos de aclaración en el flujo de producción de eventos.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Gestión y validación de datos operativos de eventos (fechas, venues, responsables) para la base de datos del área de producción en OCESA.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El estudiante construyó un sistema multi-fase con lógica de auditoría interna aplicado a un problema real y recurrente de su área de trabajo (gestión de datos de eventos), y reconoce que era su único recurso hasta ahora. Aunque no tiene GPT publicado por falta de plan pagado, el system prompt evidencia comprensión funcional de arquitectura Supervisor-Worker con casos de uso concretos.",
+          "level_up_suggestion": "Al contratar ChatGPT Plus, publica este sistema como GPT compartido para que tu equipo lo use sin necesidad de copiar el prompt cada vez. El siguiente paso es conectarlo a Zapier o Make para que los datos validados se escriban directamente en la hoja de Excel sin intervención manual."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Al contratar ChatGPT Plus, publica este sistema como GPT compartido para que tu equipo lo use sin necesidad de copiar el prompt cada vez. El siguiente paso es conectarlo a Zapier o Make para que los datos validados se escriban directamente en la hoja de Excel sin intervención manual."
     },
     {
       "id": "101516039533786932106",
@@ -1239,7 +1502,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Las restricciones anti-alucinación son sofisticadas: pide solo productos del catálogo real, exige URL específica, prohíbe productos no confirmados. El flujo en etapas (mapeo, análisis, hallazgos) muestra arquitectura de razonamiento forzado."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt de ingeniería avanzada para generar matrices técnico-comerciales de portafolio de producto por región para la empresa Mabe, cubriendo 5 categorías y 5 regiones con localización de modismos, cruces legales y restricciones de veracidad de datos. El artefacto es reutilizable y parametrizable, diseñado para alimentar directamente procesos de marketing regional y gestión de catálogo.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Generación de matrices de posicionamiento de producto por región para marca de electrodomésticos, con enfoque en diferenciación local y cumplimiento normativo.",
+          "maturity_level": "Alquimista Destacado",
+          "maturity_justification": "El prompt incluye variables parametrizables ([CATEGORÍA AQUÍ]), lógica condicional por categoría, reglas de validación de datos ('No inventes modelos'), localización regional y output estructurado listo para Excel, lo que lo convierte en una plantilla reutilizable por otros equipos sin conocimiento previo de prompting.",
+          "level_up_suggestion": "El siguiente paso natural es convertir este prompt en un GPT personalizado o un flujo en Make/n8n que consuma el portafolio de mabeglobal.com automáticamente y genere la tabla sin intervención manual, eliminando el riesgo de datos desactualizados."
         },
         "sprint_2": {
           "score": 3.0,
@@ -1268,7 +1537,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Documenta el proceso: investigación riesgosa, verificación forzada de fuente, validación del dato. Sin embargo, la respuesta es concisa y no muestra el prompt completo final ni la evolución detallada."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un protocolo de verificación de datos que fuerza a ChatGPT a revelar sus fuentes y detectar alucinaciones en información de retail. El sistema utiliza un prompt estructurado tipo 'Auditor de Datos Senior' que asigna un score de confianza y distingue entre datos verificados y datos no anclados, aplicable a cualquier investigación que requiera validar cifras antes de usarlas en decisiones de negocio.",
+          "application_area": "Análisis de Datos",
+          "application_detail": "Verificación de datos de comportamiento de consumidores en retail (afluencia, tiempo de estadía) para evitar usar información falsa en reportes o estrategias de OCESA.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El estudiante no solo experimentó con la técnica, sino que construyó un prompt reutilizable con estructura definida (roles, pasos, regla de oro) y lo aplicó a un problema real: validar datos de investigación antes de tomar decisiones. La evidencia del resultado —donde ChatGPT admitió no encontrar la fuente y redirigió a una real— demuestra uso práctico con impacto tangible.",
+          "level_up_suggestion": "Para escalar a Alquimista Destacado, empaqueta este prompt como un GPT personalizado llamado 'Auditor de Datos OCESA' con variables configurables (industria, país, tipo de dato) que cualquier colega pueda usar sin necesidad de construir el prompt desde cero."
         },
         "sprint_3": {
           "score": 3.0,
@@ -1301,9 +1576,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Comparte System Prompt con estructura completa: rol, contexto de marca, personalidad, guías de contenido, formato de salida, y restricciones. Es evidencia sólida aunque el prompt no incluye variables regionales explícitas."
             }
-          }
+          },
+          "work_synthesis": "Diseñó un sistema de copywriting dual (Worker + Supervisor) para generar parrillas de contenido mensual en redes sociales para una marca de electrodomésticos con restricciones legales complejas (FIFA/COFEPRIS) y variaciones regionales. El sistema incluye blacklists, estructura narrativa de 5 momentos, protocolo de auditoría con scorecard y separación de copies por formato, resolviendo un proceso recurrente de producción de contenido con memoria de contexto entre ciclos.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Generación mensual de copies para redes sociales con validación legal, adaptación regional y anti-repetición de contenido previo.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Tiene un caso de uso real, recurrente y ya en producción ('lo están poniendo a prueba mes con mes'). El system prompt evidencia arquitectura Supervisor-Worker con reglas operativas concretas, blacklists, estructura narrativa y protocolo de entrega estandarizado, lo cual va más allá de un prompt básico.",
+          "level_up_suggestion": "Para escalar a Alquimista Destacado, publica esto como un GPT compartido con el equipo de marketing o empaquétalo con instrucciones de onboarding para que otros diseñadores de contenido puedan usarlo sin tu intervención. Agrega una sección de memoria explícita donde el sistema registre los copies ya publicados por mes y región para fortalecer el anti-repetición."
         }
-      }
+      },
+      "maturity_level": "Alquimista Destacado",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Para escalar a Alquimista Destacado, publica esto como un GPT compartido con el equipo de marketing o empaquétalo con instrucciones de onboarding para que otros diseñadores de contenido puedan usarlo sin tu intervención. Agrega una sección de memoria explícita donde el sistema registre los copies ya publicados por mes y región para fortalecer el anti-repetición."
     },
     {
       "id": "112612489529176441100",
@@ -1352,7 +1636,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "El primer prompt muestra diseño consciente con outputs múltiples justificados (3 conceptos con Factor Wow distinto). El segundo prompt es más básico. Hay evidencia de iterar entre prompts pero no se documenta el proceso."
             }
-          }
+          },
+          "work_synthesis": "Casandra construyó un pipeline de 3 prompts encadenados para el proceso de diseño y producción de escenografías de eventos: desde la generación de conceptos creativos, pasando por la validación estructural de ingeniería, hasta la optimización logística de montaje. El sistema busca sistematizar el flujo completo de trabajo de una diseñadora/productora de eventos efímeros.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Diseño y producción de escenografías, activaciones y photo opps para festivales y eventos en vivo.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Casandra ya superó el prompting básico al construir una cadena de 3 prompts con roles especializados (diseñador, ingeniero, director de producción) que replica un flujo de trabajo real y secuencial de su industria. Sin embargo, los prompts aún usan variables placeholder en corchetes sin mostrar evidencia de ejecución real con casos concretos, lo que impide clasificarla como Alquimista Destacado.",
+          "level_up_suggestion": "Ejecuta los 3 prompts con un brief real de un cliente o proyecto reciente y documenta los outputs; luego empaquétalos en un GPT personalizado que cualquier colega de producción pueda usar sin necesidad de entender prompting."
         },
         "sprint_2": {
           "score": 3.3,
@@ -1381,7 +1671,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Documenta el contexto, la técnica aplicada y el resultado. Sin embargo, no muestra el proceso de iteración de forma explícita: cuál era el prompt antes de aplicar Anti-Slop y qué cambió específicamente."
             }
-          }
+          },
+          "work_synthesis": "Casandra construyó un prompt estructurado para el diseño de activaciones físicas en festivales, integrando análisis estructural de seguridad (herrería, truss, lastre) y concepto creativo detallado (neón, materiales, formas) en una sola instrucción reutilizable. El prompt usa variables parametrizables ([Medidas], [Marca], [Festival]) que lo convierten en una plantilla funcional para distintos proyectos de producción de eventos.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Diseño de stands y activaciones de marca en festivales de entretenimiento, con criterios de seguridad estructural y estética 'social-ready'.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt resuelve un problema real y recurrente de su trabajo (conceptualizar activaciones para festivales) con variables parametrizables que sugieren uso repetido en distintos clientes. La integración de análisis estructural técnico (calibres, puntos de lastre, alertas de seguridad) junto al concepto creativo evidencia aplicación profesional directa, no solo experimentación básica.",
+          "level_up_suggestion": "Para alcanzar nivel Experto, convierte este prompt en un GPT personalizado o flujo encadenado donde el primer paso genere el análisis estructural y el segundo, el concepto creativo con moodboard textual, permitiendo que otros en producción lo usen sin necesidad de conocer ingeniería de prompts."
         },
         "sprint_3": {
           "score": 3.3,
@@ -1414,9 +1710,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Incluye System Prompt completo y link al GPT (aunque el link no era completamente claro en la respuesta). El System Prompt tiene estructura de roles y flujo lógico definido."
             }
-          }
+          },
+          "work_synthesis": "Casandra diseñó un sistema de dirección creativa multi-paso (Supervisor-Worker) que convierte un brief de evento en una propuesta completa con coherencia narrativa entre tres momentos del evento (Plenaria, Activación y Photo Opp). El sistema no solo genera conceptos, sino que los somete a revisión crítica de viabilidad de producción, simulando el flujo real de una agencia. El resultado es un Custom GPT reutilizable que acelera el punto de partida creativo antes de llegar a renders y moodboards.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Diseño de experiencias y conceptos creativos para eventos corporativos y de entretenimiento con filtro de producción integrado",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Casandra construyó un Custom GPT con flujo multi-paso aplicado directamente a su trabajo real de dirección creativa en eventos, resolviendo un problema recurrente (conceptos superficiales sin coherencia narrativa ni viabilidad de producción). Sin embargo, no hay evidencia de que el sistema esté diseñado para ser reutilizado por otros colegas o que incluya documentación/SOPs que lo eleven a solución compartida.",
+          "level_up_suggestion": "Para dar el salto a Alquimista Destacado, documenta el sistema como un SOP cognitivo compartible y preséntalo a tu equipo de producción o dirección creativa para que otros puedan usarlo con cualquier brief, agregando una sección de inputs estandarizados (tipo brief template) que reduzca la fricción de entrada para nuevos usuarios."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Producción de Eventos",
+      "level_up_suggestion": "Para dar el salto a Alquimista Destacado, documenta el sistema como un SOP cognitivo compartible y preséntalo a tu equipo de producción o dirección creativa para que otros puedan usarlo con cualquier brief, agregando una sección de inputs estandarizados (tipo brief template) que reduzca la fricción de entrada para nuevos usuarios."
     },
     {
       "id": "103454950493181799489",
@@ -1465,7 +1770,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "La integración del Step-Back en el Sprint 1 (antes de que se enseñara formalmente en Sprint 2) demuestra dominio adelantado. El diseño de una Fase 1 de análisis antes de la Fase 2 de ejecución es una decisión arquitectónica consciente y sofisticada."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt de ingeniería de experiencias para patrocinios en conciertos de Corridos Tumbados, estructurado en dos fases: un análisis cultural profundo (step-back) seguido de un workflow de ejecución que genera análisis de fit, activaciones, matriz de beneficios y pitch de cierre. Sirve como plantilla reutilizable para desarrollar propuestas de patrocinio que conecten marcas de bebidas con audiencias específicas de manera auténtica.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Desarrollo de propuestas de patrocinio y activaciones de marca para eventos musicales masivos en OCESA.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt evidencia aplicación a un caso de uso real y recurrente en el negocio de OCESA (patrocinios en conciertos), con estructura multi-fase, uso de técnica step-back y variables reemplazables como [MARCA DE BEBIDA] que sugieren intención de reutilización contextualizada. Va más allá del prompting básico al diseñar un flujo de pensamiento orientado a un entregable de negocio concreto.",
+          "level_up_suggestion": "Para alcanzar Alquimista Destacado, convierte este prompt en un GPT personalizado o flujo en ChatGPT donde otros colegas de patrocinios puedan ingresar variables (género musical, marca, tipo de evento) y obtener propuestas estructuradas sin necesidad de conocer ingeniería de prompting."
         },
         "sprint_2": {
           "score": 2.7,
@@ -1494,7 +1805,13 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "El proceso iterativo no está documentado. Se menciona qué técnica se usó y el resultado, pero no se explica cómo evolucionó el prompt ni qué cambios se hicieron. Falta el prompt final que implementa la triangulación."
             }
-          }
+          },
+          "work_synthesis": "El estudiante aplicó una técnica de triangulación de perspectivas para validar datos sobre la presencia de Red Bull en el Corona Capital, contrastando fuentes oficiales, prensa especializada y evidencia operativa. El resultado es un párrafo de análisis de patrocinios que garantiza certeza en la información antes de presentarla como base para decisiones estratégicas de cuenta.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Análisis y validación de datos de patrocinadores para propuestas comerciales en eventos OCESA",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El estudiante describe la técnica correctamente y produce un párrafo de output, pero el trabajo presentado es más una explicación conceptual del método que evidencia de un caso de uso recurrente y aplicado a su flujo real de trabajo. No se comparte el prompt final ni se demuestra integración sistemática en tareas diarias.",
+          "level_up_suggestion": "Construye y comparte el prompt completo que usaste para triangular los datos de Red Bull, incluyendo las instrucciones específicas para cada perspectiva. Luego documenta cómo lo usarías de forma recurrente en el análisis de otros patrocinadores, mostrando que resuelve un problema real y repetible en tu trabajo."
         },
         "sprint_3": {
           "score": 3.0,
@@ -1527,9 +1844,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Incluye link funcional al proyecto en ChatGPT y describe cómo usarlo. El link es evidencia de implementación real. Sin embargo, no se comparte el System Prompt que define el comportamiento del sistema."
             }
-          }
+          },
+          "work_synthesis": "Construyó un GPT especializado en generación de propuestas comerciales de patrocinio, configurado con un Inventario Maestro de activos y reglas de calidad mediante scorecard. El sistema permite a cualquier miembro del equipo comercial generar propuestas de patrocinio para marcas y eventos de forma estandarizada, validando la calidad del output antes de presentarlo al cliente.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Automatización de propuestas de patrocinio para eventos OCESA, con validación de calidad integrada y capacidad de incorporar datos de marcas externas.",
+          "maturity_level": "Alquimista Destacado",
+          "maturity_justification": "Construyó un GPT reutilizable con contexto preconfigurado (Inventario Maestro, reglas de calidad, scorecard de validación) que otros miembros del equipo pueden usar sin conocimiento técnico de prompting. Supera el prompt aislado al encapsular datos, criterios y flujo de mejora iterativa en un solo activo digital compartible.",
+          "level_up_suggestion": "Conecta el GPT a un CRM o hoja de seguimiento vía Zapier/Make para que cada propuesta generada quede registrada automáticamente con la marca, evento y puntaje de scorecard, creando un pipeline de patrocinios auditable. Documenta 3-5 casos de uso exitosos con métricas de tiempo ahorrado para demostrar ROI al equipo directivo."
         }
-      }
+      },
+      "maturity_level": "Alquimista Destacado",
+      "primary_area": "Ventas y Propuestas",
+      "level_up_suggestion": "Conecta el GPT a un CRM o hoja de seguimiento vía Zapier/Make para que cada propuesta generada quede registrada automáticamente con la marca, evento y puntaje de scorecard, creando un pipeline de patrocinios auditable. Documenta 3-5 casos de uso exitosos con métricas de tiempo ahorrado para demostrar ROI al equipo directivo."
     },
     {
       "id": "118007543304428522295",
@@ -1578,7 +1904,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "La decisión de usar 'historias' como framework de briefing en lugar de la lógica de ventas estándar muestra comprensión de cómo guiar el output del modelo hacia un resultado diferenciado. Hay evidencia de decisión de diseño consciente."
             }
-          }
+          },
+          "work_synthesis": "La estudiante construyó un prompt para generar un formulario de briefing creativo orientado a clientes de marketing, transformando terminología técnica de funnel en lenguaje narrativo accesible. La herramienta busca resolver el problema recurrente de clientes imprecisas que solicitan 'storytelling' sin poder definirlo, guiándolas a través de estructuras narrativas (inicio-nudo-desenlace) y herramientas visuales como el Semáforo Creativo.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Formulario de briefing para clientes de servicios creativos/marketing que traduce conceptos de funnel y storytelling a lenguaje no técnico",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt está bien estructurado con rol, tarea, contexto y formato claros, lo que evidencia comprensión sólida de ingeniería de prompts. Sin embargo, el trabajo queda en la generación del artefacto (el formulario) sin evidencia de que ya lo esté usando con clientas reales ni de que haya un flujo integrado en su proceso de trabajo diario.",
+          "level_up_suggestion": "Usa el formulario generado con al menos una clienta real y documenta cómo cambió el proceso de briefing; luego convierte el prompt en un GPT personalizado que tú y otras diseñadoras puedan usar directamente con sus propias clientas sin necesidad de reescribir el prompt cada vez."
         },
         "sprint_2": {
           "score": 3.7,
@@ -1607,7 +1939,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Documenta claramente el proceso: comenzó con Step-Back, descubrió que el exceso de concepto perjudicaba prompts de imagen, y ajustó la estrategia hacia concisión técnica. Es uno de los mejores ejemplos de iteración consciente y documentada en el grupo."
             }
-          }
+          },
+          "work_synthesis": "El estudiante desarrolló una metodología de prompting para generación de imágenes en Midjourney, combinando Step-Back, estructuración por capas y ponderación de elementos (weights ::3::2::1) para resolver el problema recurrente de distorsión de rostros. El resultado es un sistema de construcción de prompts visuales jerárquico que mejora la calidad fotorrealista en contenido de lifestyle para marketing.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Generación de imágenes de alta calidad para campañas de lifestyle y contenido digital en OCESA",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "Demuestra comprensión técnica sólida al combinar múltiples técnicas (Step-Back, layers, weights) y articula el aprendizaje conceptual sobre cómo los modelos de imagen procesan información de forma lineal, pero el caso sigue siendo un ejercicio exploratorio de generación de imagen sin anclaje a un flujo de trabajo productivo recurrente o problema de negocio específico documentado.",
+          "level_up_suggestion": "Para subir a Alquimista en Práctica, aplica esta metodología de prompting a una necesidad real y recurrente de tu equipo (ej. generación consistente de assets para una campaña específica de OCESA) y documenta el antes/después en tiempo o calidad. Crear una biblioteca de prompts base reutilizables por el equipo de marketing sería el siguiente paso natural."
         },
         "sprint_3": {
           "score": 3.0,
@@ -1640,9 +1978,18 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "La respuesta describe el sistema pero no incluye System Prompt completo ni link verificable. La evidencia es descriptiva, no artefactual."
             }
-          }
+          },
+          "work_synthesis": "Diseñó un sistema Supervisor-Worker en formato GPT que toma una propuesta creativa aprobada y la traduce automáticamente en entregables de campaña 360 (parrilla, guiones y journeys de email), con un mecanismo de scoring que valida coherencia entre piezas antes de entregarlas al cliente. El sistema estandariza la brecha entre estrategia y ejecución, reduciendo retrabajo y pérdida de posicionamiento de marca bajo presión de tiempo.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Producción de entregables de campaña 360 para marcas de entretenimiento/OCESA: parrilla de contenido, guiones base y journeys de email con validación de coherencia estratégica.",
+          "maturity_level": "Alquimista Destacado",
+          "maturity_justification": "Construyó y publicó un GPT funcional (evidencia con link verificable) que implementa arquitectura Supervisor-Worker con lógica de validación por score, lo que lo convierte en una herramienta reutilizable por otros miembros del equipo en cada ciclo de campaña, no solo un prompt de uso personal.",
+          "level_up_suggestion": "Para consolidar el nivel, documenta el SOP de inputs requeridos (qué datos estratégicos alimentar al sistema) y agrega un paso de output estructurado que exporte los entregables en formato listo para presentación a cliente, reduciendo aún más la fricción operativa."
         }
-      }
+      },
+      "maturity_level": "Alquimista Destacado",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Para consolidar el nivel, documenta el SOP de inputs requeridos (qué datos estratégicos alimentar al sistema) y agrega un paso de output estructurado que exporte los entregables en formato listo para presentación a cliente, reduciendo aún más la fricción operativa."
     },
     {
       "id": "100618581398728411983",
@@ -1691,7 +2038,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "El prompt muestra decisiones de diseño conscientes (cambiar el encuadre de 'venta' a 'justificación de inversión'), aunque no muestra evidencia explícita de iteración ni mecanismos de control de calidad."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado con rol, contexto e inputs variables para generar estrategias de marketing de conciertos, específicamente orientado a superar la resistencia por precio mediante el posicionamiento de exclusividad y experiencia. Sirve como plantilla reutilizable para campañas de diferentes artistas en plataformas sociales como TikTok e Instagram.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Estrategia de contenido y copywriting para venta de boletos de conciertos de alto nivel en redes sociales",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt está bien estructurado y usa variables intercambiables, lo que muestra comprensión técnica de la ingeniería de prompting; sin embargo, no hay evidencia de que este prompt esté siendo aplicado a un caso real y recurrente de su trabajo diario en OCESA, quedándose en ejercicio teórico.",
+          "level_up_suggestion": "Toma este prompt y aplícalo a un artista REAL con el que estés trabajando actualmente en OCESA, documenta los outputs que generó y cómo los usaste en una campaña concreta; ese paso lo convierte de ejercicio a caso de uso de trabajo real y lo lleva al siguiente nivel."
         },
         "sprint_2": {
           "score": 4.0,
@@ -1720,7 +2073,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Documenta el proceso: parte de un festival de música urbana, identifica el problema del slop genérico, aplica Anti-Slop progresivamente. El template final tiene evidencia clara de múltiples iteraciones de refinamiento."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó una plantilla reutilizable de generación de copys estratégicos para festivales de música urbana, integrando técnicas Anti-Slop, Chain-of-Thought y un checklist de calidad editorial. El sistema está diseñado para producir contenido auténtico y culturalmente relevante, eliminando genéricos y exigiendo especificidad verificable en boletines y materiales de comunicación de eventos OCESA.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Generación y auditoría de copys para festivales de música urbana, adaptados a géneros, artistas y cultura local mexicana.",
+          "maturity_level": "Alquimista Destacado",
+          "maturity_justification": "El estudiante no solo resolvió un problema propio, sino que construyó una plantilla estructurada con roles, restricciones, cadena de pensamiento y un checklist de calidad que cualquier colega del equipo de marketing podría reutilizar para distintos festivales. La arquitectura multi-capa (generador + auditor) evidencia pensamiento sistémico más allá del uso personal.",
+          "level_up_suggestion": "Para consolidar el nivel Alquimista Destacado, convierte esta plantilla en un GPT personalizado con campos de entrada dinámicos (género, tono, canciones) para que el equipo lo use sin necesidad de editar el prompt manualmente. Complementa con 3-5 ejemplos Few-Shot de copys aprobados para anclar el estándar de calidad deseado."
         },
         "sprint_3": {
           "score": 2.3,
@@ -1753,9 +2112,18 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "No se comparte el System Prompt ni el link al GPT. La respuesta describe el caso de uso pero no proporciona la evidencia requerida por la instrucción del sprint."
             }
-          }
+          },
+          "work_synthesis": "El estudiante diseñó un sistema de conversión de boletines de prensa en guiones para Reels y TikToks, estructurado como flujo reutilizable por artista. El activo está programado para aplicarse de manera recurrente a distintos artistas del roster, convirtiendo contenido existente en formatos virales para redes sociales.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Generación automatizada de guiones para redes sociales (Reels/TikToks) a partir de boletines de prensa de artistas OCESA",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Hay evidencia de un caso de uso real y recurrente aplicado a su trabajo diario (boletines → guiones por artista), y menciona que el sistema está 'programado' para reutilizarse con múltiples artistas, lo que indica estructura de flujo y no solo prompts aislados. Sin embargo, la descripción es vaga y no se provee link al GPT o System Prompt, lo que impide confirmar si hay arquitectura real o simplemente un prompt guardado.",
+          "level_up_suggestion": "Comparte el System Prompt o GPT configurado con ejemplos de inputs/outputs reales para validar la arquitectura; además, documenta el flujo supervisor-worker (ej. un agente que recibe el boletín y otro que adapta el tono por plataforma) para escalar de practicante a experto y que otros del equipo puedan usar el sistema sin depender de ti."
         }
-      }
+      },
+      "maturity_level": "Alquimista Destacado",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Comparte el System Prompt o GPT configurado con ejemplos de inputs/outputs reales para validar la arquitectura; además, documenta el flujo supervisor-worker (ej. un agente que recibe el boletín y otro que adapta el tono por plataforma) para escalar de practicante a experto y que otros del equipo puedan usar el sistema sin depender de ti."
     },
     {
       "id": "113067069449122491348",
@@ -1804,7 +2172,13 @@ const DASHBOARD_DATA = {
               "score": 1,
               "justification": "No hay evidencia de comprensión de cómo funciona el modelo, ni iteración, ni decisiones de diseño conscientes. El prompt es conversacional y directo, sin estructura de ingeniería."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt para generar una página visual que explica un funnel de marketing digital con tres etapas diferenciadas por color. El resultado es un recurso de presentación para clientes, orientado a comunicar conceptos de marketing de forma visual y profesional.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Visualización de funnel de marketing digital para presentaciones a clientes",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt tiene estructura básica y un objetivo claro, pero es una solicitud genérica de contenido visual sin anclaje a un problema real y recurrente de su trabajo en OCESA. No hay evidencia de aplicación a un caso específico del negocio ni de iteración o refinamiento del prompt.",
+          "level_up_suggestion": "Conecta este prompt a un caso real de tu área: por ejemplo, crea el funnel de una campaña específica de OCESA (un concierto o evento próximo) con datos y mensajes reales. Agrega contexto de audiencia, objetivos de negocio y restricciones de marca para que el output sea directamente usable en tu trabajo diario."
         },
         "sprint_2": {
           "score": 3.7,
@@ -1833,7 +2207,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Aunque el prompt final es de alta calidad, el estudiante no documenta explícitamente el proceso de iteración ni comparte versiones previas o lo que cambió. La evidencia de refinamiento es implícita en la sofisticación del resultado."
             }
-          }
+          },
+          "work_synthesis": "El estudiante diseñó un GPT especializado que actúa como Auditor Senior de Arquitectura Backend, capaz de detectar deuda técnica generada por IA ('AI-generated technical debt') y evaluar la calidad del código más allá de su funcionalidad. El sistema aplica un framework propio (ARV) con criterios Anti-Slop, ofrece soluciones comparativas (Quick-fix vs. Architectural) y cita fuentes técnicas de referencia, siendo reutilizable por cualquier desarrollador del equipo.",
+          "application_area": "Tecnología y Desarrollo",
+          "application_detail": "Auditoría automatizada de calidad de código backend para prevenir deuda técnica generada por herramientas de IA como Copilot.",
+          "maturity_level": "Alquimista Destacado",
+          "maturity_justification": "El estudiante no solo usa IA para resolver una tarea propia, sino que construyó una herramienta (GPT configurado con rol, protocolo y restricciones) que otros desarrolladores pueden reutilizar; la integración de framework ARV, criterio Anti-Slop, triangulación de soluciones y exigencia de fuentes demuestra diseño sistemático de múltiples capas.",
+          "level_up_suggestion": "Para consolidar el nivel, conecta este GPT a un flujo automatizado (ej. GitHub Action o webhook) que dispare la auditoría automáticamente en cada Pull Request, convirtiendo la herramienta en un sistema integrado al ciclo de desarrollo real de OCESA."
         },
         "sprint_3": {
           "score": 3.0,
@@ -1866,9 +2246,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Incluye un link a ChatGPT Share, lo que constituye evidencia verificable del GPT construido. El link funcional eleva la calidad de la evidencia sobre los demás estudiantes sin link."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un GPT especializado como Auditor Senior de Arquitectura Backend que detecta deuda técnica generada por IA en código, aplicando un framework propio (ARV) para diferenciar entre soluciones superficiales y soluciones de arquitectura real. Está diseñado para integrarse en el flujo de revisión de código (PRs) y ser usado por equipos de desarrollo antes de que código deficiente llegue a producción.",
+          "application_area": "Tecnología y Desarrollo",
+          "application_detail": "Revisión automatizada de código generado por IA para detectar antipatrones, lógica hardcodeada y malas decisiones de arquitectura backend.",
+          "maturity_level": "Alquimista Destacado",
+          "maturity_justification": "El estudiante no solo resuelve un problema propio, sino que construye una herramienta reutilizable por todo el equipo con un framework de auditoría estructurado (ARV) que genera dos niveles de solución diferenciados; esto evidencia pensamiento sistémico y capacidad de crear activos que otros pueden adoptar.",
+          "level_up_suggestion": "Para consolidar el nivel experto, integra este GPT en un flujo automatizado real (por ejemplo, un webhook en GitHub/GitLab que dispare la auditoría en cada PR) y documenta métricas de impacto como tiempo ahorrado en revisiones o porcentaje de deuda técnica detectada antes de producción."
         }
-      }
+      },
+      "maturity_level": "Alquimista Destacado",
+      "primary_area": "Tecnología y Desarrollo",
+      "level_up_suggestion": "Para consolidar el nivel experto, integra este GPT en un flujo automatizado real (por ejemplo, un webhook en GitHub/GitLab que dispare la auditoría en cada PR) y documenta métricas de impacto como tiempo ahorrado en revisiones o porcentaje de deuda técnica detectada antes de producción."
     },
     {
       "id": "116079253329523330287",
@@ -1917,7 +2306,13 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "El prompt es directo y funcional pero no muestra evidencia de diseño consciente o iteración. Es un prompt de primera versión bien orientado al problema, pero sin mecanismos de control ni consideración de casos borde."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado para generar cronogramas de montaje BTL con parámetros específicos de tiempo, prioridades operativas y formato tabular. Sirve como herramienta de planificación rápida para producción de eventos, reduciendo el tiempo de elaboración manual de timelines de montaje.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Generación de cronogramas de montaje BTL con bloques de tiempo, responsables y estados críticos para eventos OCESA.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt resuelve un problema real y recurrente de su trabajo diario (planificación de montajes), incorpora variables operativas concretas como tiempos específicos, prioridades de área y formato de entrega estructurado, lo que evidencia aplicación directa al contexto laboral.",
+          "level_up_suggestion": "Agrega variables dinámicas al prompt (número de proveedores, metros cuadrados del espacio, tipo de evento) para que el mismo template sirva para cualquier montaje. Como siguiente paso, considera construir un GPT reutilizable que tus colegas de producción puedan usar sin necesidad de reescribir el prompt cada vez."
         },
         "sprint_2": {
           "score": 2.0,
@@ -1946,7 +2341,13 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "Muestra claramente el antes y después (texto informal → correo profesional con coordinación de catering) y la acción de refinamiento (agregar contexto de urgencia). Es una iteración real aunque no use terminología técnica del sprint."
             }
-          }
+          },
+          "work_synthesis": "El estudiante usó IA para mejorar la redacción de una solicitud de catering para un evento real de OCESA (activación HSBC en My Chemical Romance), enriqueciendo el contexto original con información adicional para obtener una comunicación más profesional y justificada. El resultado es un correo operativo más completo que explica el porqué de la solicitud y facilita la aprobación.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Redacción de solicitud de catering para equipo de producción en evento de alto perfil con cliente corporativo.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "Aunque el caso de uso es real y laboral, la técnica aplicada es básica: agregar contexto conversacional para mejorar un texto. No se evidencia uso de técnicas avanzadas del sprint (Few-Shot, Chain-of-Thought, etc.) ni un proceso estructurado o replicable.",
+          "level_up_suggestion": "Para subir de nivel, construye un prompt plantilla con Few-Shot que incluya 2-3 ejemplos de solicitudes de catering bien redactadas, de modo que cualquier coordinador del equipo pueda generar comunicaciones profesionales similares de forma autónoma y consistente."
         },
         "sprint_3": {
           "score": 3.0,
@@ -1979,9 +2380,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Comparte el System Prompt completo de la activación (con pasos CoT, requerimientos técnicos de Truss, capas de diseño), lo que evidencia implementación real con detalle técnico de producción."
             }
-          }
+          },
+          "work_synthesis": "El estudiante diseñó un sistema de prompting estructurado para la conceptualización de activaciones de marca en festivales de música, aplicado a un cliente real (HSBC). Evolucionó de un prompt genérico a uno con pasos secuenciales (CoT) que incluye requerimientos técnicos, capacidad de flujo de personas, estilo visual y referencias específicas, logrando resultados más precisos y accionables para su trabajo diario.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Diseño y conceptualización de activaciones de marca para clientes en festivales de música",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Aplica IA a un problema real y recurrente de su trabajo (diseño de activaciones para clientes como HSBC) y demuestra comprensión de cómo estructurar prompts con pasos, restricciones técnicas y referencias. Sin embargo, no presenta un GPT construido ni un sistema reutilizable formalizado para su equipo, solo la intención de compartirlo.",
+          "level_up_suggestion": "Convierte este prompt estructurado en un GPT o plantilla documentada con campos variables (nombre del cliente, tipo de evento, presupuesto, aforo) para que cualquier miembro de su equipo pueda generar propuestas de activación sin depender de él como intermediario."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Producción de Eventos",
+      "level_up_suggestion": "Convierte este prompt estructurado en un GPT o plantilla documentada con campos variables (nombre del cliente, tipo de evento, presupuesto, aforo) para que cualquier miembro de su equipo pueda generar propuestas de activación sin depender de él como intermediario."
     },
     {
       "id": "103035128104374350950",
@@ -2028,7 +2438,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Diseña un workflow multi-paso (Concepto → Copywriting → Directrices de Arte → Verificación de Tono), incluye una restricción de verificación interna del modelo ('¿Se ríe con ellos o de ellos?') y demuestra comprensión de que el modelo necesita un checklist de salida para no producir contenido que dañe la marca."
             }
-          }
+          },
+          "work_synthesis": "Omar construyó un prompt estructurado de múltiples capas para generar una pieza de real-time marketing reactiva para Purina, aprovechando el fenómeno cultural therian. El prompt integra rol, contexto, objetivo y flujo de trabajo en pasos discretos (concepto, copy, dirección de arte), funcionando como un brief creativo automatizado que podría producir un entregable casi listo para presentación.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Generación de contenido reactivo de marca para campañas de real-time marketing en redes sociales, aplicable a la lógica de contenido cultural de OCESA y sus patrocinadores.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt es técnicamente sólido y demuestra dominio de estructura (rol + contexto + workflow + reglas), pero el ejercicio es un caso hipotético para un cliente externo (Purina), no una solución aplicada a un problema real y recurrente de su trabajo diario en OCESA. No hay evidencia de que este flujo esté siendo usado operacionalmente.",
+          "level_up_suggestion": "Replantea este mismo framework de 'brief creativo automatizado' hacia un caso concreto de tu trabajo en OCESA: por ejemplo, generar contenido reactivo para un artista o festival específico ante un trending topic. Si lo conviertes en un GPT o plantilla reutilizable para tu equipo, das el salto a Alquimista en Práctica."
         },
         "sprint_2": {
           "score": 4.0,
@@ -2057,9 +2473,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "El análisis del problema (por qué la IA tiende al Slop en este tema), la técnica seleccionada y el resultado están articulados como un proceso de ingeniería completo con razonamiento visible de cada decisión."
             }
-          }
+          },
+          "work_synthesis": "Omar construyó un framework de investigación con verificación forzada que combina restricción de fuentes de autoridad (INEGI, CONEVAL, OIT), auditoría de confianza declarada y protocolo anti-slop para extraer datos duros sobre realidad social en México. El resultado es un prompt reutilizable que transforma consultas genéricas en hallazgos verificados con nivel de certeza explícito, útil para fundamentar decisiones estratégicas o proyectos de impacto social.",
+          "application_area": "Análisis de Datos",
+          "application_detail": "Investigación de contexto social y político en México para proyectos de responsabilidad social, alianzas institucionales o inteligencia de audiencias jóvenes en OCESA.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Omar no solo experimentó con técnicas avanzadas, sino que las combinó en un protocolo estructurado con caso de uso real (investigación de vulnerabilidad juvenil) y obtuvo un output concreto y verificable con datos específicos. Sin embargo, el prompt está diseñado para su propio uso personal, sin evidencia de que otros miembros del equipo lo estén usando o de que esté integrado a un flujo automatizado.",
+          "level_up_suggestion": "Convierte este prompt maestro en un GPT personalizado o template compartido en Notion/Drive para que el equipo de comunicación o RSE de OCESA lo use sin necesidad de conocer la ingeniería detrás. Añade una instrucción de output que genere el reporte en formato ejecutivo listo para presentar a directivos."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Convierte este prompt maestro en un GPT personalizado o template compartido en Notion/Drive para que el equipo de comunicación o RSE de OCESA lo use sin necesidad de conocer la ingeniería detrás. Añade una instrucción de output que genere el reporte en formato ejecutivo listo para presentar a directivos."
     },
     {
       "id": "105068241516045024966",
@@ -2106,7 +2531,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "La decisión de especificar los elementos sensoriales (espacio, luz, interacción, narrativa) como variables del diseño muestra comprensión de que el modelo necesita parámetros concretos para no producir conceptos genéricos. Hay evidencia de diseño intencional."
             }
-          }
+          },
+          "work_synthesis": "Paulina construyó un prompt estructurado para generar propuestas de experiencias de marca inmersivas, cubriendo desde concepto rector hasta lenguaje sensorial y restricciones creativas. Sirve como plantilla reutilizable para desarrollar pitches creativos de activaciones experienciales con profundidad estratégica y narrativa.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Generación de propuestas creativas para experiencias de marca inmersivas y activaciones experienciales en el contexto de entretenimiento y eventos.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt está muy bien estructurado técnicamente y demuestra dominio de la anatomía del prompt (rol, tarea, contexto, formato, restricciones), pero no hay evidencia de que esté resolviendo un problema real y recurrente de su trabajo en OCESA; se presenta como un ejercicio de diseño de prompt sin ancla a un proyecto o necesidad laboral específica.",
+          "level_up_suggestion": "Para subir al siguiente nivel, toma este prompt y aplícalo a una marca o cliente real actual de OCESA, documentando cómo el output generado aceleró o mejoró una propuesta real; eso transformaría el ejercicio en un caso de uso concreto de trabajo diario."
         },
         "sprint_2": {
           "score": 4.0,
@@ -2135,9 +2566,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Documenta claramente el prompt roto inicial, el diagnóstico del problema (slop visual), la técnica elegida (CoT), y cómo la cadena de razonamiento resolvió la falta de jerarquía y especificidad de materiales. Es un ejemplo completo del ciclo de refinamiento."
             }
-          }
+          },
+          "work_synthesis": "Paulina desarrolló una metodología de dirección de arte asistida por IA para la creación de Photo Opportunities navideños de gran formato (4x4m), aplicando Chain-of-Thought para descomponer la escena en capas estructurales y eliminar resultados genéricos. El sistema le permite generar visualizaciones hiperrealistas con especificaciones técnicas precisas (materiales, iluminación, composición) que comunican el nivel de producción que OCESA requiere para experiencias de marca.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Generación de renders y dirección de arte para activaciones y experiencias físicas en eventos de entretenimiento",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Resuelve un problema real y recurrente de su trabajo (visualización de producción de eventos) con una técnica aplicada conscientemente, pasando de resultados genéricos a dirección de arte técnica. Sin embargo, el output es un prompt personal no sistematizado para que otros lo reusen, lo que aún no lo lleva al nivel Experto.",
+          "level_up_suggestion": "Empaqueta este prompt como una plantilla o GPT personalizado que cualquier diseñador o productor de OCESA pueda usar para distintos tipos de activaciones (no solo navideñas), parametrizando variables como dimensiones, paleta de color y estilo de evento para escalar el impacto más allá de tu uso individual."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Empaqueta este prompt como una plantilla o GPT personalizado que cualquier diseñador o productor de OCESA pueda usar para distintos tipos de activaciones (no solo navideñas), parametrizando variables como dimensiones, paleta de color y estilo de evento para escalar el impacto más allá de tu uso individual."
     },
     {
       "id": "110196614206290248442",
@@ -2184,7 +2624,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "El diseño del prompt como un procesador de 3 pasos secuenciales (Extrae datos estructurados → Valida lógica → Presenta confirmación) muestra comprensión de cómo el modelo necesita instrucciones de flujo para no saltar directamente a conclusiones. Es ingeniería de workflow aplicada."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado de 3 pasos para centralizar y procesar instrucciones caóticas de cambios en campañas de marketing que llegan por múltiples canales (WhatsApp, Slack, Teams, Email). El sistema extrae datos clave, valida la lógica de la instrucción y genera un mensaje claro para el equipo ejecutor, actuando como filtro de ruido operativo.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Procesamiento y normalización de instrucciones dispersas para cambios en campañas digitales, evitando errores de ejecución por comunicación fragmentada.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt resuelve un problema real, recurrente y específico de su operación diaria: el caos de instrucciones multicanel en campañas. La estructura de 3 pasos con datos a extraer definidos y restricciones de validación demuestra pensamiento de proceso, no solo experimentación con IA.",
+          "level_up_suggestion": "Convierte este prompt en un GPT reutilizable o automatización en Make/Zapier donde cualquier miembro del equipo pegue el mensaje caótico y reciba automáticamente el resumen estructurado, eliminando su intervención manual y escalando el impacto a todo el equipo."
         },
         "sprint_2": {
           "score": 3.0,
@@ -2213,9 +2659,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "El estudiante documenta el problema (slop genérico para Disney on Ice), la técnica (generar 'copy out' anti-slop), y el resultado con ejemplos concretos. El proceso está documentado aunque de forma narrativa."
             }
-          }
+          },
+          "work_synthesis": "El estudiante aplicó la técnica Anti-Slop para generar copy de ventas diferenciado para Disney on Ice, eliminando frases genéricas y sustituyéndolas por lenguaje sensorial y argumentos de urgencia específicos al contexto del evento. El resultado es un texto publicitario que aborda la barrera real de vender con meses de anticipación, usando proximidad física y escasez como palancas persuasivas.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Copy de ventas para Disney on Ice con técnica Anti-Slop, orientado a superar objeciones de compra anticipada",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El estudiante resolvió un problema real y recurrente de su trabajo (vender shows con meses de anticipación) aplicando una técnica específica con criterio estratégico; el output no es un ejercicio genérico sino copy directamente utilizable para una campaña de OCESA.",
+          "level_up_suggestion": "Construye un prompt reutilizable con variables (nombre del show, fecha, tipo de asiento) que cualquier persona del equipo de marketing pueda usar para generar copy Anti-Slop para futuros eventos, documentando los criterios de qué palabras evitar y por qué."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Construye un prompt reutilizable con variables (nombre del show, fecha, tipo de asiento) que cualquier persona del equipo de marketing pueda usar para generar copy Anti-Slop para futuros eventos, documentando los criterios de qué palabras evitar y por qué."
     },
     {
       "id": "112535211651425914416",
@@ -2262,7 +2717,13 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "El diseño como workflow multi-paso (Análisis de datos → Cálculo de Insights → Generación de output final en PPTX) con un destinatario específico (Director de Contenido) demuestra comprensión de cómo el modelo necesita instrucciones secuenciales para producir outputs complejos. Es ingeniería de workflow avanzada para Sprint 1."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt de alta especificidad que automatiza la generación de reportes mensuales de contenido digital: toma un PDF con métricas de rendimiento y produce directamente un archivo PowerPoint (.pptx) estructurado en 7 slides listos para presentación ejecutiva. El sistema incluye cálculo de variaciones, detección de anomalías y formato directivo, eliminando horas de trabajo manual de reporte.",
+          "application_area": "Análisis de Datos",
+          "application_detail": "Automatización del reporte mensual de performance de contenidos digitales para Director de Contenido, con métricas por plataforma social y generación de archivo .pptx ejecutivo.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt resuelve un problema real, recurrente y específico de su rol (reporte mensual de contenidos), con instrucciones de flujo multi-paso, estructura de slides predefinida y restricciones de calidad de datos. Sin embargo, no hay evidencia de que sea una solución reutilizable por otros (GPT empaquetado, automatización vía n8n/Make, o plantilla compartida con el equipo).",
+          "level_up_suggestion": "Empaqueta este flujo como un GPT personalizado con instrucciones del sistema precargadas y una plantilla de PDF estándar, de modo que cualquier miembro del equipo de contenido pueda generar su reporte mensual sin necesidad de conocer el prompt. Agrega un paso de validación que compare automáticamente contra KPIs objetivo almacenados en un Google Sheet conectado."
         },
         "sprint_2": {
           "score": 3.0,
@@ -2291,9 +2752,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "El estudiante documenta claramente el problema (texto sin métricas y sin sustento numérico), la técnica (solicitar benchmarks), y el resultado mejorado. El proceso de refinamiento está bien documentado aunque de forma narrativa."
             }
-          }
+          },
+          "work_synthesis": "El estudiante tomó un texto genérico de mejores prácticas para Instagram y lo enriqueció usando IA para incorporar benchmarks numéricos concretos (tasas de engagement, incrementos porcentuales de alcance, métricas de retención). El resultado es una guía táctica de Instagram con datos cuantitativos que puede usarse como base para estrategia de contenido digital.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Optimización de estrategia orgánica en Instagram para marca en sector servicios financieros/crédito, con métricas de referencia para 2026.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El estudiante usa IA para mejorar un documento existente añadiendo benchmarks, lo cual muestra comprensión de cómo extraer valor de la herramienta; sin embargo, no hay evidencia de que este output resuelva un problema recurrente y específico de su trabajo diario ni de que esté integrado a un flujo real de trabajo en OCESA.",
+          "level_up_suggestion": "Para avanzar a Alquimista en Práctica, aplica esta misma técnica a un brief o reporte real de tu área: toma un documento de trabajo tuyo (plan de contenidos, propuesta de campaña) y documenta cómo la IA mejoró una decisión concreta que tomaste o presentaste a tu equipo."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Análisis de Datos",
+      "level_up_suggestion": "Para avanzar a Alquimista en Práctica, aplica esta misma técnica a un brief o reporte real de tu área: toma un documento de trabajo tuyo (plan de contenidos, propuesta de campaña) y documenta cómo la IA mejoró una decisión concreta que tomaste o presentaste a tu equipo."
     },
     {
       "id": "109113403661754840853",
@@ -2340,7 +2810,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "La integración de diseño biofílico y emocional como parámetros del rol demuestra comprensión de que el modelo necesita marcos de referencia estéticos específicos para producir conceptos diferenciados. Sin embargo, no hay formato de output definido ni instrucciones de verificación."
             }
-          }
+          },
+          "work_synthesis": "Rodrigo construyó un prompt estructurado con múltiples capas (rol, tarea, contexto, restricciones y formato de salida) para generar conceptos de diseño de ambiente y atmósfera para una convención corporativa global. El prompt está orientado a producir propuestas creativas listas para presentar a clientes, combinando storytelling, sostenibilidad y zonificación de espacios.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Diseño conceptual de ambientes para convenciones corporativas de alto nivel en OCESA",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "Rodrigo demuestra dominio sólido de arquitectura de prompts (rol + tarea + contexto + restricciones + formato), pero el trabajo presentado es el prompt en sí mismo y no evidencia que este output se esté usando de forma recurrente en un flujo real de trabajo con clientes o producciones activas. No hay caso de uso aplicado con resultado concreto, solo la construcción técnica.",
+          "level_up_suggestion": "Aplica este prompt a una convención real o propuesta activa en OCESA y documenta cómo el output de IA aceleró o mejoró el proceso de pitch al cliente. Ir un paso más allá: convierte este prompt en una plantilla reutilizable para tu equipo donde solo cambien variables como 'nombre de marca' y 'valores clave', reduciendo el tiempo de ideación en cada nuevo proyecto."
         },
         "sprint_2": {
           "score": 3.0,
@@ -2369,9 +2845,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Describe el caso, la técnica y el cambio clave (datos técnicos específicos eliminaron el slop genérico), aunque de forma narrativa y no estructurada. Hay evidencia de proceso de refinamiento aunque no documentado formalmente."
             }
-          }
+          },
+          "work_synthesis": "Rodrigo utilizó técnicas de Anti-Slop y datos técnicos del medicamento (mecanismo GLP-1, reducción metabólica) para generar un concepto experiencial de evento médico con traducción física del funcionamiento del fármaco en el cuerpo humano. El resultado es un brief de producción detallado con especificaciones técnicas de iluminación, materiales y narrativa espacial que puede presentarse directamente a proveedores de producción.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Conceptualización y briefing técnico para evento de lanzamiento farmacéutico con elementos de diseño experiencial basados en datos científicos del producto.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Rodrigo aplicó la técnica Anti-Slop con datos técnicos reales (mecanismo GLP-1, métricas de reducción metabólica, dimensiones del espacio) para resolver un problema específico y recurrente de su trabajo: traducir un concepto científico en experiencia de evento. El output generado —incluyendo la imagen— es directamente utilizable en su flujo laboral real.",
+          "level_up_suggestion": "Para saltar a Alquimista Destacado, construye una plantilla o GPT que otros productores de OCESA puedan usar para cualquier lanzamiento farmacéutico: un flujo que ingeste datos técnicos del producto, perfil de audiencia médica y parámetros del venue, y genere automáticamente el concepto experiencial + brief de producción reutilizable."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Producción de Eventos",
+      "level_up_suggestion": "Para saltar a Alquimista Destacado, construye una plantilla o GPT que otros productores de OCESA puedan usar para cualquier lanzamiento farmacéutico: un flujo que ingeste datos técnicos del producto, perfil de audiencia médica y parámetros del venue, y genere automáticamente el concepto experiencial + brief de producción reutilizable."
     },
     {
       "id": "110461156876964275771",
@@ -2418,7 +2903,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "El rol especializado y la cadena de análisis (conversación → pain points → fricciones → intereses) muestran pensamiento de workflow. Sin embargo, no hay un formato de output explícito ni restricciones de verificación que evidencien comprensión técnica de cómo el modelo necesita recibir instrucciones de formato."
             }
-          }
+          },
+          "work_synthesis": "Edson construyó un prompt estructurado de auditoría de redes sociales para análisis de sentimiento en campañas bancarias, capaz de clasificar comentarios por plataforma (Facebook, Instagram, TikTok), detectar fricciones ocultas y generar entregables accionables para equipos de marketing y CX. El prompt tiene aplicación directa en la lectura estratégica de conversaciones digitales post-campaña.",
+          "application_area": "Análisis de Datos",
+          "application_detail": "Análisis de sentimiento y extracción de pain points en comentarios de campañas financieras en redes sociales, con salidas diferenciadas por plataforma y recomendaciones estratégicas.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt está muy bien estructurado —con rol, contexto, instrucciones de clasificación, detección de sentimiento oculto y formato de salida definido— lo que demuestra dominio sólido de ingeniería de prompting. Sin embargo, no hay evidencia de que este análisis se esté ejecutando sobre datos reales de su trabajo en OCESA ni de que resuelva un problema recurrente propio; el caso de uso presentado es de un banco genérico, no de su entorno laboral.",
+          "level_up_suggestion": "Aplica este mismo prompt a una campaña real de OCESA (concierto, festival, preventa) usando comentarios reales de sus redes sociales, y documenta cómo los insights cambiaron una decisión de contenido o atención al cliente; eso lo movería directamente a Alquimista en Práctica."
         },
         "sprint_2": {
           "score": 2.7,
@@ -2447,9 +2938,18 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "El estudiante menciona que quería un prompt más específico y usó CoT, pero no documenta versiones anteriores ni explica qué aspectos concretos mejoró en la iteración."
             }
-          }
+          },
+          "work_synthesis": "Edson construyó un prompt estructurado con Chain-of-Thought para generar una estrategia de canales de difusión en Meta (Instagram/Facebook) para una institución bancaria, orientada al segmento C/C+ en México. El prompt define rol, contexto, instrucciones secuenciales y reglas de control para producir una propuesta con líneas editoriales, KPIs y formatos de contenido financiero.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Estrategia de contenido para canales de difusión de institución bancaria en Meta, enfocada en educación financiera y productos para NSE C/C+.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El estudiante demuestra dominio técnico del prompting (Chain-of-Thought, control de slop, estructuración por secciones), pero no hay evidencia de que esta estrategia haya sido aplicada a un proyecto real dentro de OCESA ni de que el output generado haya resuelto un problema laboral concreto y recurrente; parece un ejercicio bien construido sin caso de uso validado en su trabajo diario.",
+          "level_up_suggestion": "Aplica este mismo framework de prompt a un proyecto real de OCESA, como la estrategia de difusión de un evento específico (concierto, festival), y documenta el resultado obtenido vs. el proceso manual anterior. Eso convierte el ejercicio en un caso de uso real que lo llevaría al nivel Practicante."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Análisis de Datos",
+      "level_up_suggestion": "Aplica este mismo framework de prompt a un proyecto real de OCESA, como la estrategia de difusión de un evento específico (concierto, festival), y documenta el resultado obtenido vs. el proceso manual anterior. Eso convierte el ejercicio en un caso de uso real que lo llevaría al nivel Practicante."
     },
     {
       "id": "108344609292556991096",
@@ -2496,7 +2996,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "La instrucción 'No seas ambiguo, respalda lo que dices con data' y la definición de capacidades específicas del rol (detectar fallas conceptuales, aplicar marcos teóricos, evaluar bajo incertidumbre) demuestran comprensión de cómo calibrar el comportamiento del modelo con restricciones explícitas."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt de sistema que define un rol de analista estratégico de élite con capacidades de investigación avanzada y pensamiento crítico. Sirve como instrucción base para elevar la calidad de respuestas de IA en análisis de documentos, ideas o problemas complejos.",
+          "application_area": "Análisis de Datos",
+          "application_detail": "Prompt genérico para análisis estratégico y evaluación crítica de ideas o documentos",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt muestra dominio de técnicas de role-playing y tono directivo, pero es completamente genérico y no está anclado a ningún caso de uso real de OCESA ni a un problema laboral concreto y recurrente. No hay evidencia de aplicación en su trabajo diario.",
+          "level_up_suggestion": "Toma este mismo prompt base y rediseñalo para un problema específico de tu área en OCESA, por ejemplo: 'analiza propuestas de artistas para eventos masivos considerando estos criterios: presupuesto, perfil de audiencia y riesgo operativo'. La especificidad del contexto laboral es el salto que te lleva al siguiente nivel."
         },
         "sprint_2": {
           "score": 3.7,
@@ -2525,9 +3031,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Documenta el problema inicial (outputs genéricos), la técnica (CoT), y el resultado transformado (Heineken como Enabler cultural). Sin embargo, no se comparte el prompt final completo ni se detallan las iteraciones intermedias."
             }
-          }
+          },
+          "work_synthesis": "El estudiante aplicó Chain-of-Thought para reencuadrar estratégicamente el rol de Heineken en patrocinios de entretenimiento, forzando a la IA a razonar sobre la tensión 'transacción vs. cultura' antes de generar tácticas. El resultado es un marco conceptual que posiciona a la marca como facilitador cultural en lugar de proveedor logístico, con aplicación directa a propuestas de patrocinio para eventos OCESA.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Estrategia de patrocinios y posicionamiento de marca en eventos de entretenimiento en vivo (conciertos, festivales).",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El estudiante usó la técnica para resolver un problema real y recurrente —diferenciación de marca en propuestas de patrocinio— y produjo un marco estratégico aplicable, no solo un ejercicio de prompting. La síntesis sobre 'memoria post-evento' como métrica de valor demuestra pensamiento crítico aplicado al negocio.",
+          "level_up_suggestion": "Para subir a Alquimista Destacado, convierte este marco en un GPT o plantilla reutilizable que otros equipos de ventas/marketing puedan usar para generar propuestas de patrocinio diferenciadas para distintas marcas y géneros musicales, con ejemplos few-shot incluidos."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Análisis de Datos",
+      "level_up_suggestion": "Para subir a Alquimista Destacado, convierte este marco en un GPT o plantilla reutilizable que otros equipos de ventas/marketing puedan usar para generar propuestas de patrocinio diferenciadas para distintas marcas y géneros musicales, con ejemplos few-shot incluidos."
     },
     {
       "id": "113816981317648187944",
@@ -2574,7 +3089,13 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "Hay comprensión del problema que quiere resolver con IA (análisis de opiniones negativas) pero no se evidencia diseño intencional del prompt ni comprensión de cómo el modelo necesita recibir esta información para procesarla bien."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt para analizar sentimiento negativo de usuarios sobre un producto (Vicky Tajín) a partir de datos reales de DMs capitalizados, con el objetivo de generar un one-pager ejecutivo que incluya termómetro de satisfacción, análisis de sabor, datos de ingredientes y learnings de conversación no capitalizable. La herramienta sirve para convertir datos cualitativos de crisis de reputación en un reporte accionable para la marca.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Análisis de sentimiento negativo en redes sociales sobre producto de marca para generar reporte ejecutivo con insights accionables.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt está anclado en un caso de uso real y específico de su trabajo diario (61% sentimiento negativo, 254 comentarios, 32 DMs capitalizados, datos reales de enero 2026), con estructura de entregable definida y contexto de negocio claro. Sin embargo, la construcción del prompt aún mezcla instrucciones con contexto sin separación estructurada, lo que limita su reutilización por otros.",
+          "level_up_suggestion": "Estructurar el prompt con secciones explícitas (Contexto / Tarea / Formato / Restricciones) para que cualquier compañero pueda reutilizarlo solo cambiando el producto o los datos. Como siguiente paso, conectar el análisis con una plantilla de one-pager en Google Slides vía IA generativa para automatizar la entrega."
         },
         "sprint_2": {
           "score": 3.7,
@@ -2603,9 +3124,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "El prompt final muestra alta sofisticación, pero el estudiante no documenta el proceso de iteración que lo llevó a este resultado ni compara versiones anteriores. La evidencia de refinamiento es implícita en la calidad del output."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un GPT de consultoría estratégica en IA para OCESA/BNN que actúa como un arquitecto de procesos interno, guiando a colaboradores a través de fases estructuradas de indagación, diagnóstico y propuesta de soluciones. El sistema incorpora matrices de evaluación bimodal, restricciones de estilo (Anti-Slop) y un protocolo Chain-of-Thought que impide respuestas superficiales, garantizando recomendaciones accionables con KPIs medibles.",
+          "application_area": "Gestión de Proyectos",
+          "application_detail": "Consultor IA interno que diagnostica y prioriza iniciativas de adopción de IA en áreas operativas de OCESA y BNN, con diferenciación entre quick wins y cambios estructurales.",
+          "maturity_level": "Alquimista Destacado",
+          "maturity_justification": "Construyó un sistema reutilizable con identidad de rol, protocolo de interacción en múltiples fases, matrices de evaluación embebidas y restricciones de calidad Anti-Slop, todo diseñado para que otros colaboradores lo usen como herramienta de consultoría. Va más allá de resolver su propio problema: crea infraestructura que otros pueden operar.",
+          "level_up_suggestion": "Completar los placeholders abiertos (principios de Slide 2, ejes de matrices) con datos reales de OCESA para que el GPT pueda tomar decisiones contextualizadas sin depender de que el usuario los inserte. Como siguiente paso, documentar 2-3 casos de uso piloto con resultados reales para validar que el sistema efectivamente acorta el ciclo de diagnóstico-propuesta en el equipo."
         }
-      }
+      },
+      "maturity_level": "Alquimista Destacado",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Completar los placeholders abiertos (principios de Slide 2, ejes de matrices) con datos reales de OCESA para que el GPT pueda tomar decisiones contextualizadas sin depender de que el usuario los inserte. Como siguiente paso, documentar 2-3 casos de uso piloto con resultados reales para validar que el sistema efectivamente acorta el ciclo de diagnóstico-propuesta en el equipo."
     },
     {
       "id": "106470414928816113338",
@@ -2652,7 +3182,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "El diseño del prompt como un transformador de inputs desordenados en outputs estructurados muestra comprensión de cómo el modelo puede actuar como un traductor de lenguaje informal a especificaciones técnicas. Es pensamiento de herramienta, no solo de consulta."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado para transformar solicitudes desordenadas de equipo en listados de requerimientos técnicos profesionales. Funciona como un intérprete entre comunicación informal y documentación técnica accionable para iniciar proyectos digitales.",
+          "application_area": "Gestión de Proyectos",
+          "application_detail": "Estructuración de requerimientos técnicos a partir de peticiones informales del equipo",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "Demuestra comprensión de estructura de prompts con TAREA y CONTEXTO definidos, pero el trabajo presentado es un template incompleto (con corchetes vacíos '[  ]') y no hay evidencia de que esté siendo usado en un flujo de trabajo real con casos concretos de OCESA.",
+          "level_up_suggestion": "Completa el prompt con el área específica de OCESA (ej. producción de eventos, merch digital) y documenta 2-3 ejemplos reales de solicitudes desordenadas que hayas procesado con él, mostrando el input caótico y el output estructurado resultante."
         },
         "sprint_2": {
           "score": 3.0,
@@ -2681,9 +3217,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "El estudiante describe el problema original (peticiones incompletas → slop y back and forth), la solución (preguntas más amplias) y el brief resultante. El proceso de iteración está documentado aunque de forma narrativa, no con versiones comparadas."
             }
-          }
+          },
+          "work_synthesis": "El estudiante desarrolló un sistema de prompts con técnica Anti-Slop para resolver solicitudes incompletas en la creación de activadores digitales, generando un brief estructurado que estandariza los requerimientos técnicos y legales para lanzar trivias en plataformas de engagement. La solución reduce ciclos de back-and-forth con clientes o equipos internos al anticipar las preguntas críticas desde el inicio del proceso.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Creación de activaciones digitales (trivias, dinámicas de audiencia) en plataformas como Tradable Bits para eventos de entretenimiento en OCESA.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Aplica la técnica Anti-Slop a un problema real y recurrente de su trabajo —peticiones incompletas que generan retrasos— y produce un output funcional (brief estructurado) que resuelve un dolor operativo concreto. Hay evidencia de aplicación al trabajo diario, no solo experimentación con prompts.",
+          "level_up_suggestion": "Para subir a Alquimista Destacado, convierte este brief en un GPT o plantilla reutilizable que cualquier colega del equipo de activaciones pueda usar de forma autónoma, añadiendo validaciones automáticas por tipo de evento o sponsor."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Gestión de Proyectos",
+      "level_up_suggestion": "Para subir a Alquimista Destacado, convierte este brief en un GPT o plantilla reutilizable que cualquier colega del equipo de activaciones pueda usar de forma autónoma, añadiendo validaciones automáticas por tipo de evento o sponsor."
     },
     {
       "id": "104211778387333554478",
@@ -2730,7 +3275,13 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "La instrucción de 'sin adornos comerciales, solo lógica pura' como criterio de output es pensamiento Anti-Slop implícito. El diseño de la tarea como cruce de dos fuentes de datos es un workflow estructurado que evidencia comprensión de cómo el modelo procesa información compleja."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado con rol, tarea, contexto y formato de salida para análisis de inteligencia de mercado competitiva. Sirve para identificar rápidamente qué problemas críticos de la industria puede resolver el catálogo de productos de OCESA, entregando un análisis sin retórica comercial.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Análisis de oportunidades de mercado para alinear oferta de productos con necesidades reales de clientes potenciales.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt demuestra buen dominio de la anatomía básica (rol, tarea, contexto, output), pero usa variables genéricas en corchetes ([Industria], [Catálogo]) sin evidencia de haberlo aplicado a un caso real y específico de su trabajo en OCESA. No hay señal de que este prompt resuelva un problema recurrente concreto.",
+          "level_up_suggestion": "Reemplaza [Industria] con una industria real que Selene atiende hoy (ej. festivales de música, patrocinios corporativos) y adjunta un caso donde este análisis cambió una propuesta real. Eso convierte el ejercicio en un caso de uso de trabajo aplicado."
         },
         "sprint_2": {
           "score": 2.7,
@@ -2759,9 +3310,18 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "El prompt está bien construido pero el estudiante no documenta el proceso de iteración ni muestra versiones anteriores. La evidencia de refinamiento es implícita en la calidad del resultado."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt especializado para generar una estrategia de activaciones en dark markets de nicotina en México, incorporando análisis legal previo y un framework estructurado de tres pilares (Adquisición, Conversión y Advocacy). El resultado sirve como brief ejecutivo para guiar activaciones físicas en canales alternativos dirigidos a mayores de edad, donde la publicidad convencional está restringida.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Estrategia de activaciones y comunicación directa para marcas de nicotina en puntos de venta físicos bajo restricciones legales de publicidad en México.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El estudiante demuestra habilidad para estructurar un prompt complejo con rol, contexto legal y entregable ejecutivo definido, lo que va más allá del uso básico. Sin embargo, no evidencia aplicación a un caso real de su trabajo cotidiano en OCESA ni construye un sistema reutilizable; el ejercicio parece conceptual o para un cliente externo sin ancla clara a su rol actual.",
+          "level_up_suggestion": "Conecta esta técnica a un proyecto real de OCESA: por ejemplo, usa el mismo framework de tres pilares (Adquisición, Conversión, Advocacy) para diseñar la estrategia de activación de una marca patrocinadora en un evento específico que estés trabajando, documentando el prompt y el resultado como plantilla reutilizable para tu equipo."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Ventas y Propuestas",
+      "level_up_suggestion": "Conecta esta técnica a un proyecto real de OCESA: por ejemplo, usa el mismo framework de tres pilares (Adquisición, Conversión, Advocacy) para diseñar la estrategia de activación de una marca patrocinadora en un evento específico que estés trabajando, documentando el prompt y el resultado como plantilla reutilizable para tu equipo."
     },
     {
       "id": "106711327636840994139",
@@ -2808,7 +3368,13 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "El prompt final está bien construido pero el estudiante no documenta el proceso de iteración ni compara con versiones anteriores. Tampoco se evidencia claramente la técnica específica del sprint que fue aplicada."
             }
-          }
+          },
+          "work_synthesis": "El estudiante diseñó un prompt estructurado para construir un Dashboard ejecutivo en Monday.com orientado a la gestión de múltiples cuentas de agencia, comparando metodologías Balanced Scorecard vs. RAG Status. El output busca estandarizar la visibilidad de salud de marcas, pipeline de upsell y KPIs de equipo con campos objetivos y verificables, evitando criterios subjetivos.",
+          "application_area": "Gestión de Proyectos",
+          "application_detail": "Dashboard de monitoreo de cuentas para Grouper de Agencia Digital en OCESA/BNN, con seguimiento de salud de marcas, oportunidades de crecimiento y desempeño de equipo.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El estudiante aplica técnicas avanzadas como Anti-Alucinación y rol de experto (Arquitecto de Operaciones), pero el entregable es un prompt de investigación/comparación metodológica, no una solución implementada o reutilizable en su flujo real de trabajo; no hay evidencia de que el dashboard exista o se use operativamente.",
+          "level_up_suggestion": "Lleva el prompt al siguiente nivel construyendo la plantilla real en Monday.com con las columnas específicas que la IA te recomendó, y documenta cómo el equipo la usa semanalmente; eso convertiría este ejercicio en un caso de uso real y repetible que califica como Alquimista en Práctica."
         },
         "sprint_3": {
           "score": 2.0,
@@ -2841,9 +3407,18 @@ const DASHBOARD_DATA = {
               "score": 1,
               "justification": "No se incluye System Prompt, link ni ningún artefacto verificable. La respuesta es exclusivamente descriptiva y muy breve."
             }
-          }
+          },
+          "work_synthesis": "El estudiante diseñó un sistema para el análisis de brechas (gap) entre metas y resultados de ventas, con el objetivo de evitar la captura manual repetitiva de contexto y obtener perspectivas más consistentes. La propuesta incluye la intención de compartir el sistema con su equipo para estandarizar el análisis semanal.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Análisis de gap semanal de metas de ventas para el equipo comercial de OCESA.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "Aunque el caso de uso es relevante y está conectado a su trabajo real, la descripción carece de evidencia concreta: no presenta el system prompt, el GPT construido, ni la lógica del flujo Supervisor-Worker. Las justificaciones son genéricas ('ahorro tiempo', 'más perspectiva') sin demostrar arquitectura cognitiva real.",
+          "level_up_suggestion": "Construye y comparte el system prompt real con instrucciones específicas: qué datos de ventas recibe, qué análisis ejecuta paso a paso y qué formato entrega al equipo. Si logras que tu equipo lo use semanalmente sin tu intervención, habrás cruzado al nivel Alquimista en Práctica."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Gestión de Proyectos",
+      "level_up_suggestion": "Construye y comparte el system prompt real con instrucciones específicas: qué datos de ventas recibe, qué análisis ejecuta paso a paso y qué formato entrega al equipo. Si logras que tu equipo lo use semanalmente sin tu intervención, habrás cruzado al nivel Alquimista en Práctica."
     },
     {
       "id": "101197406476118350521",
@@ -2890,7 +3465,13 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "Los corchetes para completar variables demuestran un enfoque de prompt como plantilla reutilizable, lo cual es pensamiento de ingeniero en embrión. Sin embargo, al no estar completados, el prompt no puede evaluarse como implementación funcional."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt avanzado que asigna un rol de Director de Estrategia a la IA para generar planes integrales de comunicación para patrocinadores de eventos de gaming indie. El prompt tiene estructura profesional con 10 secciones definidas y variables parametrizables, funcionando como plantilla reutilizable para propuestas de sponsorship.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Generación de planes de comunicación para patrocinadores de eventos de videojuegos indie (Indie Games Supernova), cubriendo estrategia, activaciones, contenido y KPIs.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt demuestra dominio técnico sólido de ingeniería de prompting —rol, contexto, estructura de salida detallada— pero los campos clave están en blanco con placeholders sin resolver, lo que indica que aún no fue ejecutado contra un caso real con datos concretos de un patrocinador específico de OCESA.",
+          "level_up_suggestion": "Rellena los placeholders con un sponsor real que estés gestionando o prospectando en OCESA, ejecuta el prompt completo y comparte el output: eso lo convierte en un entregable de trabajo real. Si además lo conviertes en un GPT interno que cualquier ejecutivo de cuentas pueda usar para generar propuestas rápidas, saltas directo a Alquimista Destacado."
         },
         "sprint_2": {
           "score": 1.7,
@@ -2919,9 +3500,18 @@ const DASHBOARD_DATA = {
               "score": 1,
               "justification": "La respuesta es extremadamente breve y no documenta ningún proceso de iteración, ni qué cambió, ni por qué. Solo nombra las técnicas sin mostrar cómo se aplicaron."
             }
-          }
+          },
+          "work_synthesis": "El estudiante aplicó técnicas de Step-Back Prompting combinadas con Chain-of-Thought para generar un plan de patrocinio para BANAMEX como main sponsor de un evento de gaming indie. El ejercicio es conceptual y orientado a explorar la técnica, sin evidencia de aplicación directa a un problema real de su trabajo en OCESA.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Propuesta de patrocinio para evento de gaming con marca financiera",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El trabajo muestra conocimiento de las técnicas (Step-Back + Chain-of-Thought) pero se aplican en un escenario hipotético sin anclar a un reto real y recurrente de su rol en OCESA; la calificación baja (1.7/4) refuerza que la ejecución de las técnicas fue superficial.",
+          "level_up_suggestion": "Toma un briefing real de patrocinio que estés trabajando actualmente en OCESA y aplica Step-Back para definir el principio estratégico antes de redactar, luego usa Chain-of-Thought para desglosar la propuesta paso a paso; compartir el output comparativo (sin técnica vs. con técnica) demostrará impacto concreto."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Ventas y Propuestas",
+      "level_up_suggestion": "Toma un briefing real de patrocinio que estés trabajando actualmente en OCESA y aplica Step-Back para definir el principio estratégico antes de redactar, luego usa Chain-of-Thought para desglosar la propuesta paso a paso; compartir el output comparativo (sin técnica vs. con técnica) demostrará impacto concreto."
     },
     {
       "id": "103075432501673709372",
@@ -2968,7 +3558,13 @@ const DASHBOARD_DATA = {
               "score": 1,
               "justification": "No hay evidencia de comprensión de cómo funciona el modelo, ni iteración, ni decisiones de diseño. El prompt es equivalente a una instrucción verbal informal."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt básico para comparar dos tablas de datos y consolidar las diferencias en una tercera tabla. La utilidad es limitada ya que el prompt carece de contexto, estructura y especificidad sobre el tipo de datos o el propósito del análisis.",
+          "application_area": "Análisis de Datos",
+          "application_detail": "Comparación de tablas sin contexto definido de negocio",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt es conversacional y extremadamente básico, sin elementos de ingeniería de prompting como contexto, rol, formato esperado o criterios de comparación. No hay evidencia de aplicación a un caso de uso real de trabajo en OCESA.",
+          "level_up_suggestion": "Reconstruye el prompt especificando: qué tipo de datos contienen las tablas (ej. presupuestos de eventos, listas de proveedores), qué diferencias son relevantes para una decisión de negocio, y en qué formato necesitas la Tabla 3. Ejemplo: 'Actúa como analista de operaciones de eventos. Compara estas dos tablas de costos de producción e identifica discrepancias mayores al 10%, mostrándolas en una tabla con columnas: Rubro | Valor T1 | Valor T2 | Diferencia | % Variación'."
         },
         "sprint_2": {
           "score": 2.7,
@@ -2997,9 +3593,18 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "El estudiante menciona el contexto (replicar estilo para una sábana base) y la técnica (CoT 2A) pero no documenta qué salió mal antes ni qué cambió en la iteración. La evidencia de proceso de refinamiento es mínima."
             }
-          }
+          },
+          "work_synthesis": "El estudiante diseñó un prompt con Chain-of-Thought para que la IA transforme datos crudos de contratos de patrocinio en propuestas comerciales con lenguaje editorial de alto valor ('Socio Estratégico'). El sistema toma una tabla de datos (inmuebles, marcas, montos, vigencias) y la convierte en una sábana base estructurada por secciones, preservando fidelidad de datos mientras eleva el tono comunicativo.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Generación de propuestas de patrocinio para activos de OCESA (estadios, eventos) con lenguaje comercial premium.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "Hay un caso de uso real y recurrente: transformar fichas de patrocinio en documentos comerciales. El prompt muestra instrucciones concretas sobre fidelidad de datos, estilo editorial y estructura de salida, lo que indica aplicación directa a su flujo de trabajo.",
+          "level_up_suggestion": "Construir un GPT personalizado que reciba la Tabla A como input estructurado y genere la sábana base automáticamente, eliminando el copy-paste manual y permitiendo que otros del equipo de ventas lo usen sin conocer prompting."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Análisis de Datos",
+      "level_up_suggestion": "Construir un GPT personalizado que reciba la Tabla A como input estructurado y genere la sábana base automáticamente, eliminando el copy-paste manual y permitiendo que otros del equipo de ventas lo usen sin conocer prompting."
     },
     {
       "id": "107301154782480560977",
@@ -3046,7 +3651,13 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "Hay cierto pensamiento de ingeniero en la especificación de elementos visuales técnicos (bold editorial, dark background, clean grid system, modern typography) pero falta comprensión de cómo el modelo de texto funciona diferente a un modelo de imagen."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt de generación de imágenes para crear el fondo visual de una infografía de estrategia para un festival de música con estética editorial latina. El artefacto sirve como material visual de apoyo para presentaciones o comunicaciones internas de estrategia.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Generación de assets visuales para estrategia de festival de música con identidad cultural latina.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt muestra conocimiento de técnicas de prompting visual (mood, estilo, restricciones negativas), pero se queda incompleto al indicar 'This is the information that you have to use' sin incluir el contenido real. No evidencia un caso de uso recurrente ni impacto medible en su trabajo diario.",
+          "level_up_suggestion": "Completa el prompt con el contenido estratégico real y documenta cómo este visual resolvió un problema concreto de tu rol; luego construye una plantilla reutilizable que cualquier colega de marketing pueda adaptar para otros festivales de OCESA."
         },
         "sprint_2": {
           "score": 1.7,
@@ -3075,9 +3686,18 @@ const DASHBOARD_DATA = {
               "score": 1,
               "justification": "No hay evidencia de iteración, proceso de refinamiento ni comparación de versiones. El esquema presentado parece un plan de prompt, no el resultado de un proceso de refinamiento."
             }
-          }
+          },
+          "work_synthesis": "El estudiante esbozó la estructura de un prompt con rol de auditor, insumo de archivo y salida en CSV, pero no completó el ejercicio con un caso de uso concreto ni mostró el prompt final ejecutado. El trabajo presentado es un esqueleto incompleto sin evidencia de resultado real ni técnica avanzada aplicada.",
+          "application_area": "Análisis de Datos",
+          "application_detail": "Intento de auditoría de datos con salida estructurada en CSV, sin contexto de negocio definido.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El estudiante conoce elementos básicos de prompt engineering (rol, insumo, restricciones) pero no ejecutó ni compartió un resultado real; la baja calificación (1.7/4) confirma que el trabajo quedó incompleto y sin aplicación demostrada a su trabajo diario.",
+          "level_up_suggestion": "Completa el prompt con un problema real de tu área (por ejemplo, auditar una base de asistentes a un evento o ventas de boletos) y comparte el resultado obtenido, incluyendo el CSV generado y qué decisión de negocio habilitó ese análisis."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Completa el prompt con un problema real de tu área (por ejemplo, auditar una base de asistentes a un evento o ventas de boletos) y comparte el resultado obtenido, incluyendo el CSV generado y qué decisión de negocio habilitó ese análisis."
     },
     {
       "id": "106910608619500189439",
@@ -3122,9 +3742,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Demuestra pensamiento sistémico avanzado: diseña lógica de priorización para evitar saturación de usuarios, propone 'Hierarchy of Send', anticipa edge cases (fan de 3 géneros recibiendo 3 mails el mismo día) y plantea consolidación de campañas. La 'Regla de Coexistencia' añadida evidencia iteración consciente y refinamiento del prompt."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt de arquitectura estratégica para optimizar campañas en Salesforce Marketing Cloud, diseñado para reducir la carga manual en la gestión de más de 600 eventos anuales. El framework incluye lógica de triggers automatizados, consolidación de campañas, jerarquía de envíos y reglas de negocio críticas como la prioridad de preventa bancaria, lo cual tiene aplicación directa en la operación de marketing de OCESA.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Optimización y automatización de campañas de email marketing en Salesforce Marketing Cloud para eventos masivos, incluyendo segmentación, anti-fatiga y lógica de priorización de envíos.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt está anclado a un problema real, recurrente y específico de su trabajo (600 eventos, procesos manuales, saturación de base de datos), con reglas de negocio propias de OCESA como la Preventa Bancaria y triggers de venta. Sin embargo, aún no construye una solución reutilizable por otros (GPT, flujo automatizado o sistema multi-paso desplegado), lo que lo mantiene en el nivel de practicante sólido.",
+          "level_up_suggestion": "El siguiente paso es materializar este framework como un GPT personalizado o un flujo en SFMC que otros equipos de marketing de OCESA puedan operar sin necesitar construir el prompt desde cero; documenta los parámetros variables (nombre de artista, fechas, % de aforo) como inputs estandarizados para escalar la solución."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "El siguiente paso es materializar este framework como un GPT personalizado o un flujo en SFMC que otros equipos de marketing de OCESA puedan operar sin necesitar construir el prompt desde cero; documenta los parámetros variables (nombre de artista, fechas, % de aforo) como inputs estandarizados para escalar la solución."
     },
     {
       "id": "100303443825812603046",
@@ -3169,9 +3798,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Estima tiempos por tipo de entregable (Guiones: 4-6h, Conceptos: 3-4h, Copies: 1-2h) como inputs explícitos para que el modelo razone con datos reales. Solicita análisis de riesgos y tiene lógica de priorización por bloqueo de dependencias, lo que demuestra comprensión de cómo guiar al modelo hacia razonamiento estructurado."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado para gestionar la distribución de trabajo de un equipo de tres redactores creativos, con priorización por fecha de entrega y capacidad por persona. El sistema permite generar cronogramas semanales y análisis de riesgos para un evento real (Vive Latino), resolviendo un problema operativo concreto de su rol como PM.",
+          "application_area": "Gestión de Proyectos",
+          "application_detail": "Planificación y distribución de carga de trabajo para equipo de contenido creativo en producción de eventos masivos.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt está anclado a un problema real y recurrente de su trabajo diario: gestionar capacidad de equipo con fechas críticas reales (24 feb, 12 marzo). Incluye nombres de personas reales, estimaciones de horas por tipo de entregable y prioridades bloqueantes, lo que evidencia aplicación genuina al trabajo, no un ejercicio académico.",
+          "level_up_suggestion": "Para subir a Alquimista Destacado, convierte este prompt en un GPT reutilizable donde cualquier PM de su equipo pueda ingresar la lista de entregables y capacidad del equipo y obtener el cronograma automáticamente, eliminando la necesidad de personalizar el prompt cada semana."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Gestión de Proyectos",
+      "level_up_suggestion": "Para subir a Alquimista Destacado, convierte este prompt en un GPT reutilizable donde cualquier PM de su equipo pueda ingresar la lista de entregables y capacidad del equipo y obtener el cronograma automáticamente, eliminando la necesidad de personalizar el prompt cada semana."
     },
     {
       "id": "105654336832879521757",
@@ -3216,9 +3854,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Solicita dos formatos de output simultáneos (guía de workshop + talking points para presentación), establece un tono consultivo y analítico específico, y el prompt está diseñado para ser reutilizado en diferentes sesiones estratégicas. Demuestra pensamiento sistémico sobre cómo el output se integrará en flujos de trabajo reales."
             }
-          }
+          },
+          "work_synthesis": "La estudiante construyó un prompt de alta especificidad para generar un framework estratégico de análisis de beneficios de patrocinio dirigido a marcas FMCG de alimentos, incluyendo guía de workshop y talking points ejecutivos. El prompt está diseñado para resolver un problema real del área de patrocinios: priorizar qué beneficios de la oferta comercial de OCESA generan mayor retorno para una industria específica, diferenciando entre valor aspiracional y transaccional.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Análisis estratégico de propuesta de valor de patrocinios para industria FMCG, orientado a priorización comercial y preparación de presentaciones internas.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt resuelve un problema de negocio real y recurrente en su trabajo (priorización de sábana de beneficios para cliente FMCG), con contexto específico, tarea concreta y entregables definidos (framework + talking points). Supera el nivel básico de experimentación al estar anclado en una necesidad comercial tangible de su área.",
+          "level_up_suggestion": "Para avanzar al nivel Alquimista Destacado, convierta este prompt en un GPT personalizado o plantilla reutilizable que cualquier ejecutivo de patrocinios pueda usar ingresando la industria objetivo (FMCG, automotriz, telco, etc.) y obtenga automáticamente el análisis estratégico adaptado, democratizando la herramienta en todo el equipo comercial."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Ventas y Propuestas",
+      "level_up_suggestion": "Para avanzar al nivel Alquimista Destacado, convierta este prompt en un GPT personalizado o plantilla reutilizable que cualquier ejecutivo de patrocinios pueda usar ingresando la industria objetivo (FMCG, automotriz, telco, etc.) y obtenga automáticamente el análisis estratégico adaptado, democratizando la herramienta en todo el equipo comercial."
     },
     {
       "id": "108527896667514209095",
@@ -3263,9 +3910,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Solicita un 'Quick Wins Roadmap' para el equipo de pauta y operaciones, demostrando que diseñó el output para ser accionable, no solo informativo. La distinción entre barreras de compra reales vs. ruido en redes muestra comprensión del problema de signal vs. noise en análisis de datos, una decisión de diseño muy madura."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado de análisis de inteligencia del consumidor que convierte datos mixtos (redes sociales + encuestas post-venta) en un reporte ejecutivo accionable para Subdirección de Marketing. El sistema identifica barreras de compra reales vs. ruido digital y genera un roadmap de quick wins para optimizar la conversión en futuros eventos de OCESA.",
+          "application_area": "Análisis de Datos",
+          "application_detail": "Análisis de fricción en embudo de ventas y percepción del fan para informar estrategia de marketing de eventos en vivo.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt demuestra aplicación real y recurrente a su trabajo diario en OCESA: tiene contexto específico del negocio, datos reales de entrada (comentarios RRSS + encuestas), y un formato de salida calibrado para un tomador de decisiones real (Subdirector). La distinción entre 'ruido de redes' vs 'problemas reales de conversión' evidencia pensamiento analítico aplicado, no solo experimentación básica.",
+          "level_up_suggestion": "Para escalar a Alquimista Destacado, convierte este prompt en un GPT reutilizable que tu equipo pueda usar de forma autónoma tras cada evento, incorporando un template estandarizado de captura de datos (RRSS + encuesta) y un sistema de scoring automático de severidad por barrera identificada."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Análisis de Datos",
+      "level_up_suggestion": "Para escalar a Alquimista Destacado, convierte este prompt en un GPT reutilizable que tu equipo pueda usar de forma autónoma tras cada evento, incorporando un template estandarizado de captura de datos (RRSS + encuesta) y un sistema de scoring automático de severidad por barrera identificada."
     },
     {
       "id": "114103931418907515524",
@@ -3310,9 +3966,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "La restricción de 'usar exclusivamente la documentación proporcionada' y el mecanismo de 'Información no disponible en manuales oficiales. Consultar con Pame' son guardas explícitas contra alucinaciones, demostrando comprensión sofisticada de las limitaciones del modelo. El diseño de pasos numerados ($1, 2, 3$) muestra control del formato de output."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado que simula un asistente técnico especializado en operaciones, diseñado para responder preguntas del equipo basándose exclusivamente en documentación oficial. El sistema incluye protocolos de validación, restricciones de respuesta y un mecanismo de escalación cuando la información no está disponible, lo que sugiere una aplicación real dentro de un proceso operativo definido.",
+          "application_area": "Operaciones",
+          "application_detail": "Asistente técnico para resolución de dudas del equipo en fases de Venta, Auditoría y Evento, usando documentación oficial como base de conocimiento.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt está claramente orientado a un contexto laboral real (operaciones de una persona llamada 'Pame', con fases específicas de proceso), resuelve un problema recurrente y concreto del equipo, e incorpora restricciones operativas y lógica de escalación que revelan entendimiento del flujo de trabajo.",
+          "level_up_suggestion": "Para avanzar a Alquimista Destacado, convierte este prompt en un GPT personalizado con la documentación oficial cargada como knowledge base, de modo que cualquier persona del equipo pueda usarlo de forma autónoma sin necesidad de copiar y pegar el prompt manualmente."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Operaciones",
+      "level_up_suggestion": "Para avanzar a Alquimista Destacado, convierte este prompt en un GPT personalizado con la documentación oficial cargada como knowledge base, de modo que cualquier persona del equipo pueda usarlo de forma autónoma sin necesidad de copiar y pegar el prompt manualmente."
     },
     {
       "id": "116333425705445925015",
@@ -3357,9 +4022,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "La sección de 'Instrucciones de Razonamiento' (con el símbolo ()) que guía al modelo paso a paso (Para Qué → Hallazgo → Visualización → Storytelling) es técnica de chain-of-thought aplicada de forma consciente. La restricción de 'Recomendación Accionable al final de cada interpretación' es una decisión de diseño que maximiza el valor del output."
             }
-          }
+          },
+          "work_synthesis": "Construyó un prompt estructurado que convierte a la IA en un mentor de reporting estratégico para su equipo de Social Media, generando una guía de 5 diapositivas que transforma métricas en narrativas accionables para clientes. El sistema está diseñado para elevar al equipo de ejecutores operativos a consultores estratégicos, con instrucciones de razonamiento explícitas sobre insight, visualización y storytelling.",
+          "application_area": "Análisis de Datos",
+          "application_detail": "Guía de interpretación de datos para reportes mensuales de Social Media orientada a clientes del portafolio (caso: Modelo)",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt resuelve un problema real, recurrente y específico de su trabajo: equipos que reportan datos sin interpretarlos estratégicamente. La arquitectura del prompt (rol + contexto organizacional + instrucciones de razonamiento encadenadas + restricciones lingüísticas) demuestra dominio técnico aplicado a un flujo de trabajo concreto, no solo experimentación.",
+          "level_up_suggestion": "Para escalar a Alquimista Destacado, convierte esta guía en un GPT personalizado que tu equipo pueda usar de forma autónoma cada mes, alimentándolo con los datos reales del reporte y generando automáticamente los titulares de impacto y recomendaciones accionables sin necesidad de re-promptear."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Análisis de Datos",
+      "level_up_suggestion": "Para escalar a Alquimista Destacado, convierte esta guía en un GPT personalizado que tu equipo pueda usar de forma autónoma cada mes, alimentándolo con los datos reales del reporte y generando automáticamente los titulares de impacto y recomendaciones accionables sin necesidad de re-promptear."
     },
     {
       "id": "116428279246995737033",
@@ -3404,9 +4078,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Los 'Lineamientos de Innovación' con casos de uso específicos (LED Ribbon para 'Momentos de Antojo' tras un gol) son ejemplos few-shot integrados en el prompt que anclan el modelo hacia el tipo de creatividad esperada. El Precio Sugerido en USD como columna del output demuestra pensamiento de producto aplicado al output."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado de alta especificidad para generar estrategias de patrocinio deportivo aplicadas a un estadio real, con restricciones operativas concretas (costo cero, activos existentes) y formato de salida definido. La herramienta sirve para acelerar la creación de propuestas comerciales de valor para marcas patrocinadoras en el contexto de OCESA/entretenimiento en vivo.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Generación de beneficios e inventario de patrocinios para marcas en estadios, con pricing y restricciones operativas incluidas.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt resuelve un problema de negocio real y recurrente (venta de patrocinios con activos existentes), incluye contexto operativo específico del estadio, restricciones de margen y un formato de salida accionable que puede usarse directamente en una propuesta comercial. No es un ejercicio genérico: refleja conocimiento profundo del dominio.",
+          "level_up_suggestion": "Para escalar a Alquimista Destacado, convierte este prompt en un GPT reutilizable donde cualquier colega ingrese la marca, los activos disponibles y el objetivo de margen, y obtenga automáticamente la propuesta de patrocinio lista para presentar. Agregar un segundo paso que genere el deck ejecutivo en PowerPoint elevaría aún más el impacto."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Ventas y Propuestas",
+      "level_up_suggestion": "Para escalar a Alquimista Destacado, convierte este prompt en un GPT reutilizable donde cualquier colega ingrese la marca, los activos disponibles y el objetivo de margen, y obtenga automáticamente la propuesta de patrocinio lista para presentar. Agregar un segundo paso que genere el deck ejecutivo en PowerPoint elevaría aún más el impacto."
     },
     {
       "id": "117460584845700163992",
@@ -3451,9 +4134,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "La restricción explícita de 'No sugieras descuentos directos de precio (2x1)' es una decisión de diseño sofisticada que protege la propuesta de valor del evento. El foco en FOMO y urgencia como palancas psicológicas muestra comprensión de la psicología del consumidor integrada en el diseño del prompt."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt altamente estructurado con cinco componentes explícitos (Rol, Contexto, Tarea, Restricciones y Formato) para generar estrategias de Guerrilla Marketing orientadas a reactivar ventas de un concierto estancado al 60%. El prompt demuestra dominio técnico de la anatomía del prompt y está directamente alineado con un escenario real del negocio de entretenimiento en vivo.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Generación de estrategias de marketing disruptivo para reactivación de ventas de eventos masivos con presupuesto limitado.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt es técnicamente impecable y usa un caso de negocio verosímil, pero no hay evidencia de que haya sido ejecutado en un evento real ni de que las ideas generadas hayan sido implementadas en su flujo de trabajo diario; el ejercicio permanece como construcción de prompt, no como solución aplicada.",
+          "level_up_suggestion": "Toma el output que generó este prompt en un evento real próximo (por ejemplo, una gira actual de OCESA con venta estancada), documenta cuál de las 3 ideas se implementó y qué resultado tuvo; eso lo convierte en caso de uso real y lo mueve a Alquimista en Práctica."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Toma el output que generó este prompt en un evento real próximo (por ejemplo, una gira actual de OCESA con venta estancada), documenta cuál de las 3 ideas se implementó y qué resultado tuvo; eso lo convierte en caso de uso real y lo mueve a Alquimista en Práctica."
     },
     {
       "id": "100844961474697007897",
@@ -3498,9 +4190,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "La inclusión del paso obligatorio de 'Validación Crítica' y las restricciones sobre el rol del humano vs la IA demuestran pensamiento meta-cognitivo sobre el uso responsable del modelo. El nombre 'Motor de Co-Inteligencia' y el flujo 'Proceso Actual vs. Proceso Co-Inteligente' revelan una visión sistémica sofisticada."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt maestro tipo plantilla para diseñar propuestas de proyectos piloto de adopción de IA en distintas áreas de marketing, enmarcando a la IA como 'compañero de pensamiento' en lugar de automatización. El prompt incluye estructura de roles, restricciones éticas de co-inteligencia y un formato de salida estandarizado, funcionando como un kit de facilitación para líderes de cambio organizacional.",
+          "application_area": "Educación y Capacitación",
+          "application_detail": "Diseñado para facilitar la adopción de IA en equipos de marketing con brecha generacional, generando propuestas de pilotos reutilizables por área.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt está muy bien construido estructuralmente y muestra pensamiento estratégico sofisticado, pero es una plantilla genérica con variables sin rellenar (corchetes '[Insertar Área]') que no evidencia aplicación a un proceso de trabajo real y recurrente del estudiante. No hay caso de uso concreto resuelto, sino un artefacto de diseño.",
+          "level_up_suggestion": "Aplica este prompt a UN proceso real tuyo —por ejemplo, el onboarding de IA en tu equipo específico— y documenta los resultados obtenidos con evidencia de uso. Eso transformaría la plantilla en un caso de uso vivo y te posicionaría como Alquimista en Práctica."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Educación y Capacitación",
+      "level_up_suggestion": "Aplica este prompt a UN proceso real tuyo —por ejemplo, el onboarding de IA en tu equipo específico— y documenta los resultados obtenidos con evidencia de uso. Eso transformaría la plantilla en un caso de uso vivo y te posicionaría como Alquimista en Práctica."
     },
     {
       "id": "108102483717301766206",
@@ -3545,9 +4246,18 @@ const DASHBOARD_DATA = {
               "score": 4,
               "justification": "Las restricciones de consistencia del rostro (idéntico en todas las tomas, sin vello facial, iluminación de set) demuestran comprensión del problema de inconsistencia en modelos de imagen generativa. La división en 3 planos en una sola imagen es una decisión de diseño sofisticada para maximizar eficiencia del output."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt detallado de ingeniería visual para generar una hoja de referencia de personaje (Character Sheet) con especificaciones técnicas de cine/animación, definiendo rasgos físicos fijos, vestimenta corporativa con identidad de marca y tres encuadres cinematográficos específicos. El activo sirve como referencia visual consistente para un personaje recurrente, útil en producción de contenido, campañas o storytelling de marca.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Generación de personajes visuales consistentes para contenido de marca o campañas con identidad corporativa definida (ej. OXXO).",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt demuestra dominio técnico sólido en estructuración (ROL, TAREA, CONTEXTO, RESTRICCIONES, FORMATO) y especificidad visual cinematográfica, pero el ejercicio es una exploración creativa sin evidencia de aplicación a un problema real y recurrente de su trabajo en OCESA.",
+          "level_up_suggestion": "Conecta esta habilidad a un caso de uso real de OCESA: por ejemplo, crea un Character Sheet de un 'host tipo' o mascota para una campaña de evento específico, documentando cómo este activo visual ahorra tiempo en briefings con agencias o proveedores de producción."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Conecta esta habilidad a un caso de uso real de OCESA: por ejemplo, crea un Character Sheet de un 'host tipo' o mascota para una campaña de evento específico, documentando cómo este activo visual ahorra tiempo en briefings con agencias o proveedores de producción."
     },
     {
       "id": "103387490168955358425",
@@ -3592,9 +4302,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "La estructura en 5 puntos con especificaciones técnicas precisas (XAU, XAG, premium típico, diferencia entre spot y precio de moneda) demuestra comprensión de que el modelo necesita instrucciones granulares para producir datos específicos del mercado. Hay diseño consciente del output deseado."
             }
-          }
+          },
+          "work_synthesis": "Jesús construyó un prompt estructurado para obtener análisis completo de precios de metales preciosos (oro y plata) en tiempo real, incluyendo comparativa spot vs. mercado físico mexicano y contexto macroeconómico. El prompt tiene utilidad para seguimiento de inversiones personales o consultoría financiera básica.",
+          "application_area": "Otro",
+          "application_detail": "Análisis de inversiones en metales preciosos (oro/plata), específicamente monedas Libertad mexicanas — no vinculado directamente al negocio de entretenimiento/eventos de OCESA.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt está bien estructurado con múltiples dimensiones de análisis y demuestra conocimiento técnico del dominio (onza troy, XAU/XAG, premium sobre spot), pero corresponde a un interés personal/financiero sin conexión con su rol en OCESA ni con un problema recurrente de trabajo real.",
+          "level_up_suggestion": "Aplica esta misma capacidad de estructurar prompts detallados a un problema real de tu área en OCESA — por ejemplo, análisis de costos de producción, comparativa de proveedores o seguimiento de métricas de eventos — para demostrar valor directo en tu trabajo diario."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Otro",
+      "level_up_suggestion": "Aplica esta misma capacidad de estructurar prompts detallados a un problema real de tu área en OCESA — por ejemplo, análisis de costos de producción, comparativa de proveedores o seguimiento de métricas de eventos — para demostrar valor directo en tu trabajo diario."
     },
     {
       "id": "102214830195407912747",
@@ -3639,9 +4358,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "Demuestra comprensión del modelo al incluir instrucciones explícitas de veracidad ('No inventes datos', 'Solicitud de Claridad'), lo que evidencia conciencia de las limitaciones del modelo. El diseño en 4 pilares con formato de salida estandarizado refleja pensamiento sistemático."
             }
-          }
+          },
+          "work_synthesis": "Roberto construyó un prompt estructurado para evaluar propuestas de diseño de producción bajo cuatro pilares técnicos (cumplimiento, estética, eficiencia en materiales y calidad de renders), con salidas estandarizadas por semáforo y feedback directo al diseñador. El prompt está diseñado para apoyar decisiones de inversión en materiales dentro de un contexto de costos operativos altos, funcionando como un evaluador sistemático de briefs de diseño.",
+          "application_area": "Producción de Eventos",
+          "application_detail": "Evaluación de propuestas de diseño y materiales para producción de eventos, optimizando el ROI visual por dólar invertido.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt tiene buena estructura técnica con instrucciones de veracidad y formato de salida definido, pero el placeholder '[PEGAR AQUÍ LOS DETALLES DEL PROYECTO]' indica que aún no está aplicado a un caso de trabajo real y recurrente; es un template bien construido sin evidencia de uso operativo concreto.",
+          "level_up_suggestion": "Aplica este prompt a una propuesta de diseño real que ya hayas recibido esta semana, documenta el resultado y compara si la evaluación de la IA coincidió con tu criterio experto; eso lo convierte en un caso de uso validado. Como segundo paso, considera crear un GPT o flujo donde el diseñador mismo pueda pegar su brief y recibir la evaluación sin que tú tengas que intermediar."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Producción de Eventos",
+      "level_up_suggestion": "Aplica este prompt a una propuesta de diseño real que ya hayas recibido esta semana, documenta el resultado y compara si la evaluación de la IA coincidió con tu criterio experto; eso lo convierte en un caso de uso validado. Como segundo paso, considera crear un GPT o flujo donde el diseñador mismo pueda pegar su brief y recibir la evaluación sin que tú tengas que intermediar."
     },
     {
       "id": "102542173536207744885",
@@ -3686,9 +4414,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "La instrucción de reencuadre ('No hables de logos, habla de conectar con el estilo de vida') es una decisión de diseño consciente que dirige al modelo hacia un output diferenciado y de mayor valor comercial. Muestra comprensión de que el framing importa para el resultado."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado para generar argumentos de venta estratégicos que justifiquen inversión de patrocinio en festivales de OCESA, dirigido a tomadores de decisiones de industrias específicas. El prompt es reutilizable como plantilla comercial para el equipo de ventas de patrocinios.",
+          "application_area": "Ventas y Propuestas",
+          "application_detail": "Generación de argumentos estratégicos de patrocinio para presentaciones a marcas potenciales en festivales como Corona Capital.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt tiene buena estructura y variables reemplazables [CORONA CAPITAL], [AUTOMOTRIZ], lo que muestra comprensión de ingeniería de prompting. Sin embargo, no hay evidencia de que este prompt se haya usado en un caso de trabajo real ni de que produzca un output concreto integrado a un flujo de ventas existente.",
+          "level_up_suggestion": "Aplica este prompt a una propuesta de patrocinio real que estés preparando en OCESA y documenta el output generado. Como siguiente paso, encadena este prompt con uno que genere el deck ejecutivo completo o el correo de seguimiento, creando un mini-flujo de ventas reutilizable por tu equipo."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Ventas y Propuestas",
+      "level_up_suggestion": "Aplica este prompt a una propuesta de patrocinio real que estés preparando en OCESA y documenta el output generado. Como siguiente paso, encadena este prompt con uno que genere el deck ejecutivo completo o el correo de seguimiento, creando un mini-flujo de ventas reutilizable por tu equipo."
     },
     {
       "id": "108863553751009295415",
@@ -3733,9 +4470,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "El workflow de 4 pasos (Analizar → Conectar → Humanizar → Proyectar) muestra pensamiento de diseño de proceso. La restricción de tratar datos faltantes con 'nota constructiva' demuestra conciencia de que el modelo puede alucinar al no tener datos. Es sólido pero sin el nivel de sofisticación técnica de los prompts Destacado."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado tipo sistema para automatizar la generación de informes mensuales integrados que cruzan datos de Pauta, Alianzas y Redes Sociales en una narrativa ejecutiva con recomendaciones tácticas. El prompt define un workflow de 4 pasos (analizar, conectar, humanizar, proyectar) con formato de salida específico, restricciones de tono y manejo de datos faltantes, lo que lo convierte en una plantilla reutilizable para reporteo estratégico.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Reportes mensuales integrados de pauta publicitaria, alianzas estratégicas y redes sociales con análisis cruzado y recomendaciones tácticas.",
+          "maturity_level": "Alquimista en Práctica",
+          "maturity_justification": "El prompt resuelve un caso de uso real y recurrente (informe mensual de su área) con estructura de workflow multi-paso, formato de salida definido y manejo de casos edge (datos faltantes). Va más allá del prompting básico al incorporar lógica condicional y un rol contextualizado con nombre real del líder, evidenciando aplicación directa al trabajo diario.",
+          "level_up_suggestion": "Para escalar a Alquimista Destacado, convierte este prompt en un GPT personalizado que otros miembros del equipo puedan usar directamente pegando sus propios datos, sin necesidad de copiar y configurar el prompt cada vez. Agrega instrucciones de cómo estructurar el input de datos para que el sistema sea completamente autónomo."
         }
-      }
+      },
+      "maturity_level": "Alquimista en Práctica",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Para escalar a Alquimista Destacado, convierte este prompt en un GPT personalizado que otros miembros del equipo puedan usar directamente pegando sus propios datos, sin necesidad de copiar y configurar el prompt cada vez. Agrega instrucciones de cómo estructurar el input de datos para que el sistema sea completamente autónomo."
     },
     {
       "id": "117171587541111185611",
@@ -3780,9 +4526,18 @@ const DASHBOARD_DATA = {
               "score": 3,
               "justification": "La especificación de '3 puntos de costos inflados' como output delimitado es una decisión de diseño consciente que evita outputs excesivos o vagos. El formato tabla con columnas específicas (Concepto, Costo Propuesto, Costo Estimado, Observación) demuestra comprensión de cómo estructurar outputs útiles."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado que simula un auditor senior para comparar propuestas de agencias contra benchmarks de mercado, identificando costos inflados o descripciones ambiguas. Su utilidad práctica es servir como 'filtro de negociación' antes de aprobar presupuestos con proveedores externos.",
+          "application_area": "Gestión de Proyectos",
+          "application_detail": "Auditoría y validación de propuestas de agencias y proveedores para detectar sobrecostos antes de aprobar presupuestos.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt tiene buena estructura (rol, tarea, output específico con tabla) y evidencia comprensión de ingeniería de prompting, pero usa variables en corchetes como marcadores vacíos sin mostrar que lo aplicó a un caso real de su trabajo en OCESA con datos concretos.",
+          "level_up_suggestion": "Aplica este prompt a una propuesta real de proveedor que hayas recibido recientemente en OCESA, incluyendo los datos reales de la propuesta y benchmarks históricos internos, y documenta si el output cambió alguna decisión de compra o negociación."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Gestión de Proyectos",
+      "level_up_suggestion": "Aplica este prompt a una propuesta real de proveedor que hayas recibido recientemente en OCESA, incluyendo los datos reales de la propuesta y benchmarks históricos internos, y documenta si el output cambió alguna decisión de compra o negociación."
     },
     {
       "id": "112880746027068223653",
@@ -3827,9 +4582,18 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "La instrucción de 'no sentirse como venta forzada' muestra conciencia del tono, pero la petición de 'basarse en casos de éxito de la web' revela que el estudiante no comprende aún que el modelo trabaja con memoria paramétrica, no busca en internet en tiempo real. Esto reduce el puntaje de comprensión del modelo."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado para generar una estrategia de comunicación de lanzamiento para 'Lexus', una experiencia de teatro inmersivo en CDMX. El prompt define rol, contexto de negocio, audiencia objetivo y solicita ángulos de comunicación diferenciados para redes sociales y mailing, orientado a agotar preventa de forma orgánica.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Estrategia de lanzamiento y comunicación para evento de entretenimiento inmersivo dirigido a millennials urbanos.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt tiene buena estructura (rol + contexto + objetivo + audiencia) y está anclado a un caso real de OCESA, lo que es prometedor. Sin embargo, sigue siendo un ejercicio de construcción de prompt, no una solución recurrente integrada al flujo de trabajo diario; además incluye una instrucción ambigua ('casos de éxito que encuentres en la web') que evidencia exploración básica del uso de la herramienta.",
+          "level_up_suggestion": "Para subir de nivel, toma el output que generó este prompt y úsalo realmente en la campaña de Lexus: documenta qué ángulo funcionó mejor, itera el prompt con esos aprendizajes y conviértelo en una plantilla reutilizable para futuros lanzamientos de OCESA."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Para subir de nivel, toma el output que generó este prompt y úsalo realmente en la campaña de Lexus: documenta qué ángulo funcionó mejor, itera el prompt con esos aprendizajes y conviértelo en una plantilla reutilizable para futuros lanzamientos de OCESA."
     },
     {
       "id": "110740748897478671154",
@@ -3874,9 +4638,18 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "La solicitud de identificar riesgos de sobrecarga y ajustes si la planeación no es realista muestra cierto pensamiento de diseño, pero no hay evidencia de iteración, comprensión de limitaciones del modelo ni decisiones de diseño sofisticadas."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado para asistir en la planeación semanal de proyectos, orientado a priorizar tareas, distribuir carga de trabajo y detectar riesgos de sobrecarga. Aunque el prompt tiene estructura clara con contexto y requerimientos definidos, carece de datos reales (proyectos, horas, deadlines) que lo conviertan en una herramienta operativa aplicada a su trabajo diario.",
+          "application_area": "Gestión de Proyectos",
+          "application_detail": "Planeación semanal de proyectos en agencia digital con múltiples clientes y niveles de urgencia.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt demuestra comprensión de la anatomía básica (contexto, rol, necesidades, formato de salida), pero no incluye datos reales del trabajo —proyectos actuales, miembros del equipo, horas disponibles— lo que lo mantiene como ejercicio conceptual y no como una solución aplicada a un problema concreto y recurrente.",
+          "level_up_suggestion": "Incorpora al prompt datos reales de tu semana: nombres de proyectos, tareas pendientes, horas disponibles por persona y fechas límite; con eso pasarás de un template genérico a una herramienta que resuelve tu problema operativo real cada lunes."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Gestión de Proyectos",
+      "level_up_suggestion": "Incorpora al prompt datos reales de tu semana: nombres de proyectos, tareas pendientes, horas disponibles por persona y fechas límite; con eso pasarás de un template genérico a una herramienta que resuelve tu problema operativo real cada lunes."
     },
     {
       "id": "114353135574688787995",
@@ -3921,9 +4694,18 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "Las tres categorías de clasificación tienen definiciones cortas (ej. 'Requieren calidez y rapidez', 'Requieren foco total') que guían el razonamiento del modelo de forma básica. Sin embargo, no hay evidencia de diseño consciente de flujo, iteración o comprensión de limitaciones del modelo."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt de clasificación de tareas y correos en tres categorías funcionales (social, análisis y crisis) orientado a organizar la carga de trabajo diaria. El sistema busca priorizar según el tipo de atención que requiere cada actividad, pero aún depende de que el usuario pegue manualmente su lista sin aplicarlo a un contexto laboral específico de OCESA.",
+          "application_area": "Gestión de Proyectos",
+          "application_detail": "Organización y priorización de tareas operativas diarias",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt muestra comprensión de estructura básica con roles y categorías, pero usa un placeholder genérico '[PEGAR TU LISTA]' sin anclar el caso a un problema real y recurrente de su trabajo en OCESA. No hay evidencia de aplicación en un flujo laboral concreto.",
+          "level_up_suggestion": "Sustituye el placeholder por un ejemplo real de tu bandeja de entrada o lista de pendientes de un día típico en OCESA, y agrega una instrucción de output que indique prioridad y tiempo estimado por bloque para hacerlo accionable de inmediato."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Gestión de Proyectos",
+      "level_up_suggestion": "Sustituye el placeholder por un ejemplo real de tu bandeja de entrada o lista de pendientes de un día típico en OCESA, y agrega una instrucción de output que indique prioridad y tiempo estimado por bloque para hacerlo accionable de inmediato."
     },
     {
       "id": "104570289294903597082",
@@ -3968,9 +4750,18 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "La instrucción de 'justificar basada en psicología del consumidor' es una técnica de dirección del razonamiento del modelo que muestra cierta comprensión del prompting. Sin embargo, el prompt es muy corto y no evidencia iteración ni diseño consciente de un flujo de trabajo."
             }
-          }
+          },
+          "work_synthesis": "Valeria construyó un prompt orientado al análisis emocional de briefs creativos, buscando traducir emociones a elementos visuales como materiales físicos y temperaturas de color. El ejercicio muestra comprensión de estructura de prompt con instrucciones encadenadas, pero se queda en un caso hipotético sin ancla a un proyecto real de OCESA.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Análisis emocional de briefs para guías de dirección de arte o identidad visual de eventos",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt demuestra conocimiento de técnicas como encadenamiento de tareas y justificación basada en marco teórico (psicología del consumidor), pero no hay evidencia de que se haya aplicado a un brief real de trabajo ni de que resuelva un problema recurrente en su rol.",
+          "level_up_suggestion": "Toma un brief real de un evento próximo de OCESA, aplica este prompt y comparte el output con tu equipo para validar si cambió alguna decisión creativa. Ese resultado concreto es lo que transforma el ejercicio en caso de uso real."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Toma un brief real de un evento próximo de OCESA, aplica este prompt y comparte el output con tu equipo para validar si cambió alguna decisión creativa. Ese resultado concreto es lo que transforma el ejercicio en caso de uso real."
     },
     {
       "id": "110283996774674465315",
@@ -4015,9 +4806,18 @@ const DASHBOARD_DATA = {
               "score": 2,
               "justification": "Hay elementos básicos de ingeniería de prompts (formato tabla, tono específico, restricción de presupuesto bajo) pero es un prompt de primer nivel sin evidencia de iteración o decisiones de diseño conscientes sobre el modelo."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt estructurado para generar un plan de contenido semanal en Instagram para una marca de café artesanal, incorporando elementos como rol, formato de salida, restricciones de presupuesto y tono. El ejercicio demuestra comprensión básica de la anatomía del prompt, aunque el caso de uso no está vinculado a su trabajo en OCESA.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Planificación de contenido para redes sociales de marca pequeña, externo al contexto OCESA.",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El prompt tiene estructura correcta (rol, contexto, formato, restricciones, tono) y muestra dominio técnico básico de prompting, pero el caso de uso es un ejercicio genérico desconectado de su trabajo diario en la empresa de entretenimiento.",
+          "level_up_suggestion": "Aplica esta misma estructura de prompt a un reto real de tu rol en OCESA, por ejemplo generando un plan de contenido para un evento o artista específico de la cartera. Conectar la habilidad adquirida a un problema recurrente de tu trabajo diario es el salto hacia 'Alquimista en Práctica'."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Aplica esta misma estructura de prompt a un reto real de tu rol en OCESA, por ejemplo generando un plan de contenido para un evento o artista específico de la cartera. Conectar la habilidad adquirida a un problema recurrente de tu trabajo diario es el salto hacia 'Alquimista en Práctica'."
     },
     {
       "id": "115916603979959017305",
@@ -4062,9 +4862,18 @@ const DASHBOARD_DATA = {
               "score": 1,
               "justification": "Describe haber 'agregado contexto de la presentación, recursos disponibles y deadlines' de forma conversacional, lo que muestra comprensión intuitiva pero no ingeniería consciente de prompts. No hay evidencia del proceso de diseño estructurado aprendido en el sprint."
             }
-          }
+          },
+          "work_synthesis": "El estudiante utilizó IA para convertir notas escritas a mano en una presentación de PowerPoint con plan de trabajo estructurado, logrando en ~10 minutos un entregable que normalmente requiere mayor inversión de tiempo. El caso demuestra uso espontáneo de IA en contexto real, aunque el prompt compartido es rudimentario y no evidencia dominio de ingeniería de prompting.",
+          "application_area": "Gestión de Proyectos",
+          "application_detail": "Generación rápida de presentaciones y planes de trabajo a partir de notas informales para validación con equipo",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "Aunque el caso de uso tiene aplicación real y genera valor tangible, el prompt presentado es básico ('¿Me ayudas a extraer el texto?') y el estudiante no demuestra construcción estructurada de prompts con los elementos del framework (contexto, rol, restricciones, formato). La narrativa describe el resultado más que la técnica aplicada.",
+          "level_up_suggestion": "Documenta y comparte el prompt completo con todos sus componentes (contexto, instrucción, formato esperado, restricciones) para que un compañero pueda replicar exactamente el mismo resultado sin necesitar adaptarlo. Esto te moverá de usuario ocasional a referente de buenas prácticas dentro del equipo."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Gestión de Proyectos",
+      "level_up_suggestion": "Documenta y comparte el prompt completo con todos sus componentes (contexto, instrucción, formato esperado, restricciones) para que un compañero pueda replicar exactamente el mismo resultado sin necesitar adaptarlo. Esto te moverá de usuario ocasional a referente de buenas prácticas dentro del equipo."
     },
     {
       "id": "107054313229103567205",
@@ -4109,9 +4918,18 @@ const DASHBOARD_DATA = {
               "score": 1,
               "justification": "No hay evidencia de iteración, decisiones de diseño ni comprensión del funcionamiento del modelo. La respuesta incompleta sugiere que el estudiante no llegó a construir el prompt completo."
             }
-          }
+          },
+          "work_synthesis": "El estudiante construyó un prompt con rol especializado en marketing comercial y patrocinios para eventos masivos, posicionando a la IA como estratega experta en monetización de experiencias premium. El prompt establece un contexto profesional relevante para OCESA, pero se presenta incompleto: solo define el rol sin incluir tarea, contexto de problema, ni output esperado.",
+          "application_area": "Marketing y Contenido",
+          "application_detail": "Estrategia de patrocinios creativos y monetización de experiencias para fans en eventos masivos",
+          "maturity_level": "Aprendiz Activo",
+          "maturity_justification": "El estudiante demuestra comprensión básica de la técnica de role-prompting, pero el prompt carece de los elementos esenciales de un prompt completo (tarea concreta, contexto, formato de salida). No hay evidencia de aplicación a un problema real de trabajo ni de resultados obtenidos.",
+          "level_up_suggestion": "Completa el prompt añadiendo un problema específico real de tu trabajo diario —por ejemplo: 'Necesito crear una propuesta de patrocinio para [evento X] con [presupuesto Y] dirigida a [marca Z]'— e incluye el formato de respuesta esperado (presentación, tabla comparativa, brief). Así pasas de definir el rol a resolver un problema concreto."
         }
-      }
+      },
+      "maturity_level": "Aprendiz Activo",
+      "primary_area": "Marketing y Contenido",
+      "level_up_suggestion": "Completa el prompt añadiendo un problema específico real de tu trabajo diario —por ejemplo: 'Necesito crear una propuesta de patrocinio para [evento X] con [presupuesto Y] dirigida a [marca Z]'— e incluye el formato de respuesta esperado (presentación, tabla comparativa, brief). Así pasas de definir el rol a resolver un problema concreto."
     }
   ],
   "sprint_details": {}
