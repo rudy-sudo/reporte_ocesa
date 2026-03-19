@@ -100,7 +100,7 @@
         </div>
         <div class="kpi-content">
           <span class="kpi-value" id="kpiFormacion">20</span>
-          <span class="kpi-label">En Formación</span>
+          <span class="kpi-label">En Práctica</span>
         </div>
       </div>
       <div class="kpi-card">
@@ -153,48 +153,7 @@
       <h3 class="chart-title">Embudo de Participación</h3>
       <p class="chart-subtitle">De inscritos a participación sostenida</p>
       <div class="funnel">
-        <div class="funnel-step" style="--width: 100%">
-          <div class="funnel-bar" style="background: var(--color-teal);"></div>
-          <div class="funnel-info">
-            <span class="funnel-value">88</span>
-            <span class="funnel-label">Inscritos</span>
-          </div>
-        </div>
-        <div class="funnel-step" style="--width: 62.5%">
-          <div class="funnel-bar" style="background: var(--color-violet);"></div>
-          <div class="funnel-info">
-            <span class="funnel-value">55</span>
-            <span class="funnel-label">Con alguna actividad</span>
-          </div>
-        </div>
-        <div class="funnel-step" style="--width: 55.7%">
-          <div class="funnel-bar" style="background: var(--color-amber);"></div>
-          <div class="funnel-info">
-            <span class="funnel-value">49</span>
-            <span class="funnel-label">Sprint 1</span>
-          </div>
-        </div>
-        <div class="funnel-step" style="--width: 34.1%">
-          <div class="funnel-bar" style="background: var(--color-amber-dark);"></div>
-          <div class="funnel-info">
-            <span class="funnel-value">30</span>
-            <span class="funnel-label">Sprint 2</span>
-          </div>
-        </div>
-        <div class="funnel-step" style="--width: 19.3%">
-          <div class="funnel-bar" style="background: var(--color-rose);"></div>
-          <div class="funnel-info">
-            <span class="funnel-value">17</span>
-            <span class="funnel-label">Sprint 3</span>
-          </div>
-        </div>
-        <div class="funnel-step" style="--width: 5.7%">
-          <div class="funnel-bar" style="background: var(--color-rose-dark);"></div>
-          <div class="funnel-info">
-            <span class="funnel-value">5</span>
-            <span class="funnel-label">Sprint 4</span>
-          </div>
-        </div>
+        <!-- Populated dynamically by JS -->
       </div>
     </div>
   </div>
@@ -209,10 +168,10 @@
     </div>
     
     <div class="sprint-tabs">
-      <button class="sprint-tab active" data-sprint="sprint_1">🧪 Sprint 1</button>
-      <button class="sprint-tab" data-sprint="sprint_2">🛡️ Sprint 2</button>
-      <button class="sprint-tab" data-sprint="sprint_3">🧩 Sprint 3</button>
-      <button class="sprint-tab" data-sprint="sprint_4">🔮 Sprint 4</button>
+      <button class="sprint-tab active" data-sprint="1">🧪 Sprint 1</button>
+      <button class="sprint-tab" data-sprint="2">🛡️ Sprint 2</button>
+      <button class="sprint-tab" data-sprint="3">🧩 Sprint 3</button>
+      <button class="sprint-tab" data-sprint="4">🔮 Sprint 4</button>
     </div>
 
     <div class="sprint-content" id="sprintContent">
@@ -237,16 +196,17 @@
       <div class="filter-group">
         <select id="classFilter" class="filter-select">
           <option value="all">Todas las clasificaciones</option>
-          <option value="🔮 Alquimista Destacado">🔮 Destacado</option>
-          <option value="⚗️ Alquimista en Formación">⚗️ En Formación</option>
-          <option value="🧪 Aprendiz Activo">🧪 Aprendiz Activo</option>
+          <option value="Alquimista Destacado">Destacado</option>
+          <option value="Alquimista en Práctica">En Práctica</option>
+          <option value="Aprendiz Activo">Aprendiz Activo</option>
+          <option value="Participación Insuficiente">Participación Insuficiente</option>
         </select>
         <select id="sprintFilter" class="filter-select">
           <option value="all">Todos los sprints</option>
-          <option value="sprint_1">Sprint 1</option>
-          <option value="sprint_2">Sprint 2</option>
-          <option value="sprint_3">Sprint 3</option>
-          <option value="sprint_4">Sprint 4</option>
+          <option value="1">Sprint 1</option>
+          <option value="2">Sprint 2</option>
+          <option value="3">Sprint 3</option>
+          <option value="4">Sprint 4</option>
         </select>
       </div>
     </div>
@@ -295,7 +255,7 @@
         </div>
       </div>
       <div class="chart-card">
-        <h3 class="chart-title">¿Dónde aplican la IA?</h3>
+        <h3 class="chart-title">Competencias Promedio</h3>
         <div class="chart-container">
           <canvas id="areasChart"></canvas>
         </div>
@@ -349,7 +309,7 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-left">
-      <p class="footer-text">Reporte generado el 17 de marzo de 2026</p>
+      <p class="footer-text">Reporte generado el 18 de marzo de 2026</p>
       <p class="footer-note">Las calificaciones son borradores de evaluación y no representan notas finales oficiales.</p>
     </div>
     <div class="footer-right">
