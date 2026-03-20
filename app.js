@@ -795,6 +795,27 @@ function openStudentModal(studentId) {
                 </div>
               `).join('')}
             </div>
+
+            ${sp.strengths && sp.strengths.length > 0 ? `
+              <div class="modal-section-title" style="margin-top:var(--space-4);">Fortalezas</div>
+              <ul class="modal-list strengths">
+                ${sp.strengths.map(str => `<li>${str}</li>`).join('')}
+              </ul>
+            ` : ''}
+
+            ${sp.recommendations && sp.recommendations.length > 0 ? `
+              <div class="modal-section-title">Recomendaciones</div>
+              <ul class="modal-list recommendations">
+                ${sp.recommendations.map(rec => `<li>${rec}</li>`).join('')}
+              </ul>
+            ` : ''}
+
+            ${sp.alchemist_signals && sp.alchemist_signals.length > 0 ? `
+              <div class="modal-section-title">Señales de Alquimista</div>
+              <ul class="modal-list signals">
+                ${sp.alchemist_signals.map(sig => `<li>${sig}</li>`).join('')}
+              </ul>
+            ` : ''}
           </div>
         </div>
       `;
